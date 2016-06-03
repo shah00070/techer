@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="20\nApr"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/message_size_medium"
+        android:textStyle="normal" />
+
+    <RelativeLayout
+        android:id="@+id/doctor_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/date" >
+
+        <TextView
+            android:id="@+id/dr_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Dr. Kuldeep Singh"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/message_size_medium"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/appointment_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/dr_name"
+            android:text="Inclinic" />
+
+        <!--
+             <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/appointment_type"
+            android:text="Active" />
+        -->
+
+
+        <TextView
+            android:id="@+id/clinic_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/appointment_type"
+            android:text="Singh Dental Clinic"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/time_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/clinic_name"
+            android:text="7:00 PM, Noida Sector 62" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/div2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/doctor_details"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:background="#DEDEDE" />
+
+</RelativeLayout>

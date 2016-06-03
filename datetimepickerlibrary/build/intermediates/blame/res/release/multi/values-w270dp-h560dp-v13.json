@@ -1,0 +1,83 @@
+[
+    {
+        "outputFile": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/values-w270dp-h560dp-v13/values-w270dp-h560dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 63,
+                    "endOffset": 114
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/values-w270dp-h560dp/dimens.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 811,
+                        "endColumn": 63,
+                        "endOffset": 870
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 119,
+                    "endColumn": 54,
+                    "endOffset": 169
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/values-w270dp-h560dp/dimens.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 932,
+                        "endColumn": 54,
+                        "endOffset": 982
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 174,
+                    "endColumn": 55,
+                    "endOffset": 225
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/values-w270dp-h560dp/dimens.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 988,
+                        "endColumn": 55,
+                        "endOffset": 1039
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 230,
+                    "endColumn": 54,
+                    "endOffset": 280
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/values-w270dp-h560dp/dimens.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 876,
+                        "endColumn": 54,
+                        "endOffset": 926
+                    }
+                }
+            }
+        ]
+    }
+]

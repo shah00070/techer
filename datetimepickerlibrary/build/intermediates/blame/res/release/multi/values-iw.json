@@ -1,0 +1,520 @@
+[
+    {
+        "outputFile": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/values-iw/values-iw.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 103,
+                    "endOffset": 204
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-iw/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 276,
+                        "endColumn": 103,
+                        "endOffset": 375
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 209,
+                    "endColumn": 109,
+                    "endOffset": 314
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-iw/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 380,
+                        "endColumn": 109,
+                        "endOffset": 485
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 319,
+                    "endColumn": 125,
+                    "endOffset": 440
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-iw/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 490,
+                        "endColumn": 125,
+                        "endOffset": 611
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 445,
+                    "endColumn": 98,
+                    "endOffset": 539
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-iw/values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 616,
+                        "endColumn": 98,
+                        "endOffset": 710
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 544,
+                    "endColumn": 107,
+                    "endOffset": 647
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-iw/values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 715,
+                        "endColumn": 107,
+                        "endOffset": 818
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 652,
+                    "endColumn": 83,
+                    "endOffset": 731
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-iw/values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 823,
+                        "endColumn": 83,
+                        "endOffset": 902
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 736,
+                    "endColumn": 99,
+                    "endOffset": 831
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-iw/values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 907,
+                        "endColumn": 99,
+                        "endOffset": 1002
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 836,
+                    "endColumn": 113,
+                    "endOffset": 945
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-iw/values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1007,
+                        "endColumn": 113,
+                        "endOffset": 1116
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 950,
+                    "endColumn": 101,
+                    "endOffset": 1047
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-iw/values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1121,
+                        "endColumn": 101,
+                        "endOffset": 1218
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 1052,
+                    "endColumn": 103,
+                    "endOffset": 1151
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-iw/values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1223,
+                        "endColumn": 103,
+                        "endOffset": 1322
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1156,
+                    "endColumn": 95,
+                    "endOffset": 1247
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-iw/values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1327,
+                        "endColumn": 95,
+                        "endOffset": 1418
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1252,
+                    "endColumn": 102,
+                    "endOffset": 1350
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-iw/values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1423,
+                        "endColumn": 102,
+                        "endOffset": 1521
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 1355,
+                    "endColumn": 100,
+                    "endOffset": 1451
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-iw/values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1526,
+                        "endColumn": 100,
+                        "endOffset": 1622
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1456,
+                    "endColumn": 99,
+                    "endOffset": 1551
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-iw/values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1627,
+                        "endColumn": 99,
+                        "endOffset": 1722
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1556,
+                    "endColumn": 115,
+                    "endOffset": 1667
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-iw/values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1727,
+                        "endColumn": 115,
+                        "endOffset": 1838
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1672,
+                    "endColumn": 95,
+                    "endOffset": 1763
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-iw/values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1843,
+                        "endColumn": 95,
+                        "endOffset": 1934
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1768,
+                    "endColumn": 108,
+                    "endOffset": 1872
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/values-iw/strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1261,
+                        "endColumn": 108,
+                        "endOffset": 1365
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1877,
+                    "endColumn": 103,
+                    "endOffset": 1976
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/values-iw/strings.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1743,
+                        "endColumn": 107,
+                        "endOffset": 1846
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1981,
+                    "endColumn": 73,
+                    "endOffset": 2050
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/values-iw/strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 820,
+                        "endColumn": 73,
+                        "endOffset": 889
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 2055,
+                    "endColumn": 98,
+                    "endOffset": 2149
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/values-iw/strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 895,
+                        "endColumn": 98,
+                        "endOffset": 989
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 2154,
+                    "endColumn": 109,
+                    "endOffset": 2259
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/values-iw/strings.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1628,
+                        "endColumn": 113,
+                        "endOffset": 1737
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 2264,
+                    "endColumn": 100,
+                    "endOffset": 2360
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/values-iw/strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 995,
+                        "endColumn": 100,
+                        "endOffset": 1091
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 2365,
+                    "endColumn": 82,
+                    "endOffset": 2443
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/values-iw/strings.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1465,
+                        "endColumn": 82,
+                        "endOffset": 1543
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 2448,
+                    "endColumn": 79,
+                    "endOffset": 2523
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/values-iw/strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1097,
+                        "endColumn": 79,
+                        "endOffset": 1172
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 2528,
+                    "endColumn": 81,
+                    "endOffset": 2605
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/values-iw/strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1178,
+                        "endColumn": 81,
+                        "endOffset": 1255
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 2610,
+                    "endColumn": 77,
+                    "endOffset": 2683
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/values-iw/strings.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1549,
+                        "endColumn": 77,
+                        "endOffset": 1622
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 2688,
+                    "endColumn": 92,
+                    "endOffset": 2776
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/values-iw/strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1371,
+                        "endColumn": 92,
+                        "endOffset": 1459
+                    }
+                }
+            }
+        ]
+    }
+]

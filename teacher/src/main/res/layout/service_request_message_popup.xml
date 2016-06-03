@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/introduction_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/introduction"
+        android:layout_margin="8dp"
+        android:gravity="center_horizontal"
+        android:text="You are about to Cancel the Appointment."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/message_size_normal" />
+
+    <Spinner
+        android:id="@+id/message_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/introduction_first"
+        android:layout_margin="8dp" />
+
+    <RelativeLayout
+        android:id="@+id/message_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_spinner"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/jeev_row_drop_shadow"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="Do you have any message"
+            android:textSize="@dimen/message_size_medium" />
+
+        <View
+            android:id="@+id/top_seprator"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/message_text"
+            android:background="@color/Gray" />
+
+        <EditText
+            android:id="@+id/message_value"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_seprator"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="@string/message_hint"
+            android:maxLength="1000"
+            android:maxLines="5"
+            android:minHeight="100dp"
+            android:padding="8dp"
+            android:textSize="@dimen/message_size_medium" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_send_message"
+        style="@style/buttonFillParent"
+        android:layout_below="@+id/message_layout"
+        android:background="@drawable/round_button"
+        android:text="Done" />
+
+</RelativeLayout>

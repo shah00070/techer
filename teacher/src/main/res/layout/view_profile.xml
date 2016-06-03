@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@+id/dob"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/green_dark"
+            android:textSize="@dimen/message_size_medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/message_size_small" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/message_size_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/message_size_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cell"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/message_size_small" />
+
+        <TextView
+            android:id="@+id/height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/cell"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/message_size_small" />
+
+        <TextView
+            android:id="@+id/bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weight"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/message_size_small" />
+
+        <TextView
+            android:id="@+id/bmr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/weight"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/message_size_small" />
+
+        <View
+            android:id="@+id/first_seprator"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/bmi"
+            android:layout_marginTop="8dp"
+            android:background="@color/blue_button" />
+
+        <LinearLayout
+            android:id="@+id/address_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/first_seprator"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Address"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/address_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/message_size_medium" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/second_seprator"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/address_layout"
+            android:layout_marginTop="8dp"
+            android:background="@color/blue_button" />
+
+        <LinearLayout
+            android:id="@+id/medical_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/second_seprator"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Specific Medical Conditions"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/medical_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/message_size_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/allergy_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/medical_layout"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Allergies"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/allergy_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/message_size_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/marks_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/allergy_layout"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Visible Identical Marks"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/marks_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/message_size_medium" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/family_tag"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/marks_layout"
+            android:layout_marginTop="8dp"
+            android:background="@color/blue_edit"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="Family Member Details"
+            android:textColor="@color/White"
+            android:textSize="@dimen/message_size_medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/family_details"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/family_tag"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/emergency_tag"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/family_details"
+            android:layout_marginTop="8dp"
+            android:background="@color/blue_edit"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="Emergency Contact Details"
+            android:textColor="@color/White"
+            android:textSize="@dimen/message_size_medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/emergency_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emergency_tag"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/green_dark"
+            android:textSize="@dimen/message_size_medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/emergency_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emergency_name"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/message_size_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/emergency_cell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emergency_email"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/message_size_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/insurance_tag"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emergency_cell"
+            android:layout_marginTop="8dp"
+            android:background="@color/blue_edit"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="Insurance Details"
+            android:textColor="@color/White"
+            android:textSize="@dimen/message_size_medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/insurance_details"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/insurance_tag"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

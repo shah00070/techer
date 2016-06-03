@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/weight_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/weight_tag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/weight"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="Weight:"
+                android:textColor="@color/Blue"
+                android:textSize="@dimen/message_size_normal" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/Gray" />
+
+            <TextView
+                android:id="@+id/weight_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/message_size_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/height_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weight_layout" >
+
+            <TextView
+                android:id="@+id/height_tag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/height"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="Height:"
+                android:textColor="@color/Blue"
+                android:textSize="@dimen/message_size_normal" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/Gray" />
+
+            <TextView
+                android:id="@+id/height_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/message_size_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bmi_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/height_layout" >
+
+            <TextView
+                android:id="@+id/bmi_tag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/bmi"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="BMI:"
+                android:textColor="@color/Blue"
+                android:textSize="@dimen/message_size_normal" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/Gray" />
+
+            <TextView
+                android:id="@+id/bmi_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/bmi_tag"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/message_size_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bmr_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bmi_layout" >
+
+            <TextView
+                android:id="@+id/bmr_tag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/bmr"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="BMR:"
+                android:textColor="@color/Blue"
+                android:textSize="@dimen/message_size_normal" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/Gray" />
+
+            <TextView
+                android:id="@+id/bmr_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/bmr_tag"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/message_size_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/medical_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bmr_layout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/medical_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/medicalcondition"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="Specific Medical Conditions"
+                android:textColor="@color/Blue"
+                android:textSize="@dimen/message_size_normal" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/Gray" />
+
+            <TextView
+                android:id="@+id/medical_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/message_size_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/allergies_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/medical_layout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/allergies_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/allergy"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="Allergies"
+                android:textColor="@color/Blue"
+                android:textSize="@dimen/message_size_normal" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/Gray" />
+
+            <TextView
+                android:id="@+id/allergies_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/message_size_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mark_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/allergies_layout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/iden_mark_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:drawableLeft="@drawable/visibleidentitymark"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="Visible Identity Marks"
+                android:textColor="@color/Blue"
+                android:textSize="@dimen/message_size_normal" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/Gray" />
+
+            <TextView
+                android:id="@+id/marks_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/message_size_medium" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

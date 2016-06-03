@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/dow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="Presidium School, 2016-17"
+        android:textColor="#fff"
+        android:background="#99000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <Spinner
+        android:id="@+id/spinner11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:background="#99000000"
+       />
+
+
+    <ScrollView
+
+
+        android:id="@+id/main_content"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+
+                    />
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/one"
+android:visibility="visible"
+                    style="@style/Widget.CardContentt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:contentPadding= "5dp"
+                    card_view:cardUseCompatPadding="true"
+                    >
+
+                    <LinearLayout
+
+                        style="@style/Widget.CardContentt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#33CCCC"
+                        >
+
+
+
+
+
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="120dp"
+                         
+                            android:scrollbars="vertical"
+
+                            android:layout_marginBottom="5dp"
+
+                            android:paddingLeft="15dp"
+                            android:editable="false"
+                     
+                            android:background="@drawable/finaallp"
+                            android:textColor="@color/white"
+                            android:textSize="20dip"
+                            ></TextView>
+                      
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:weightSum="100"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:text="2/4/2016 Monday 2:00 pm"
+                                android:gravity="right|center"
+                                android:textSize="14dip"
+                                android:paddingRight="5dp"
+                                android:background="@color/transparentt"
+                                android:textColor="@color/white"
+                                android:layout_height="match_parent" />
+
+
+
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/Black"
+
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:weightSum="100"
+
+
+                        
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:text="Share"
+                                android:gravity="center"
+                                android:textSize="20dip"
+                                android:background="@color/transparentt"
+                                android:textColor="@color/Black"
+                                android:layout_height="match_parent" />
+
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+
+                    />
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/two"
+                    android:visibility="gone"
+                    style="@style/Widget.CardContentt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:contentPadding= "5dp"
+                    card_view:cardUseCompatPadding="true"
+                    >
+
+                    <LinearLayout
+
+                        style="@style/Widget.CardContentt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#33CCCC"
+                        >
+
+
+
+
+
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="120dp"
+
+                            android:scrollbars="vertical"
+
+                            android:layout_marginBottom="5dp"
+
+                            android:paddingLeft="15dp"
+                            android:editable="false"
+
+                            android:background="@drawable/schoolfor"
+                            android:textColor="@color/white"
+                            android:textSize="20dip"
+                            ></TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:weightSum="100"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:text="2/4/2016 Monday 2:00 pm"
+                                android:gravity="right|center"
+                                android:textSize="14dip"
+                                android:paddingRight="5dp"
+                                android:background="@color/transparentt"
+                                android:textColor="@color/white"
+                                android:layout_height="match_parent" />
+
+
+
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/Black"
+
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:weightSum="100"
+
+
+
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:text="Share"
+                                android:gravity="center"
+                                android:textSize="20dip"
+                                android:background="@color/transparentt"
+                                android:textColor="@color/Black"
+                                android:layout_height="match_parent" />
+
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+
+                    />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/three"
+                    android:visibility="gone"
+                    style="@style/Widget.CardContentt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:contentPadding= "5dp"
+                    card_view:cardUseCompatPadding="true"
+                    >
+
+                    <LinearLayout
+
+                        style="@style/Widget.CardContentt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#33CCCC"
+                        >
+
+
+
+
+
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="120dp"
+
+                            android:scrollbars="vertical"
+
+                            android:layout_marginBottom="5dp"
+
+                            android:paddingLeft="15dp"
+                            android:editable="false"
+
+                            android:background="@drawable/schooltwo"
+                            android:textColor="@color/white"
+                            android:textSize="20dip"
+                            ></TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:weightSum="100"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:text="2/4/2016 Monday 2:00 pm"
+                                android:gravity="right|center"
+                                android:textSize="14dip"
+
+android:paddingRight="5dp"
+                                android:background="@color/transparentt"
+                                android:textColor="@color/white"
+                                android:layout_height="match_parent" />
+
+
+
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/Black"
+
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:weightSum="100"
+
+
+
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:text="Share"
+                                android:gravity="center"
+                                android:textSize="20dip"
+                                android:background="@color/transparentt"
+                                android:textColor="@color/Black"
+                                android:layout_height="match_parent" />
+
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+
+                    />
+                <android.support.v7.widget.CardView
+                    android:id="@+id/four"
+                    android:visibility="gone"
+                    style="@style/Widget.CardContentt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:contentPadding= "5dp"
+                    card_view:cardUseCompatPadding="true"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/pk"
+                        style="@style/Widget.CardContentt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#33CCCC"
+                        >
+
+
+
+
+
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="120dp"
+
+                            android:scrollbars="vertical"
+
+                            android:layout_marginBottom="5dp"
+
+                            android:paddingLeft="15dp"
+                            android:editable="false"
+
+                            android:background="@drawable/schoolthr"
+                            android:textColor="@color/white"
+                            android:textSize="20dip"
+                            ></TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:weightSum="100"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:text="2/4/2016 Monday 2:00 pm"
+                                android:gravity="right|center"
+                                android:textSize="14dip"
+                                android:paddingRight="5dp"
+                                android:background="@color/transparentt"
+                                android:textColor="@color/white"
+                                android:layout_height="match_parent" />
+
+
+
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/Black"
+
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:weightSum="100"
+
+
+
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:text="Share"
+                                android:gravity="center"
+                                android:textSize="20dip"
+                                android:background="@color/transparentt"
+                                android:textColor="@color/Black"
+                                android:layout_height="match_parent" />
+
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+
+                    />
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>

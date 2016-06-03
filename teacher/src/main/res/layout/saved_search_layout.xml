@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <include
+        android:id="@+id/saved_search_toolbar"
+        layout="@layout/toobar" />
+
+    <ListView
+        android:id="@+id/saved_search_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/saved_search_toolbar" >
+    </ListView>
+
+</RelativeLayout>

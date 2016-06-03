@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/home/chandan/Teacher/jeevOMLibs/src/main/assets"><file name="splash_image.jpg" path="/home/chandan/Teacher/jeevOMLibs/src/main/assets/splash_image.jpg"/></source></dataSet><dataSet config="release"><source path="/home/chandan/Teacher/jeevOMLibs/src/release/assets"/></dataSet></merger>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/date_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+
+        android:textColor="@color/Black"
+        android:textSize="@dimen/message_size_medium" />
+
+    <TextView
+        android:id="@+id/reading_value_cms"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_time"
+        android:layout_margin="8dp"
+
+        android:textColor="@color/Black"
+        android:textSize="@dimen/message_size_medium" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey_dark" />
+</RelativeLayout>

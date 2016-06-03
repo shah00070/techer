@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White" >
+
+    <include
+        android:id="@+id/toolbar_step_two"
+        layout="@layout/toobar" />
+
+    <RelativeLayout
+        android:id="@+id/image_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:layout_below="@+id/toolbar_step_two"
+        android:layout_marginBottom="8dp" >
+
+        <com.schoolteacher.main.CircleImageView
+            android:id="@+id/img_doctor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/jeevom_back" />
+
+        <TextView
+            android:id="@+id/name_step_two"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/img_doctor"
+            android:ellipsize="end"
+            android:textColor="@color/blue_button"
+            android:textSize="@dimen/message_size_normal" />
+
+        <TextView
+            android:id="@+id/mode_step_two"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_step_two"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/img_doctor"
+            android:ellipsize="end"
+            android:textColor="@color/blue_button"
+            android:textSize="@dimen/message_size_medium" />
+
+        <TextView
+            android:id="@+id/select_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mode_step_two"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/img_doctor"
+            android:textSize="@dimen/message_size_medium" />
+    </RelativeLayout>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_option"
+        android:layout_below="@+id/image_name" >
+
+        <RelativeLayout
+            android:id="@+id/top_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/jeev_row_drop_shadow"
+            android:paddingBottom="8dp" >
+
+            <RelativeLayout
+                android:id="@+id/user_info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="4dp" >
+
+                <TextView
+                    android:id="@+id/login_potential_message"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:padding="4dp"
+                    android:text="Before you book an appointment, please provide the following details"
+                    android:textSize="@dimen/message_size_normal"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/action_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login_potential_message"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp" >
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/login_option"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_step_two_submit"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/Gray" />
+
+        <TextView
+            android:id="@+id/text_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:text="Already a Jeevom member - Sign In"
+            android:textColor="@drawable/forgot_password_color"
+            android:textSize="@dimen/message_size_medium" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_step_two_submit"
+        style="@style/buttonFillParent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/round_button"
+        android:text="Proceed" />
+
+</RelativeLayout>

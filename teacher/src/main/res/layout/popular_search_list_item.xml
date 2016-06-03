@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ccffffff"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/title_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Helooo"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/datetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_search"
+            android:layout_marginRight="30dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="description"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/arrow_imagevw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/arrow_image" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@+id/main_layout" />
+</RelativeLayout>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/left_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/iv_buttonA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="@dimen/button_padding"
+            android:src="@drawable/to_do" />
+
+        <View
+            android:id="@+id/void_view_A"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#3A4C5C" />
+
+        <ImageButton
+            android:id="@+id/iv_buttonB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="@dimen/button_padding"
+            android:src="@drawable/accepted" />
+
+        <View
+            android:id="@+id/void_view_B"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#3A4C5C" />
+
+        <ImageButton
+            android:id="@+id/iv_buttonC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="@dimen/button_padding"
+            android:src="@drawable/pending" />
+
+        <View
+            android:id="@+id/void_view_C"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#3A4C5C" />
+
+        <ImageButton
+            android:id="@+id/iv_buttonD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="@dimen/button_padding"
+            android:src="@drawable/completed" />
+
+        <View
+            android:id="@+id/void_view_D"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#3A4C5C" />
+
+        <ImageButton
+            android:id="@+id/iv_buttonE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="@dimen/button_padding"
+            android:src="@drawable/ignore_request" />
+
+        <View
+            android:id="@+id/void_view_E"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#3A4C5C" />
+
+        <ImageButton
+            android:id="@+id/iv_buttonF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="@dimen/button_padding"
+            android:src="@drawable/ignore_request" />
+
+        <View
+            android:id="@+id/void_view_F"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#3A4C5C" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/void_view_full_height"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/left_container"
+        android:background="#3A4C5C" />
+
+    <LinearLayout
+        android:id="@+id/srm_type_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/void_view_full_height"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/request_callback"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#6DAE30"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_request_callback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_bottom"
+                android:paddingTop="@dimen/padding_top"
+                android:text="Request Callback"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/message_size_medium" />
+
+            <info.jeevom.appointment.RectangleView
+                android:id="@+id/rectangleView_request_callback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_toRightOf="@+id/tv_request_callback"
+                android:background="@drawable/textview_rounded"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_request_callback_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/count_padding_left"
+                    android:paddingRight="@dimen/count_padding_right"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/fix_message_size_small" />
+            </info.jeevom.appointment.RectangleView>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF" />
+
+        <RelativeLayout
+            android:id="@+id/email_consultant_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#3A4C5C"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:id="@+id/ll_email_consultant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingBottom="@dimen/padding_bottom"
+                android:paddingTop="@dimen/padding_top" >
+
+                <TextView
+                    android:id="@+id/tv_email_consultant"
+                    android:layout_width="104dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Email Consultations"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/message_size_medium" />
+            </LinearLayout>
+
+            <info.jeevom.appointment.RectangleView
+                android:id="@+id/rectangleView_email_consultant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_toRightOf="@+id/ll_email_consultant"
+                android:background="@drawable/textview_rounded"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_email_consultant_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/count_padding_left"
+                    android:paddingRight="@dimen/count_padding_right"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/fix_message_size_small" />
+            </info.jeevom.appointment.RectangleView>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF" />
+
+        <RelativeLayout
+            android:id="@+id/appointment_container"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#3A4C5C"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:id="@+id/ll_appointment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding_bottom"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingTop="@dimen/padding_top"
+                android:textSize="@dimen/message_size_medium" >
+
+                <TextView
+                    android:id="@+id/tv_appointment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/padding_bottom"
+                    android:paddingLeft="@dimen/padding_left"
+                    android:paddingTop="@dimen/padding_top"
+                    android:text="Appointment"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/message_size_medium" />
+            </LinearLayout>
+
+            <info.jeevom.appointment.RectangleView
+                android:id="@+id/rectangleView_appointment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_toRightOf="@+id/ll_appointment"
+                android:background="@drawable/textview_rounded"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_appointment_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/count_padding_left"
+                    android:paddingRight="@dimen/count_padding_right"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/fix_message_size_small" />
+            </info.jeevom.appointment.RectangleView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/void_view"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/srm_type_container"
+        android:layout_toRightOf="@+id/void_view_full_height"
+        android:background="#FFFFFF" />
+
+    <ListView
+        android:id="@+id/lv_request_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/void_view"
+        android:layout_toRightOf="@+id/void_view_full_height"
+        android:divider="#FFFFFF"
+        android:dividerHeight="4dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+    </ListView>
+
+</RelativeLayout>

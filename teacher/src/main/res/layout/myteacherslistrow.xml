@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+
+    android:clickable="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="30">
+        <com.schoolteacher.main.CircleImageView
+            android:id="@+id/user_imageview"
+            android:layout_width="70dp"
+android:layout_gravity="center"
+android:layout_marginLeft="10dp"
+            android:layout_height="70dp"
+            android:src="@drawable/profile" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="70"
+        android:weightSum="100"
+        android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginRight="10dp"
+    android:layout_weight="40">
+
+    <TextView
+        android:id="@+id/myteachername"
+        android:textColor="@color/title"
+    android:layout_marginTop="15dp"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/user_imageview"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="20"
+    android:weightSum="100"
+    android:orientation="horizontal">
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+android:layout_weight="90"
+        />
+    <ImageView
+android:id="@+id/imageic"
+        android:textColor="@color/title"
+
+        android:src="@drawable/menuicon"
+        android:layout_width="0dp"
+        android:layout_weight="10"
+        android:layout_height="match_parent" />
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="40">
+
+            <TextView
+                android:id="@+id/myteachersubject"
+                android:textColor="@color/title"
+                android:layout_below="@+id/myteachername"
+                android:layout_toRightOf="@+id/user_imageview"
+                android:textSize="16dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+<!--
+    <com.school.main.CircleImageView
+        android:id="@+id/user_imageview"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/profile" />
+
+
+    <TextView
+        android:id="@+id/myteachername"
+        android:textColor="@color/title"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/user_imageview"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:id="@+id/myteachersubject"
+        android:textColor="@color/title"
+        android:layout_below="@+id/myteachername"
+        android:layout_toRightOf="@+id/user_imageview"
+        android:textSize="16dp"
+        android:background="@color/white"
+        android:drawableRight="@drawable/menuicon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+-->
+
+   <!-- <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:src="@drawable/menuicon"
+        android:paddingLeft="220dp"
+        android:layout_toEndOf="@+id/user_imageview"
+        />-->
+
+</RelativeLayout>

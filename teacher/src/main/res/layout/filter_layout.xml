@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp" >
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/layout_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/distance_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Distance from your location"
+                android:textSize="@dimen/message_size_medium" />
+
+            <SeekBar
+                android:id="@+id/distance_seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/distance_text"
+                android:layout_marginTop="16dp"
+                android:max="100" />
+
+            <CheckBox
+                android:id="@+id/all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/distance_seek_bar"
+                android:layout_marginTop="16dp"
+                android:text="All" />
+
+            <CheckBox
+                android:id="@+id/recommended"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/all"
+                android:layout_marginTop="8dp"
+                android:text="Recommended" />
+
+            <CheckBox
+                android:id="@+id/premium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recommended"
+                android:layout_marginTop="8dp"
+                android:text="Premium" />
+
+            <CheckBox
+                android:id="@+id/verified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/premium"
+                android:layout_marginTop="8dp"
+                android:text="Verified" />
+
+            <CheckBox
+                android:id="@+id/fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/verified"
+                android:layout_marginTop="8dp"
+                android:text="Fee Available" />
+
+            <CheckBox
+                android:id="@+id/online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fee"
+                android:layout_marginTop="8dp"
+                android:text="Online" />
+
+            <LinearLayout
+                android:id="@+id/type_group_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/online"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/type_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="8dp"
+                    android:text="Type"
+                    android:textSize="@dimen/message_size_medium" />
+
+                <RadioGroup
+                    android:id="@+id/type_radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_button_none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="None"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/message_size_small" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button_facility"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Facility"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/message_size_small" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button_professional"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Professional"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/message_size_small" />
+                </RadioGroup>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/scroll" >
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight=".5"
+            android:background="@color/black_first"
+            android:gravity="center"
+            android:text="Reset All"
+            android:textColor="@color/White"
+            android:textSize="@dimen/message_size_medium" />
+
+        <Button
+            android:id="@+id/apply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight=".5"
+            android:background="@color/black_first"
+            android:gravity="center"
+            android:text="Apply"
+            android:textColor="@color/White"
+            android:textSize="@dimen/message_size_medium" />
+    </LinearLayout>
+
+</RelativeLayout>

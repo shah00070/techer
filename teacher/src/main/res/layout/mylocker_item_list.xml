@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="#C5CAE9"
+    android:foreground="?attr/selectableItemBackground"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+    <View
+        android:id="@+id/view"
+    android:layout_width="match_parent"
+    android:layout_height="15dp"></View>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:weightSum="100">
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+
+        <TextView
+            android:id="@+id/loc_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Title"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="16sp"
+            android:layout_weight="60"/>
+
+        <TextView
+            android:id="@+id/self"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Sent To: VIII-D"
+            android:paddingRight="8dp"
+            android:textColor="#000000"
+            android:gravity="end"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="14sp"
+            android:layout_weight="40"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_below="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/loc_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Type"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/loc_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="#000000"
+
+
+            android:text="Desc"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="14sp" />
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                >
+
+                <TextView
+                    android:id="@+id/loc_tag"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="75"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="#000000"
+
+                    android:text="Tags #Ist Prize"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/loc_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:textColor="#000000"
+                    android:gravity="right"
+                    android:paddingRight="8dp"
+                    android:text="Date"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+       <!-- <TextView
+            android:id="@+id/loc_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="#000000"
+
+            android:text="Tags #Ist Prize"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="14sp" />
+            <TextView
+                android:id="@+id/loc_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="#000000"
+android:gravity="right"
+                android:paddingRight="8dp"
+                android:text="Date"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="14sp" />-->
+
+
+
+
+            <ImageView
+                android:id="@+id/download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+
+                android:layout_gravity="right"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_action_download" />
+        </LinearLayout>
+</LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></View>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

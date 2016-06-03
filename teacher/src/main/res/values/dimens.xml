@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+   <dimen name="tab_max_width">264dp</dimen>
+    <dimen name="tab_padding_bottom">16dp</dimen>
+    <dimen name="tab_label">14sp</dimen>
+    <dimen name="custom_tab_layout_height">72dp</dimen>
+
+ <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="activity_horizontal_margin">14dp</dimen>
+    <dimen name="activity_vertical_margin">14dp</dimen>
+    <dimen name="flowlayout_horizontal_padding">8dp</dimen>
+    <dimen name="flowlayout_vertical_padding">8dp</dimen>
+    <dimen name="message_size_normal">16dp</dimen>
+    <dimen name="message_size_medium">14dp</dimen>
+    <dimen name="message_size_small">12dp</dimen>
+    <dimen name="fix_message_size_normal">12dp</dimen>
+    <dimen name="fix_message_size_medium">12dp</dimen>
+    <dimen name="fix_message_size_small">10dp</dimen>
+    <dimen name="fix_message_size_very_small">4dp</dimen>
+    <dimen name="profile_image_size">96dp</dimen>
+    <dimen name="image_frame_size">136dp</dimen>
+    <dimen name="padding_bottom">6dp</dimen>
+    <dimen name="padding_top">6dp</dimen>
+    <dimen name="padding_left">4dp</dimen>
+    <dimen name="padding_right">2dp</dimen>
+    <dimen name="margin_left">4dp</dimen>
+    <dimen name="margin_top">2dp</dimen>
+    <dimen name="margin_right">12dp</dimen>
+    <dimen name="margin_bottom">12dp</dimen>
+    <dimen name="margin">2dp</dimen>
+    <dimen name="count_padding_bottom">2dp</dimen>
+    <dimen name="count_padding_top">2dp</dimen>
+    <dimen name="count_padding_left">2dp</dimen>
+    <dimen name="count_padding_right">2dp</dimen>
+    <dimen name="padding">1dp</dimen>
+    <dimen name="image_width">60dp</dimen>
+    <dimen name="image_height">60dp</dimen>
+    <dimen name="button_padding">4dp</dimen>
+
+    <dimen name="nav_header_height">160dp</dimen>
+
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2" >
+
+    <TextView
+        android:id="@+id/dow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="Presidium School, 2016-17"
+        android:textColor="#fff"
+        android:background="#99000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <Spinner
+        android:id="@+id/spinner_att"
+        android:layout_below="@+id/dow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#99000000"
+       />
+
+
+    <ListView
+        android:id="@+id/attendencelist"
+        android:layout_below="@+id/spinner_att"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+    </ListView>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/save_and_filter_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:animateLayoutChanges="true"
+        android:background="@color/colorPrimary" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="100">
+
+
+            <RelativeLayout
+                android:id="@+id/save_search_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="15"
+                android:gravity="center_horizontal" >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                     android:background="@drawable/filter"
+                    android:textColor="@color/White"
+                    android:textSize="22dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal" >
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@color/transparent_black"
+
+                android:textSize="22dp" /></RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/save_search_layout1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="42"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/save_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Review"
+                    android:textColor="@color/White"
+                    android:textSize="22dp" />
+            </RelativeLayout>
+            <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal" >
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:background="@color/transparent_black"
+
+                    android:textSize="22dp" /></RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/filter_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="42"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:textColor="@color/White"
+                    android:textSize="22dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>

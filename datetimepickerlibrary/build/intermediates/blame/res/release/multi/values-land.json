@@ -1,0 +1,235 @@
+[
+    {
+        "outputFile": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/values-land/values-land.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 61,
+                    "endOffset": 112
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-land/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 276,
+                        "endColumn": 61,
+                        "endOffset": 333
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 117,
+                    "endColumn": 71,
+                    "endOffset": 184
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-land/values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 560,
+                        "endColumn": 71,
+                        "endOffset": 627
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 189,
+                    "endColumn": 69,
+                    "endOffset": 254
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-land/values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 863,
+                        "endColumn": 69,
+                        "endOffset": 928
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 259,
+                    "endColumn": 69,
+                    "endOffset": 324
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-land/values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 933,
+                        "endColumn": 69,
+                        "endOffset": 998
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 329,
+                    "endColumn": 63,
+                    "endOffset": 388
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-land/values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1225,
+                        "endColumn": 63,
+                        "endOffset": 1284
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 393,
+                    "endColumn": 70,
+                    "endOffset": 459
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-land/values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1520,
+                        "endColumn": 70,
+                        "endOffset": 1586
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 464,
+                    "endColumn": 67,
+                    "endOffset": 527
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-land/values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1591,
+                        "endColumn": 67,
+                        "endOffset": 1654
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 532,
+                    "endColumn": 46,
+                    "endOffset": 574
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/values-land/dimens.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 706,
+                        "endColumn": 46,
+                        "endOffset": 748
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 579,
+                    "endColumn": 48,
+                    "endOffset": 623
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/values-land/dimens.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 754,
+                        "endColumn": 48,
+                        "endOffset": 798
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 628,
+                    "endColumn": 54,
+                    "endOffset": 678
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/values-land/dimens.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 862,
+                        "endColumn": 54,
+                        "endOffset": 912
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 683,
+                    "endColumn": 55,
+                    "endOffset": 734
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/values-land/dimens.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 918,
+                        "endColumn": 55,
+                        "endOffset": 969
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 739,
+                    "endColumn": 54,
+                    "endOffset": 789
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/values-land/dimens.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 806,
+                        "endColumn": 54,
+                        "endOffset": 856
+                    }
+                }
+            }
+        ]
+    }
+]

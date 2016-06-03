@@ -1,0 +1,1417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <include
+        android:id="@+id/toolbar_doctor"
+        layout="@layout/toobar" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/info.merahealthcare.slidingmenu"
+        android:id="@+id/doctor_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_doctor"
+        android:background="@color/White"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/main_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp">
+
+            <RelativeLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Gray"
+                android:padding="8dp">
+
+                <com.schoolteacher.main.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp" />
+
+                <RelativeLayout
+                    android:id="@+id/description_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/profile_image">
+
+                    <TextView
+                        android:id="@+id/doctor_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:textColor="@color/grey_dark"
+                        android:textSize="@dimen/message_size_normal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/doctor_education"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/doctor_name"
+                        android:layout_marginRight="8dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:textColor="@color/grey_dark"
+                        android:textSize="@dimen/message_size_medium" />
+
+                    <TextView
+                        android:id="@+id/doctor_specialities"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/doctor_education"
+                        android:layout_marginRight="8dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:textColor="@color/grey_dark"
+                        android:textSize="@dimen/message_size_medium" />
+
+                    <TextView
+                        android:id="@+id/doctor_exp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/doctor_specialities"
+                        android:layout_marginRight="8dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:textColor="@color/grey_dark"
+                        android:textSize="@dimen/message_size_medium" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/status_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/description_layout"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/fee_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:id="@+id/fee_image_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/fee_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_jeev_fee" />
+
+                            <TextView
+                                android:id="@+id/fee_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="8dp"
+                                android:layout_toRightOf="@+id/fee_image"
+                                android:text="N/A"
+                                android:textColor="@color/grey_dark"
+                                android:textSize="@dimen/message_size_small" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/fee_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/fee_image_text"
+                            android:text="Fees"
+                            android:textColor="@color/grey_dark"
+                            android:textSize="@dimen/message_size_small" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/like_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:id="@+id/like_image_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/like_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_jeev_thumb" />
+
+                            <TextView
+                                android:id="@+id/like_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="8dp"
+                                android:layout_toRightOf="@+id/like_image"
+                                android:text="N/A"
+                                android:textColor="@color/grey_dark"
+                                android:textSize="@dimen/message_size_small" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/like_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/like_image_text"
+                            android:text="Like"
+                            android:textColor="@color/grey_dark"
+                            android:textSize="@dimen/message_size_small" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/profile_view_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:paddingRight="4dp">
+
+                        <RelativeLayout
+                            android:id="@+id/profile_view_image_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/profile_view_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_jeev_profile_view" />
+
+                            <TextView
+                                android:id="@+id/profile_view_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="8dp"
+                                android:layout_toRightOf="@+id/profile_view_image"
+                                android:text="N/A"
+                                android:textColor="@color/grey_dark"
+                                android:textSize="@dimen/message_size_small" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/profile_view_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/profile_view_image_text"
+                            android:lines="1"
+                            android:text="Profile"
+                            android:textColor="@color/grey_dark"
+                            android:textSize="@dimen/message_size_small" />
+
+                        <TextView
+                            android:id="@+id/profile_view_text_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/profile_view_text"
+                            android:lines="1"
+                            android:text="Views"
+                            android:textColor="@color/grey_dark"
+                            android:textSize="@dimen/message_size_small" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/connection_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:id="@+id/connection_image_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/connection_view_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_jeev_connections" />
+
+                            <TextView
+                                android:id="@+id/connection_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="8dp"
+                                android:layout_toRightOf="@+id/connection_view_image"
+                                android:text="N/A"
+                                android:textColor="@color/grey_dark"
+                                android:textSize="@dimen/message_size_small" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/connection_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/connection_image_text"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="Connections"
+                            android:textColor="@color/grey_dark"
+                            android:textSize="@dimen/message_size_small" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/instant_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_layout"
+                android:background="@drawable/btn_bg_instant"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/instant_icon_white" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtvw_instant_appoint"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="@string/instant_appoint_msg"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/consult_modes_scroll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/instant_layout"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/consult_mode_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/in_clinc_consultation"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/in_clinic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:src="@drawable/in_clinic_consult" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:lines="1"
+                            android:text="In-clinic"
+                            android:textSize="@dimen/message_size_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/home_consultation"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/home_visit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:src="@drawable/home_consult" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:lines="1"
+                            android:text="Home Visit"
+                            android:textSize="@dimen/message_size_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/video_consultation"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/video"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:src="@drawable/video_consult" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:lines="1"
+                            android:text="Video"
+                            android:textSize="@dimen/message_size_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/audio_consultation"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/audio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:src="@drawable/phone_consult" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:lines="1"
+                            android:text="Phone"
+                            android:textSize="@dimen/message_size_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/text_consultation"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/text_chat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:src="@drawable/chat_consult" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:lines="1"
+                            android:text="Chat"
+                            android:textSize="@dimen/message_size_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/basic_email_consultation"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/email_basic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:src="@drawable/email_consult" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:lines="1"
+                            android:text="Email"
+                            android:textSize="@dimen/message_size_small" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:lines="1"
+                            android:text="Consult"
+                            android:textSize="@dimen/message_size_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/advance_email_consultation"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/email_advance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:src="@drawable/advance_email_consult" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:lines="1"
+                            android:text="Advanced"
+                            android:textSize="@dimen/message_size_small" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:lines="1"
+                            android:text="Email"
+                            android:textSize="@dimen/message_size_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/purchase_request"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/purchase"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:src="@drawable/purchase_request" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:lines="1"
+                            android:text="Purchase"
+                            android:textSize="@dimen/message_size_small" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:lines="1"
+                            android:text="Request"
+                            android:textSize="@dimen/message_size_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lab_test"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/lab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:src="@drawable/lab_test" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:lines="1"
+                            android:text="Book a"
+                            android:textSize="@dimen/message_size_small" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:lines="1"
+                            android:text="Lab Test"
+                            android:textSize="@dimen/message_size_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/request_quote"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/quotes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:src="@drawable/request_quote" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:lines="1"
+                            android:text="Request"
+                            android:textSize="@dimen/message_size_small" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:lines="1"
+                            android:text="Quote"
+                            android:textSize="@dimen/message_size_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/request_call"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/callback"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:src="@drawable/phone_consult" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:lines="1"
+                            android:text="Request"
+                            android:textSize="@dimen/message_size_small" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:lines="1"
+                            android:text="Call Back"
+                            android:textSize="@dimen/message_size_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/send_message"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:src="@drawable/email_consult" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:lines="1"
+                            android:text="Send"
+                            android:textSize="@dimen/message_size_small" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:lines="1"
+                            android:text="Message"
+                            android:textSize="@dimen/message_size_small" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <View
+                android:id="@+id/track_div"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/consult_modes_scroll"
+                android:background="@color/Gray" />
+
+            <RelativeLayout
+                android:id="@+id/information_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/track_div"
+                android:layout_margin="8dp">
+
+                <RelativeLayout
+                    android:id="@+id/clinics_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/jeev_row_drop_shadow"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/clinic_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_jeev_clinic" />
+
+                    <TextView
+                        android:id="@+id/clinic_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toLeftOf="@+id/left_container"
+                        android:layout_toRightOf="@+id/clinic_image"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:textSize="@dimen/message_size_normal" />
+
+                    <TextView
+                        android:id="@+id/address_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/clinic_name"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toLeftOf="@+id/left_container"
+                        android:layout_toRightOf="@+id/clinic_image"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:textSize="@dimen/message_size_small" />
+
+                    <TextView
+                        android:id="@+id/address_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/address_one"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toLeftOf="@+id/left_container"
+                        android:layout_toRightOf="@+id/clinic_image"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:textSize="@dimen/message_size_small" />
+
+                    <TextView
+                        android:id="@+id/address_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/address_two"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toLeftOf="@+id/left_container"
+                        android:layout_toRightOf="@+id/clinic_image"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:textSize="@dimen/message_size_small" />
+
+                    <RelativeLayout
+                        android:id="@+id/left_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/jeev_row_drop_shadow"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/direction_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/ic_jeev_direction" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/direction_image"
+                            android:text="Direction"
+                            android:textSize="@dimen/message_size_small" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/add_more_clinics"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/clinics_layout"
+                    android:background="@drawable/jeev_row_drop_shadow"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:visibility="gone"></LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/more_clinics_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/add_more_clinics"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/more_clinics"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@+id/show_more_clinic"
+                        android:textSize="@dimen/message_size_medium" />
+
+                    <TextView
+                        android:id="@+id/show_more_clinic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="Show All"
+                        android:textSize="@dimen/message_size_small" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/consult_modes_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/more_clinics_layout">
+
+                    <RelativeLayout
+                        android:id="@+id/summary_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/jeev_row_drop_shadow"
+                        android:padding="8dp">
+
+                        <RelativeLayout
+                            android:id="@+id/summary_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp">
+
+                            <ImageView
+                                android:id="@+id/summary_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_jeev_clinic"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/summary_heading"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/summary_image"
+                                android:text="Profile Summary"
+                                android:textColor="@color/grey_dark"
+                                android:textSize="@dimen/message_size_normal"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/summary_divider"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/summary_layout"
+                            android:background="@color/Gray" />
+
+                        <!-- sample xml -->
+
+                        <com.schoolteacher.main.ExpandableTextView xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/summary_value"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/summary_divider"
+                            android:orientation="vertical"
+                            expandableTextView:animDuration="200"
+                            expandableTextView:maxCollapsedLines="4">
+
+                            <TextView
+                                android:id="@id/expandable_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/message_size_medium" />
+
+                            <ImageButton
+                                android:id="@id/expand_collapse"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|bottom"
+                                android:layout_margin="16dp"
+                                android:background="@android:color/transparent" />
+                        </com.schoolteacher.main.ExpandableTextView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/services_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/summary_container"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/jeev_row_drop_shadow"
+                        android:padding="8dp">
+
+                        <RelativeLayout
+                            android:id="@+id/services_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/services_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_jeev_clinic"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/services_heading"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/services_image"
+                                android:text="Services"
+                                android:textColor="@color/grey_dark"
+                                android:textSize="@dimen/message_size_normal"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/services_divider"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/services_layout"
+                            android:background="@color/Gray" />
+
+                        <LinearLayout
+                            android:id="@+id/specialites_container"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/services_divider"
+                            android:layout_marginTop="8dp">
+
+                            <TextView
+                                android:id="@+id/specialies_heading"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".3"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:text="Specialities"
+                                android:textSize="@dimen/message_size_medium" />
+
+                            <View
+                                android:id="@+id/seprator_speciality"
+                                android:layout_width="1dp"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="8dp"
+                                android:background="@color/Gray" />
+
+                            <TextView
+                                android:id="@+id/specialies_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".7"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:lines="2"
+                                android:textSize="@dimen/message_size_medium" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/expertise_container"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/specialites_container"
+                            android:layout_marginTop="8dp">
+
+                            <TextView
+                                android:id="@+id/expertise_heading"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".3"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:text="Experties"
+                                android:textSize="@dimen/message_size_medium" />
+
+                            <View
+                                android:id="@+id/seprator_expertise"
+                                android:layout_width="1dp"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="8dp"
+                                android:background="@color/Gray" />
+
+                            <TextView
+                                android:id="@+id/experties_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".7"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:lines="2"
+                                android:textSize="@dimen/message_size_medium" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/service_container"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/expertise_container"
+                            android:layout_marginTop="8dp">
+
+                            <TextView
+                                android:id="@+id/service_heading"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".3"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:text="Service"
+                                android:textSize="@dimen/message_size_medium" />
+
+                            <View
+                                android:id="@+id/seprator_service"
+                                android:layout_width="1dp"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="8dp"
+                                android:background="@color/Gray" />
+
+                            <TextView
+                                android:id="@+id/service_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".7"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:lines="2"
+                                android:textSize="@dimen/message_size_medium" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/track_record_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/services_container"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/jeev_row_drop_shadow">
+
+                        <RelativeLayout
+                            android:id="@+id/track_record_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/track_record_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_jeev_clinic"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/track_record_heading"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/track_record_image"
+                                android:text="Track Record"
+                                android:textColor="@color/grey_dark"
+                                android:textSize="@dimen/message_size_normal"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/track_divider"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/track_record_layout"
+                            android:background="@color/Gray" />
+
+                        <LinearLayout
+                            android:id="@+id/experience_container"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/track_divider"
+                            android:layout_marginTop="8dp"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:id="@+id/track_heading"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".3"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:text="Experience"
+                                android:textSize="@dimen/message_size_medium" />
+
+                            <View
+                                android:id="@+id/seprator_track"
+                                android:layout_width="1dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:background="@color/Gray" />
+
+                            <TextView
+                                android:id="@+id/track_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".7"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:textSize="@dimen/message_size_medium" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/language_container"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/experience_container"
+                            android:layout_marginTop="8dp"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:id="@+id/language_heading"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".3"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:text="Language"
+                                android:textSize="@dimen/message_size_medium" />
+
+                            <View
+                                android:id="@+id/seprator_language"
+                                android:layout_width="1dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:background="@color/Gray" />
+
+                            <TextView
+                                android:id="@+id/language_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".7"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:textSize="@dimen/message_size_medium" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/membership_container"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/language_container"
+                            android:layout_marginTop="8dp"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:id="@+id/membership_heading"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".3"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:text="Membership"
+                                android:textSize="@dimen/message_size_medium" />
+
+                            <View
+                                android:id="@+id/seprator_membership"
+                                android:layout_width="1dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:background="@color/Gray" />
+
+                            <TextView
+                                android:id="@+id/membership_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".7"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:textSize="@dimen/message_size_medium" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/qualification_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/track_record_container"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/jeev_row_drop_shadow">
+
+                        <RelativeLayout
+                            android:id="@+id/qualification_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/doctor_qualification_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_jeev_clinic"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/qualification_heading"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/doctor_qualification_image"
+                                android:text="Qualification"
+                                android:textColor="@color/grey_dark"
+                                android:textSize="@dimen/message_size_normal"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/qualification_divider"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/qualification_layout"
+                            android:background="@color/Gray" />
+
+                        <LinearLayout
+                            android:id="@+id/qualification_value_container"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/qualification_divider"
+                            android:layout_marginTop="8dp"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:id="@+id/qualification_heading"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".3"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:text="Qualification"
+                                android:textSize="@dimen/message_size_medium" />
+
+                            <View
+                                android:id="@+id/seprator_qualification"
+                                android:layout_width="1dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:background="@color/Gray" />
+
+                            <TextView
+                                android:id="@+id/qualification_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".7"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:textSize="@dimen/message_size_medium" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/deal_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/qualification_container"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/jeev_row_drop_shadow">
+
+                        <RelativeLayout
+                            android:id="@+id/deal_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/deal_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_jeev_clinic"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/deal_heading"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/deal_image"
+                                android:text="Deals"
+                                android:textColor="@color/grey_dark"
+                                android:textSize="@dimen/message_size_normal"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/deal_divider"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/deal_layout"
+                            android:background="@color/Gray" />
+
+                        <LinearLayout
+                            android:id="@+id/deal_value_container"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/deal_divider"
+                            android:layout_marginTop="8dp"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:id="@+id/deal_heading"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".3"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:text="Deals"
+                                android:textSize="@dimen/message_size_medium" />
+
+                            <View
+                                android:id="@+id/seprator_deal"
+                                android:layout_width="1dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:background="@color/Gray" />
+
+                            <TextView
+                                android:id="@+id/deal_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".7"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:textSize="@dimen/message_size_medium" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

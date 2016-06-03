@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/introduction_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/introduction"
+        android:layout_margin="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/verification_thanks"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/message_size_normal" />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/provide_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/introduction_first"
+        android:layout_margin="8dp"
+        android:gravity="left"
+        android:text="@string/phone_email_exists_note"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/message_size_medium" />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/provide_phone"
+        android:layout_margin="8dp"
+        android:gravity="left"
+        android:text="@string/provide_phone"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/message_size_medium" />
+
+    <TextView
+        android:id="@+id/warning_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/note"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="kfjdslkfjsdf"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/phone_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/warning_phone"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" >
+
+        <EditText
+            android:id="@+id/user_phone_value"
+            style="@style/EditTextFillParentSmall"
+            android:background="@drawable/edit_text_line_green"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:paddingLeft="8dp"
+            android:textColorHint="@color/black_first" />
+
+        <ProgressBar
+            android:id="@+id/phone_progress"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="8dp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_send_verification_code"
+        style="@style/buttonFillParent"
+        android:layout_below="@+id/phone_layout"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_button"
+        android:text="SEND VERIFICATION CODE"
+        android:textColor="@color/White" />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <EditText
+        android:id="@+id/guest_email_value"
+        style="@style/EditTextFillParentSmall"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_line_green"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:textColorHint="@color/black_first" >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guest_email_value"
+        android:layout_margin="8dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/guest_age_value"
+            style="@style/EditTextFillParentSmall"
+            android:layout_width="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_line_green"
+            android:gravity="center_vertical"
+            android:hint="Age"
+            android:inputType="numberSigned"
+            android:padding="8dp"
+            android:textColorHint="@color/black_first" >
+        </EditText>
+
+        <Spinner
+            android:id="@+id/guest_gender_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/ic_dropdown"
+            android:padding="4dp"
+            android:textColor="@color/text_color" />
+    </LinearLayout>
+
+</RelativeLayout>

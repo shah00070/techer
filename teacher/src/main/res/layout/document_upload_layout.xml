@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/toolbar_upload"
+        layout="@layout/toobar" />
+
+    <LinearLayout
+        android:id="@+id/options_upload"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_upload" >
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/ic_camera" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/grey_dark" />
+
+        <ImageView
+            android:id="@+id/gallery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/ic_gallery" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/grey_dark" />
+
+        <ImageView
+            android:id="@+id/explorer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/ic_directory" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/options_seprator"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/options_upload"
+        android:background="@color/grey_dark" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_done"
+        android:layout_below="@+id/options_seprator" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/document_name_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Name of document"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/document_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/document_name_label"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/edit_text_line_green"
+                android:hint="Document name"
+                android:padding="8dp"
+                android:textSize="@dimen/message_size_medium" />
+
+            <TextView
+                android:id="@+id/date_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/document_name"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:text="Date"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/date_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_label"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/date_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_line_green"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:textColorHint="@color/black_first"
+                    android:textSize="@dimen/message_size_medium" />
+
+                <ImageView
+                    android:id="@+id/new_date_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:src="@drawable/ic_calender" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/type_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_layout"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:text="Type of document"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/document_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/type_label"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/ic_dropdown"
+                android:padding="8dp"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/tag_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/document_type"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:text="Tags"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/document_tag"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tag_label"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/edit_text_line_green"
+                android:hint="eg. #Father,#2015..."
+                android:lines="1"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textSize="@dimen/message_size_medium" />
+
+            <TextView
+                android:id="@+id/description_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/document_tag"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:text="Description"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/document_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/description_label"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/edit_text_line_green"
+                android:hint="eg. Prescription given by.."
+                android:lines="1"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textSize="@dimen/message_size_medium" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_done"
+        style="@style/buttonFillParent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/round_button"
+        android:text="Done" />
+
+</RelativeLayout>

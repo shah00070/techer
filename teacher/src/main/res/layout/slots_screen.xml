@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White" >
+
+    <include
+        android:id="@+id/toolbar_slots"
+        layout="@layout/toobar" />
+
+    <RelativeLayout
+        android:id="@+id/time_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_slots"
+        android:layout_margin="4dp"
+        android:background="@drawable/jeev_row_drop_shadow" >
+
+        <ImageView
+            android:id="@+id/slot_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_date_time_slot" />
+
+        <TextView
+            android:id="@+id/date_time_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            android:layout_toRightOf="@+id/slot_icon"
+            android:text="Date: "
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/message_size_normal"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/select_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"
+            android:layout_toLeftOf="@+id/edit_icon"
+            android:layout_toRightOf="@+id/date_time_app"
+            android:textSize="@dimen/message_size_medium" />
+
+        <ImageView
+            android:id="@+id/edit_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:src="@drawable/edit_date" />
+    </RelativeLayout>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/avail_unavail"
+        android:layout_below="@+id/time_date" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/noSlots"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/time_date"
+                android:layout_margin="4dp"
+                android:padding="8dp"
+                android:text="No Slot Available. Please select another date to book an appointment."
+                android:textColor="@color/warning"
+                android:textSize="@dimen/message_size_small"
+                android:visibility="gone" />
+
+            <!-- Slots Container -->
+
+            <LinearLayout
+                android:id="@+id/slots_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/noSlots"
+                android:layout_margin="4dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+            <!-- Slots container End -->
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/avail_unavail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/jeev_row_drop_shadow" >
+
+        <RelativeLayout
+            android:id="@+id/avail_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:padding="4dp" >
+
+            <ImageView
+                android:id="@+id/avail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/avail" />
+
+            <TextView
+                android:id="@+id/avail_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/avail"
+                android:text="Available"
+                android:textSize="@dimen/message_size_small" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/unavail_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/avail_layout"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="4dp" >
+
+            <ImageView
+                android:id="@+id/unavail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/unavail" />
+
+            <TextView
+                android:id="@+id/unavail_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/unavail"
+                android:text="Booked"
+                android:textSize="@dimen/message_size_small" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

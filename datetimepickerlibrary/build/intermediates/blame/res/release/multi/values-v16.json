@@ -1,0 +1,89 @@
+[
+    {
+        "outputFile": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/values-v16/values-v16.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 71,
+                    "endOffset": 122
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/values-v16/strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 785,
+                        "endColumn": 71,
+                        "endOffset": 852
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 127,
+                    "endLine": 5,
+                    "endColumn": 12,
+                    "endOffset": 250
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/values-v16/styles.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1036,
+                        "endLine": 27,
+                        "endColumn": 12,
+                        "endOffset": 1161
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 255,
+                    "endLine": 8,
+                    "endColumn": 12,
+                    "endOffset": 364
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/values-v16/styles.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 917,
+                        "endLine": 23,
+                        "endColumn": 12,
+                        "endOffset": 1028
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 369,
+                    "endLine": 11,
+                    "endColumn": 12,
+                    "endOffset": 476
+                },
+                "from": {
+                    "file": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/values-v16/styles.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 800,
+                        "endLine": 19,
+                        "endColumn": 12,
+                        "endOffset": 909
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+    <com.schoolteacher.library.main.CirclePageIndicator
+        android:id="@+id/page_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="110dp" />
+
+    <LinearLayout
+        android:id="@+id/login_signup_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="960">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="45" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="160"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/jeevom_logo" />
+        </LinearLayout>
+
+        <!-- <View
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="550" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="550"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50" />
+
+            <EditText
+                android:id="@+id/editText_emaill"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="80"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/key_icon"
+                android:hint="Email/Student Id"
+                android:paddingLeft="5dp"
+                android:textColor="#585858"
+                android:textSize="16sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30" />
+            <RelativeLayout
+                android:id="@+id/password_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/phone_layout"
+                android:layout_weight="80"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/editText_passwordd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/lock_icon"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="5dp"
+                    android:textColor="#585858"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/pwd_image_hintt"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/eye_icon" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="320" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="73"
+            android:background="@android:color/transparent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="#bbb"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+        <TextView
+            android:id="@+id/explere_as_guest"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explore as a Guest"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="13"
+            android:background="@android:color/transparent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="82"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/login_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#AAffffff"
+                android:gravity="center"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOG IN"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

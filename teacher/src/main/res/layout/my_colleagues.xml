@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/collieagues_spin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#99000000"
+        />
+
+    <LinearLayout
+        android:id="@+id/colleagues_from_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#99000000"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8.5"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="Are you looking for Colleagues..."
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/ic_menu_search" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/colleagues_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+    </ListView>
+
+</LinearLayout>

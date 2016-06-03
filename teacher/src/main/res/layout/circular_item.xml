@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="#ccffffff"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+        android:id="@+id/main_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100">
+            <TextView
+                android:id="@+id/update"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Date: "
+                android:textColor="#000"
+                android:textStyle="normal"
+                android:textSize="16sp"
+                android:layout_weight="50"/>
+            <TextView
+                android:id="@+id/uptime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="time: "
+                android:textStyle="normal"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_weight="50"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_below="@+id/header"
+            android:id="@+id/title_circular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:text="Helooo"
+            android:textColor="@color/title"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/date_circular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_circular"
+            android:layout_marginRight="30dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="description"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/arrow_circular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/arrow_image" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,1600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg2"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:id="@+id/ss"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/toolbar_careathome">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+//  absent
+      <!--  <LinearLayout
+            android:id="@+id/absent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:orientation="vertical">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#f06292"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+                        android:gravity="center"
+                        android:background="@color/transparent_black"
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="14/5/2016"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:background="@color/transparentt"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Saturday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#f06292"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="16/5/2016"
+                        android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Monday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#f06292"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="17/5/2016"            android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Tuesday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#f06292"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="18/5/2016"            android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Wednesday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#f06292"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="19/5/2016"            android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Thusday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#f06292"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="20/5/2016"            android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Friday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            
+            
+            ///space
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#f06292"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="21/5/2016"            android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Saturday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>-->
+    
+    
+    
+    //present
+        <LinearLayout
+            android:id="@+id/present"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#33CCCC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="2/5/2016"
+                        android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Monday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#33CCCC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="3/5/2016"
+                        android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Tuesday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#33CCCC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="4/5/2016"
+                        android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Wednesday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#33CCCC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="5/5/2016"
+                        android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Thusday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#33CCCC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="6/5/2016"
+                        android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Friday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#33CCCC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="7/5/2016"
+                        android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Saturday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#33CCCC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="9/5/2016"
+                        android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Monday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#f06292"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="10/5/2016"
+                        android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Tuesday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#33CCCC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="11/5/2016"
+                        android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Wednesday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#33CCCC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="12/5/2016"
+                        android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Thusday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#33CCCC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="13/5/2016"
+                        android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Friday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#f06292"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+                        android:gravity="center"
+                        android:background="@color/transparent_black"
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="14/5/2016"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:background="@color/transparentt"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Saturday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#f06292"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="16/5/2016"
+                        android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Monday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#f06292"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="17/5/2016"            android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Tuesday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#f06292"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="18/5/2016"            android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Wednesday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#33CCCC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="19/5/2016"            android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Thusday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#f06292"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="20/5/2016"            android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Friday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+            ///
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#33CCCC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="21/5/2016"
+                        android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Saturday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#33CCCC"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="30"
+
+                            android:gravity="center"
+
+                            android:editable="false"
+                            android:textColor="@color/white"
+                            android:text="24/5/2016"
+                            android:background="@color/transparent_black"
+                            />
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="70"
+                            android:textSize="35dp" android:editable="false"
+                            android:text="Tuesday"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:background="@color/transparentt"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#33CCCC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="23/5/2016"
+                        android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Monday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#33CCCC"
+
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="30"
+
+                            android:gravity="center"
+
+                            android:editable="false"
+                            android:textColor="@color/white"
+                           android:text="25/5/2016"
+                            android:background="@color/transparent_black"
+                            />
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="70"
+                            android:textSize="35dp" android:editable="false"
+                            android:text="Wednesday"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:background="@color/transparentt"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#33CCCC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                       android:text="26/5/2016"
+                        android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Thusday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#33CCCC"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                       android:text="27/5/2016"
+                        android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Friday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#33CCCC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                       android:text="28/5/2016"
+                        android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Saturday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#33CCCC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="30/5/2016"
+                        android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Monday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#33CCCC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    android:weightSum="100">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+
+                        android:gravity="center"
+
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="31/5/2016"
+                        android:background="@color/transparent_black"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:textSize="35dp" android:editable="false"
+                        android:text="Tuesday"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/transparentt"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
+    </ScrollView>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+           android:background="@color/colorOrange"
+            android:layout_alignParentBottom="true"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="50"
+                android:weightSum="100">
+            <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="50"
+    android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/presentmonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@color/colorOrange"
+                    android:editable="false"
+                    android:textColor="@color/white"
+                    android:text="Total Presents"
+
+                    />
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:background="@color/colorOrange"
+
+                    android:orientation="horizontal">
+                    <EditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="20/26"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="50"
+                android:weightSum="100">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:orientation="horizontal">
+                    <EditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@color/colorOrange"
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="Percentage"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:background="@color/green"
+
+                    android:orientation="horizontal">
+                    <EditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@color/transparentt"
+                        android:editable="false"
+                        android:textColor="@color/white"
+                        android:text="76.09%"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+</RelativeLayout>

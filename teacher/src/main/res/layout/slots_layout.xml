@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/jeev_row_drop_shadow"
+    android:paddingBottom="8dp" >
+
+    <TextView
+        android:id="@+id/session_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="fklsdjflkdsf"
+        android:textColor="@color/colorOrange"
+        android:textSize="@dimen/message_size_normal"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/seprator"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/session_name"
+        android:layout_marginTop="8dp"
+        android:background="@color/Gray" />
+
+    <com.schoolteacher.main.ExpandableHeightGridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seprator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:horizontalSpacing="3dp"
+        android:isScrollContainer="false"
+        android:numColumns="5"
+        android:verticalSpacing="3dp" />
+
+</RelativeLayout>

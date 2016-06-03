@@ -1,0 +1,55 @@
+package com.schoolteacher.interfaces;
+
+/**
+ * Created by chandan on 18/12/15.
+ */
+public interface AppConstants {
+
+    String DEVELOPER_KEY_YOTUBE = "AIzaSyDXRr64omVTqJK_om1S-dueFytnxJeuG3M";
+    String VIDEO_ID = "jVWsVDjP0fQ";
+
+
+    int HEALTH_BUDDY = 1; int MY_DAIRY =1;
+    int HEALTH_CLOUD = 2;int MY_LOCKER =2;
+    int HEALTH_MART = 3;int MY_TIMETABLE= 3;
+    int HEALTH_SOCIAL = 4;int MY_SYLLABUS =4;
+    int DEAL_AND_OFFERS = 5;int MY_ATTENDANCE =5;
+    int HEALTH_LIBRARY = 6;int MY_REPORTCARD =6;
+    int HEALTH_PROFILE = 7;int TEACHER_AND_CLASSMATE =7;
+    int WHY_JEEVOM = 8;int MEMORYLANE =8;
+    int ABOUT_US = 9;int NOTICE_BOARD =9;
+    int HOME_SCREEN = 10;
+    int MY_SERVICE_REQUEST = 11;
+    int POPULAR_SEARCH = 12;
+
+    int SOCIAL_MEDIA =11;
+    int SHOWCASE =12;
+    int CLASS_D_BOARD=13;
+    int  CLASS_HOMEWORK=14;
+
+
+    int CLASS_LIST=20;
+    int  SCHOOL_HOLIDAYS=21;
+    int CIRCULARS=22;
+    int MY_COLLEAGUES=23;
+
+int HEAD_COUNT=24;
+
+int SCHOOL_ANALYTICS=25;
+
+
+    int MY_APPOINT_REQUEST_CODE = 11000;
+    int MEDVAULT_REQUEST_CODE = 11001;
+    int HEALTH_PROFILE_REQUEST_CODE = 11002;int TEACHER_AND_CLASSMATE_REQUEST_CODE=11002;
+
+    int SAVED_SEARCHES_REQUEST_CODE = 11003;
+    int HEALTH_TRACK_REQUEST_CODE = 11004;
+    int HEALTH_DIARY_REQUEST_CODE = 11005;
+    int HEALTH_CONNECTION_REQUEST_CODE = 11006;
+
+    int DEALS_AND_OFFER_PAGE = 1;
+    int WHY_JEEVOM_PAGE = 2;
+    int ABOUT_US_PAGE = 3;
+    int HEALTH_TIPS_PAGE = 4;
+
+}

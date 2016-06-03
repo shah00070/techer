@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:weightSum="100"
+                android:visibility="gone"
+
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    />
+                <TextView
+                    android:id="@+id/ttimmmsdee"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_date"
+                    android:gravity="left|center"
+                    android:textSize="17dip"
+                    android:paddingLeft="15dp"
+                    android:editable="false"
+                    android:visibility="invisible"
+                    android:text="Date/Time" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    />
+
+            </LinearLayout>
+            <android.support.v7.widget.CardView
+                android:id="@+id/tcvv"
+
+                style="@style/Widget.CardContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPadding= "5dp"
+                card_view:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:id="@+id/tpkk"
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#33CCCC"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:weightSum="100"
+
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+
+                            android:id="@+id/tstarr"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:gravity="center|left"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginBottom="10dp"
+
+                            android:background="@drawable/unstar"
+                            android:editable="false"
+                            />
+                        <TextView
+                            android:id="@+id/tperson_namee"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Title"
+                            android:layout_weight="80"
+                            android:maxLines="1"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/white"
+                            android:gravity="center|left"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:editable="false"
+                            />
+                        <TextView
+                            android:id="@+id/tbookmarr"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:gravity="center|right"
+                            android:background="@drawable/bbookmark"
+                            android:layout_marginRight="15dp"
+                            android:editable="false"
+                            />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/Black"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/transparentt"
+                        android:weightSum="100">
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/Black"
+                            android:gravity="center|left"
+
+                            android:layout_weight="50"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:textSize="14dip"
+                            android:background="@null"
+                            android:editable="false"
+                            android:text="Created By: " />
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:gravity="center|right"
+                            android:layout_weight="50"
+
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:textSize="14dip"
+                            android:background="@null"
+                            android:paddingLeft="5dp"
+                            android:editable="false"
+                            android:text="Self" />
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tperson_photoo"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/transparentt"
+                        android:scrollbars="vertical"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/white"
+                        android:textSize="17dip"
+                        ></TextView>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@null"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="5dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/transparentt"
+                        android:weightSum="100">
+                        <TextView
+                            android:id="@+id/ttype"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/Black"
+                            android:gravity="center|left"
+                            android:layout_weight="50"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:textSize="14dip"
+                            android:background="@null"
+                            android:editable="false"
+                            android:text="Current status: " />
+                        <TextView
+                            android:id="@+id/tnametype"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:gravity="center|right"
+                            android:layout_weight="50"
+
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:textSize="14dip"
+                            android:background="@null"
+                            android:paddingLeft="5dp"
+                            android:editable="false"
+                            android:text="pending" />
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/Black"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:weightSum="100"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="65"
+                            android:orientation="horizontal">
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="18"
+                                android:weightSum="100"
+                                android:orientation="vertical">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="50">
+                                    <TextView
+                                        android:id="@+id/tpersonds_agee"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="25"
+                                        android:textColor="@color/white"
+                                        android:gravity="left|top"
+                                        android:paddingTop="5dp"
+                                        android:textSize="14dip"
+                                        android:paddingLeft="5dp"
+                                        android:editable="false"
+                                        android:text="Time " />
+                                </LinearLayout>
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="50">
+                                    <TextView
+                                        android:id="@+id/tperson_agee"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="25"
+                                        android:textColor="@color/white"
+                                        android:gravity="left|top"
+                                        android:paddingTop="5dp"
+                                        android:textSize="14dip"
+                                        android:paddingLeft="5dp"
+                                        android:editable="false"
+                                        android:layout_marginBottom="2dp"
+                                        android:text="Time " />
+                                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </LinearLayout>
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="25"
+                                android:weightSum="100"
+                                android:orientation="vertical">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="50">
+                                    <TextView
+                                        android:id="@+id/tpersondssd_agee"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="25"
+                                        android:textColor="@color/white"
+                                        android:gravity="left|top"
+                                        android:paddingTop="5dp"
+                                        android:textSize="14dip"
+
+                                        android:editable="false"
+                                        android:text="Create" />
+                                </LinearLayout>
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="50">
+                                    <TextView
+                                        android:id="@+id/ttimeee"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="25"
+                                        android:textColor="@color/white"
+                                        android:background="@null"
+                                        android:gravity="left|top"
+                                        android:paddingTop="5dp"
+                                        android:textSize="14dip"
+                                        android:layout_marginBottom="2dp"
+                                        android:editable="false"
+                                        android:text="7/5/2016" />
+                                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="25"
+                                android:weightSum="100"
+                                android:orientation="vertical">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="50">
+                                    <TextView
+                                        android:id="@+id/ttoo"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="25"
+                                        android:textColor="@color/white"
+                                        android:gravity="left|top"
+                                        android:paddingTop="5dp"
+                                        android:textSize="14dip"
+
+                                        android:editable="false"
+                                        android:text="Due" />
+                                </LinearLayout>
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="50">
+                                    <TextView
+                                        android:id="@+id/tto_datee"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="25"
+                                        android:textColor="@color/white"
+                                        android:background="@null"
+                                        android:gravity="left|top"
+                                        android:paddingTop="5dp"
+                                        android:textSize="14dip"
+                                        android:layout_marginBottom="2dp"
+                                        android:editable="false"
+                                        android:text="15/6/2016" />
+                                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                        ///
+                        <!-- <TextView
+                             android:id="@+id/person_ageq"
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="50"
+                             android:paddingRight="15dp"
+                             android:drawableRight="@drawable/notify_icon"
+                             android:textColor="@color/white"
+                             android:gravity="center|top"
+                             android:editable="false"
+                             android:textSize="14dip"
+                             android:paddingTop="5dp"
+                             android:text="Delivered" />-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="35"
+                            android:weightSum="100"
+                            android:orientation="vertical">
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="50">
+                                <TextView
+                                    android:id="@+id/tdelevv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="25"
+                                    android:textColor="@color/white"
+                                    android:gravity="left|top"
+                                    android:paddingTop="5dp"
+                                    android:textSize="14dip"
+                                    android:paddingRight="15dp"
+                                    android:drawableRight="@drawable/tick"
+                                    android:paddingLeft="5dp"
+                                    android:editable="false"
+                                    android:text="Uploaded " />
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="50">
+                                <TextView
+                                    android:id="@+id/trecnamee"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="25"
+                                    android:textColor="@color/white"
+                                    android:gravity="left|top"
+                                    android:paddingTop="5dp"
+                                    android:textSize="14dip"
+                                    android:paddingRight="15dp"
+                                    android:drawableRight="@drawable/tick"
+                                    android:paddingLeft="5dp"
+                                    android:editable="false"
+
+                                    android:layout_marginBottom="2dp"
+                                    android:text="Kushagra sharma " />
+                            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                    <View
+
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/Black"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        />
+                 <!--   <TextView
+                        android:id="@+id/tcomment_tm"
+                        android:layout_width="match_parent"
+                        android:text="Replies"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="10dp"
+                        android:textSize="14dp"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:visibility="gone"
+                        android:textStyle="bold"
+                        android:layout_height="match_parent" />
+                    <View
+                        android:id="@+id/tline43m"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/Black"
+                        android:visibility="gone"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        />
+                    <TextView
+                        android:id="@+id/tcommentonem"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/transparentt"
+                        android:scrollbars="vertical"
+                        android:paddingLeft="5dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:visibility="gone"
+                        android:textColor="@color/white"
+                        android:textSize="20dip"
+                        ></TextView>-->
+                 <!--   <LinearLayout
+                        android:id="@+id/tlinearrrm"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:weightSum="100"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@null"
+                        android:layout_marginTop="10dp"                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/tcommentm"
+                            android:layout_width="0dp"
+                            android:layout_weight="70"
+                            android:textColor="@android:color/white"
+                            android:background="@color/transparentt"
+                            android:layout_height="match_parent" />
+                        <Button
+                            android:id="@+id/tcommentbuttonm"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="30"
+                            android:textSize="13dp"
+                            android:background="@android:color/white"
+                            android:text="Comment"/>
+
+                    </LinearLayout>-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/transparentt"
+                        android:weightSum="100">
+                        <TextView
+                            android:id="@+id/ttypedss"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/Black"
+                            android:gravity="center|left"
+                            android:layout_weight="25"
+                            android:layout_marginLeft="15dp"
+
+                            android:textSize="14dip"
+                            android:background="@null"
+                            android:editable="false"
+                            android:text="Reminder: " />
+                        <TextView
+                            android:id="@+id/tnameasatype"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:gravity="center|right"
+                            android:layout_weight="75"
+
+
+                            android:textSize="14dip"
+                            android:background="@null"
+                            android:paddingRight="10dp"
+                            android:editable="false"
+                            android:text="12:00 am,Thusday 30th June" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:weightSum="100"
+
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    />
+                <TextView
+                    android:id="@+id/timmmee"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_date"
+                    android:gravity="left|center"
+                    android:textSize="17dip"
+                    android:paddingLeft="15dp"
+                    android:editable="false"
+                    android:visibility="invisible"
+                    android:text="Date/Time" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

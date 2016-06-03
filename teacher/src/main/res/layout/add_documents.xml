@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/upload_text_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_dark"
+        android:gravity="center_horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="Add multiple files to your Health Records Repository "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/White"
+        android:textSize="@dimen/message_size_medium" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/upload_text_header" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/documents_description_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <View
+            android:id="@+id/seprator"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seprator"
+            android:orientation="horizontal" >
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/attach_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="Attach a document"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/colorPrimary" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/upload_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="Upload"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toobar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="#6d8176" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp" >
+
+            <RelativeLayout
+                android:id="@+id/second_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/actionbar_gradient"
+                android:padding="8dp" >
+
+                <TextView
+                    android:id="@+id/thanks"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:text="@string/verify_thanks"
+                    android:textColor="@color/black_first"
+                    android:textSize="@dimen/message_size_medium" />
+
+                <TextView
+                    android:id="@+id/phone_verify_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/thanks"
+                    android:background="#393d60"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/message_size_normal" />
+
+                <TextView
+                    android:id="@+id/successful_verify_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/phone_verify_text"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/message_size_medium"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/register_button"
+                    style="@style/buttonFillParent"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/successful_verify_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="8dp"
+                    android:background="@color/green"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="Register"
+                    android:textColor="@color/White"
+                    android:visibility="gone" >
+                </Button>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/code_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/second_layout"
+                android:background="@drawable/actionbar_gradient"
+                android:padding="8dp" >
+
+                <LinearLayout
+                    android:id="@+id/text_call"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/ep_phone_toll_free_text_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:text="@string/missedCallText"
+                        android:textColor="@color/black_first"
+                        android:textSize="@dimen/message_size_medium" />
+
+                    <TextView
+                        android:id="@+id/toll_free_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="8dp"
+                        android:text="@string/tollFreeNo"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/message_size_medium"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/email_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_call"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="8dp"
+                    android:text="@string/emailVerificationMessage"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/text_call_remaining"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/email_message"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/ep_seconds_remaining"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:text="Seconds Remaining : " />
+
+                    <TextView
+                        android:id="@+id/ep_seconds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:clickable="true"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/or_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_call_remaining"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/textview_rounded"
+                    android:padding="8dp"
+                    android:text="OR"
+                    android:textSize="@dimen/message_size_medium" />
+
+                <TextView
+                    android:id="@+id/sms_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/or_text"
+                    android:layout_centerHorizontal="true"
+                    android:padding="8dp" />
+
+                <RelativeLayout
+                    android:id="@+id/code_field_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sms_text"
+                    android:layout_centerHorizontal="true" >
+
+                    <EditText
+                        android:id="@+id/code_field"
+                        style="@style/EditTextFillParent"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@color/White"
+                        android:hint="Code"
+                        android:inputType="numberPassword"
+                        android:maxLength="4"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="8dp" />
+
+                    <Button
+                        android:id="@+id/verify_btn"
+                        style="@style/buttonFillParent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/code_field"
+                        android:background="@color/green"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="Verify"
+                        android:textColor="@color/White" >
+                    </Button>
+
+                    <ProgressBar
+                        android:id="@+id/verify_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/verify_btn"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/regenerate_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/code_layout" >
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/regenerate_code_text_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:text="@string/regenerate_code_text"
+                    android:textColor="@color/blue_button"
+                    android:textSize="@dimen/message_size_small" />
+
+                <TextView
+                    android:id="@+id/phone_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/regenerate_code_text_value"
+                    android:layout_centerHorizontal="true"
+                    android:padding="8dp"
+                    android:textSize="@dimen/message_size_small" />
+
+                <Button
+                    android:id="@+id/regenerate_btn"
+                    style="@style/buttonFillParent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/phone_no"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/green"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="Regenerate"
+                    android:textColor="@color/White" >
+                </Button>
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/regenerate_code_successful"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/regenerate_btn"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:textColor="@color/verification_blue"
+                    android:textSize="@dimen/message_size_small"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

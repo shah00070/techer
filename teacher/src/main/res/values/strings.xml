@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SchoolTriangle</string>
+    <string name="content_description">cont_desc</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Jeevom</string>
+    <string name="drawer_close">Jeevom</string>
+    <string name="search_doctor">Search a Doctor</string>
+    <string name="search_medical_facilities">Search Medical Facilities</string>
+    <string name="search_other_facilities">Search other Healthcare Facilities</string>
+    <string name="need_help">Need Help? Ask us.</string>
+    <string name="myFacility">My Facility</string>
+    <string name="speech_prompt">Say something&#8230;</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="home">Home</string>
+    <string name="product_overview">Product Overview</string>
+    <string name="about">About Us</string>
+    <string name="popular_search">Popular Searches</string>
+    <string name="my_sr_request">My Service Requests</string>
+
+
+    <string name="deals_offer">Deals &amp; Offer</string>
+    <string name="health_analyzer">Health Analyzer</string>
+    <string name="health_locker">Health Locker</string>
+    <string name="deals_offer_title">View latest <i>Deals &amp; Offers</i> on</string>
+    <string name="deal_avail_msg">To avail any of these offer, please visit www.jeevom.com or call us at 1800-3000-5032.</string>
+    <string name="empty_offer_list"> Oops! There are no active deals and offers running at this point of time. Keep Watching this space for exciting deals and offers!</string>
+
+
+    <string name="instant_appoint_msg">Instant Book Appointment</string>
+    <string name="instant_appoint_done">Thank you for Submitting your request. \nYour Appointment details will be sent on mail/sms</string>
+
+
+    <!-- Facebook app id 730888413665717-->
+    <string name="app_id">730888413665717</string>
+    <!--<string name="app_id">389305244604431</string>-->
+
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Search</item>
+        <item>My Requests</item>
+        <item>Health Records</item>
+        <item>My Searches</item>
+        <item>Health Vitals</item>
+    </string-array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_change_password">ChangePassword</string>
+    <string name="google_update">An update to Jeevom app is available on the Play Store. Please update to keep exploring the new features and enhancements !</string>
+    <string name="MERCHANT_KEY">yi7ZMm</string>
+    <string name="SALT">bvs7WG7W</string>
+    <string name="PAYU_BASE_URL">https://test.payu.in</string>
+    <string name="hashSequence">key|txnid|amount|productinfo|firstname|email|udf1|udf2|udf3|udf4|udf5|udf6|udf7|udf8|udf9|udf10</string>
+    <string name="email_consultation">Email Consultation</string>
+    <string name="email_consultation_fee">Email Consultation - INR 99/-</string>
+    <string name="title_activity_alert_dialog">AlertDialogActivity</string>
+
+    <!-- Jeevom Strings -->
+    <string name="home_search_option_value">Type here to search..</string>
+    <string name="search_doctor_clinic">Doctors &amp; Clinics</string>
+    <string name="search_pharmacies">Search Pharmacies</string>
+    <string name="search_labs_diagnostics">Labs &amp; Diagnostics</string>
+    <string name="search_fitness_wellness">Fitness &amp; wellness</string>
+    <string name="search_audio_video">Audio / Video</string>
+    <string name="search_email_chat">Email / Chat</string>
+    <string name="search_care_home">Care @ Home</string>
+    <string name="search_order_online">Order Medicine</string>
+    <string name="advance_search">Advanced Search</string>
+    <string name="service_mode">Service Mode</string>
+    <string name="service_category">Service Category</string>
+    <string name="loren_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+    <!-- appointment Strings -->
+
+    <string name="weight_left">0.25</string>
+    <string name="weight_right">0.75</string>
+
+    <!-- Drop Down Values for Cancel Service Request -->
+    <string-array name="cancel_status_drop_down_values">
+        <item>Not available at the mentioned date and time</item>
+        <item>Don’t offer this type of Consultation</item>
+        <item>Setup closed on the mentioned date and time</item>
+        <item>Others</item>
+    </string-array>
+
+    <!-- Drop Down Values for Reschedule Service Request -->
+    <string-array name="reschedule_status_drop_down_values">
+        <item>Will not be able to come at the mentioned date and time</item>
+        <item>Booked by mistake</item>
+        <item>Others</item>
+    </string-array>
+    <string name="title_activity_search_map">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_search_map_view">Map</string>
+    <string name="title_activity_maps_search_view">Map</string>
+    <string name="title_activity_vouchers">VouchersActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_health_vitals">HealthVitals</string>
+    <string name="title_activity_add_health_vital">AddHealthVital</string>
+    <string name="title_activity_health_indicators">HealthIndicators</string>
+    <string name="title_activity_care_at_home">CareAtHome</string>
+    <string name="title_activity_add_height_indicator_value">AddHeightIndicatorValue</string>
+
+    <!--- Unit Names-->
+    <string name="lbs">lbs</string>
+    <string name="kg">kg</string>
+    <string name="cm">cm</string>
+    <string name="ft_inch">ft. inch</string>
+    <string name="fahrenheit">fahrenheit</string>
+    <string name="celsius">celsius</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="health_mart_msg">Ditch the hassle of booking a doctor\'s appointment on phone. Switch to Jeevom\'s health mart for booking online appointment with your favourite doctor within 1 minute</string>
+    <string name="health_buddy_msg">Your Health-friend. Stay informed about your health at any time, any place</string>
+    <string name="health_cloud_msg">Highly secure and 24x7 accessible private cloud storage for healthcare data, trends, analytics etc for you and your entire family</string>
+    <string name="health_social_msg">Platform for Healthcare Engagements &amp; initiatives for user communities and society at large</string>
+    <string name="deals_offer_msg">Save even more now with Jeevom\'s exciting deals and offers</string>
+    <string name="health_profile_msg">A snapshot overview of your health that improves availability and accessibility of your health essentials</string>
+    <string name="health_library_msg">Good health begins with awareness. With Jeevom\'s Health Library, stay aware, spread health</string>
+
+    <string name="header_hello_text">Hello Uma Luthra,</string>
+
+
+
+
+
+
+
+
+    <string name="welcome_message">Thought of the day</string>
+    <string name="go_for_signup_msg">Things work out best for those who make the best of how things work out.</string>
+
+    <string name="user_age_msg">You are celebrating YYYYMMDD of healthy life.</string>
+    <string name="update_profile_msg">Lets update your health profile for a personalized health experience. Manage Health Profile</string>
+
+    <string name="about_us_text">Jeevom Healthcare Private Limited is a young and vibrant company engaged in developing innovative software solutions for healthcare segment. We plan to revolutionize the healthcare ecosystem on global level through our \"Cloud n Crowd\" platform providing comprehensive healthcare information management, data analytics and collaboration capabilities to healthcare seeker and care providers.\n\nJeevom is based out of Delhi NCR (Noida) and is setting its footprint at a steady pace throughout India. </string>
+    <string name="what_is_product_txt">Jeevom is a SW platform available through a set of web and mobile applications that enables you to manage all your healthcare data and needs You can plan, track, organize and collaborate in the context of holistic healthcare (preventive, curative and wellness).</string>
+    <string name="who_can_use_txt">Jeevom is meant for both healthcare seekers as well as providers. Consumers across the age and gender can use it effectively for their everyday health engagement. You don;t need to be tech savvy to use this product as the services can be availed using a phone toll free phone based assistance service as well.\n\nAll kind of healthcare providers in the space of preventive healthcare, medical services as well as wellness segment can use this platform for effective practice management and collaborations with their customers.</string>
+
+    <string name="jeevom_name_purpose_txt"> The name Jeevom comes from the unification of two independent words \"Jeev\" + \"OM\". and it represents the unification of Jeev (the human being in this context) and OM (The supreme power). This unification is the manifestation of the comprehensive healing powers and elimination of all evils.</string>
+
+    <string name="jeev_vision_txt">To be the most trusted partner for family based holistic healthcare management through innovative software solutions for consumers and providers.</string>
+
+    <string name="jeev_mission_txt">&#8226;&#160;Spreading Health Awareness \n&#8226;&#160;Enabling Health Assessments \n&#8226;&#160;Encouraging Health Indulgence \n&#8226;&#160;Fostering Health Collaborations</string>
+
+    <string name="health_buddy">My Diary</string>
+    <string name="health_cloud">Health Cloud</string>
+    <string name="health_mart">Health Mart</string>
+    <string name="health_social">Health Social</string>
+    <string name="health_library">Health Library</string>
+    <string name="profile">Profile</string>
+    <string name="health_tips">Health Tips</string>
+
+
+
+
+    <string-array name="update">
+        <item>25th May, 2016</item>
+        <item>26th May, 2016</item>
+        <item>29th May, 2016</item>
+        <item>25th May, 2016</item>
+        <item>30th May, 2016</item>
+        <item>25th May, 2016</item>
+        <item>25th May, 2016</item>
+</string-array>
+
+    <string-array name="uptime">
+        <item>9 AM</item>
+        <item>9 AM</item>
+        <item>9 AM</item>
+        <item>9 AM</item>
+        <item>9 AM</item>
+        <item>9 AM</item>
+        <item>9 AM</item>
+    </string-array>
+
+
+    <string-array name="titles">
+        <item>New Rules for Cafeteria</item>
+        <item> New dress code on Fridays</item>
+        <item>Change in Mess Timings</item>
+        <item>Change in Mess Menu</item>
+        <item>Detention for mobile phones</item>
+        <item>2016 Library Rules</item>
+        <item>Change of Assembly  location</item>
+        </string-array>
+
+
+    <string-array name="descriptions">
+        <item>W.E.F. from  June, 2016 everyone needs to follow the following rules in cafeteria-</item>
+        <item>There been a change is student Friday dress. Please read the whole circular</item>
+        <item>W.E.F. from June, 2016 Mess will be serving food on following times-</item>
+        <item>W.E.F 1 of June, 2016, Mess will be following the attached menu.</item>
+        <item>If any student is found using or even carrying a mobile phone he will be facing following actions</item>
+        <item>W.E.F  of June, 2016 everyone needs to follow the following rules in Library</item>
+        <item>W.E.F 1 of June, 2016 weekly assembly will take place in new Auditorium.</item>
+    </string-array>
+
+
+
+
+
+
+
+
+
+
+
+    <string-array name="popular_search_list">
+        <item> Fee Submission Reminder</item>
+        <item>Nominations for School Cricket Team Required</item>
+        <item>Commencement of Theatre Classes</item>
+        <item>Inter School football match</item>
+        <item>Guest Lecture from Mr. Ajay Sharma (Motivational Speaker)</item>
+        <item>Dance Competition in XYZ Public, School</item>
+
+    </string-array>
+
+    <string-array name="date_list">
+        <item>Date- 2nd June.2016      Time: 03:06 pm</item>
+        <item>Date: 5th June              Time: 12:05 pm</item>
+        <item>Date: 6th June                  Time: 11:55 am
+</item>
+        <item>Date: 6th June                Time: 1:00 pm</item>
+        <item>Date: 9th June               Time: 2:00 pm</item>
+        <item>Date: 9th June                 Time: 8:59 am</item>
+
+    </string-array>
+
+    <string name="prompt">  Select one Football Club  </string>
+
+    <string-array name="event_call">
+        <item>School Annual Function</item>
+<item>Senior Batch Farewell</item>
+<item>Sports Day</item>
+        <item>Inter House Football Competition</item>
+        <item>Inter School Basketball </item>
+        <item>Alumni  Meet</item>
+        <item>Holi Celebrations</item>
+        <item>Summer Camp</item>
+    </string-array>
+
+
+
+    <string-array name="spin_disscus">
+    <item>Class VII-D</item>
+    <item>Class VIII-C</item>
+        <item>Staffroom</item>
+    </string-array>
+
+
+
+    <string-array name="day_week_month">
+        <item>This Day</item>
+        <item>This Week</item>
+        <item>This Month</item>
+
+    </string-array>
+    <string-array name="populate_searc">
+        <item>Class VII-D</item>
+        <item>Class VIII-C</item>
+
+    </string-array>
+
+
+    <string-array name="colleague_search">
+        <item>School Management</item>
+        <item>School Teachers</item>
+
+    </string-array>
+
+    <string-array name="school_analytic_search">
+        <item>July,2016</item>
+        <item>August,2016</item>
+
+    </string-array>
+
+    <string-array name="head_search">
+        <item>Students Report</item>
+        <item>Teachers Report</item>
+
+    </string-array>
+<string name="defalut">Choose your class</string>
+
+    <string-array name="acc_type">
+        <item>Ist Term</item>
+        <item>IInd Term</item>
+        <item>IIIrd Term</item>
+
+    </string-array>
+<!-- int HEALTH_BUDDY = 1; int MY_DAIRY =1;
+    int HEALTH_CLOUD = 2;int MY_LOCKER =2;
+    int HEALTH_MART = 3;int MY_TIMETABLE= 3;
+    int HEALTH_SOCIAL = 4;int MY_SYLLABUS =4;
+    int DEAL_AND_OFFERS = 5;int MY_ATTENDANCE =5;
+    int HEALTH_LIBRARY = 6;int MY_REPORTCARD =6;
+    int HEALTH_PROFILE = 7;int TEACHER_AND_CLASSMATE =7;
+    int WHY_JEEVOM = 8;int MEMORYLANE =8;
+    int ABOUT_US = 9;int NOTICE_BOARD =9;
+    int HOME_SCREEN = 10;
+    int MY_SERVICE_REQUEST = 11;int SOCIAL_MEDIA =11;
+    int POPULAR_SEARCH = 12;int SHOWCASE =12;
+-->
+
+    <string name="MY_DAIRY">My_DAIRY</string>
+    <string name="MY_LOCKER">My_LOCKER</string>
+    <string name="MY_TIMETABLE">My_TIMETABLE</string>
+    <string name="MY_SYLLABUS">My_SYLLABUS</string>
+    <string name="MY_ATTENDANCE">My_ATTENDANCE</string>
+    <string name="MY_REPORTCARD">My_REPORTCARD</string>
+    <string name="TEACHER_AND_CLASSMATE">TEACHER_AND_CLASSMATE</string>
+    <string name="MEMORYLANE">MEMORYLANE</string>
+    <string name="NOTICE_BOARD">NOTICE_BOARD</string>
+    <string name="SHOWCASE">SHOWCASE</string>
+    <string name="SOCIAL_MEDIA">SOCIAL_MEDIA</string>
+
+
+
+
+
+
+
+
+</resources>

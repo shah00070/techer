@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- End current session if app sleeps for a period of time -->
+    <integer name="ga_sessionTimeout">300</integer>
+
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <!--  The property id associated with this analytics tracker -->
+    <!-- TEST ID
+    <string name="ga_trackingId">UA-71361098-1</string>
+    -->
+    <string name="ga_trackingId">UA-55508701-2</string>
+
+    <string name="ga_sampleFrequency">100.0</string>
+
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+    <!-- How long a session exists before giving up -->
+    <integer name="ga_sessionTimeout">
+        -1
+    </integer>
+
+    <!--
+      See Project Structure -> Analytics -> Google Analytics -> Learn More
+      to learn more about configuring this file.
+    -->
+    <screenName name="com.schoolteacher.main.SplashActivity">Splash Screen</screenName>
+    <screenName name="com.schoolteacher.main.HomeActivity">Home Screen</screenName>
+    <screenName name="com.schoolteacher.library.main.IntroScreenActivity">Introduction Screen</screenName>
+    <screenName name="com.schoolteacher.library.main.SignUpLoginActivity">Signup Login Screen</screenName>
+    <screenName name="com.schoolteacher.library.main.ConsumerProfessionalSignup">Signup Screen</screenName>
+    <screenName name="com.schoolteacher.library.main.ForgotPassword">Forgot password screen</screenName>
+    <screenName name="com.schoolteacher.library.main.ChangePasswordActivity">Change password screen
+    </screenName>
+    <screenName name="com.schoolteacher.appointment.ServiceRequestsActivity">Service Requests Screen
+    </screenName>
+
+    <screenName name="com.schoolteacher.main.YouTubeCustomPlayerActivity">Overview Video</screenName>
+    <screenName name="com.schoolteacher.main.ProfileViews">Profile Views Screen</screenName>
+    <screenName name="com.schoolteacher.main.FacilityProfile">Facility Profile Screen</screenName>
+    <screenName name="com.schoolteacher.main.DoctorProfile">Doctor Profile Screen</screenName>
+    <screenName name="com.schoolteacher.main.FilterActivity">Filter Screen</screenName>
+    <screenName name="com.schoolteacher.main.ViewProfile">Profile Screen</screenName>
+    <screenName name="com.schoolteacher.main.EditMyProfile">Edit Profile Screen</screenName>
+    <screenName name="com.schoolteacher.main.FamilyInformation">Family Information Screen</screenName>
+    <screenName name="com.schoolteacher.main.PaymentActivity">Payment Screen</screenName>
+    <screenName name="com.schoolteacher.main.InsuranceDetails">Insurance Details Screen</screenName>
+    <screenName name="com.schoolteacher.search.JeevSearchFilters">Search Filter Screen</screenName>
+    <screenName name="com.schoolteacher.search.JeevSearchList">Search List Screen</screenName>
+    <screenName name="com.schoolteacher.search.UserSavedSearches">Saved Searches Screen</screenName>
+    <screenName name="com.schoolteacher.main.FacilityMapView">Facility Mapview Screen</screenName>
+    <screenName name="com.schoolteacher.serviceRequest.EmailConsultation">Email Consultation Screen
+    </screenName>
+    <screenName name="com.schoolteacher.serviceRequest.RequestQuote">Input Quote Screen</screenName>
+    <screenName name="com.schoolteacher.serviceRequest.SendMessage">Send Message Screen</screenName>
+    <screenName name="com.schoolteacher.serviceRequest.Appointments">Appointment Screen</screenName>
+    <screenName name="com.schoolteacher.serviceRequest.PurchaseRequest">Purchase Request Screen
+    </screenName>
+    <screenName name="com.schoolteacher.serviceRequest.PurchaseRequestStepTwo">Purchase Request Step Two
+        Screen
+    </screenName>
+    <screenName name="com.schoolteacher.serviceRequest.LabTest">Labtest Screen</screenName>
+    <screenName name="com.schoolteacher.serviceRequest.AppointmentStepTwo">Appointment Step Two Screen
+    </screenName>
+    <screenName name="com.schoolteacher.serviceRequest.AppointmentStepThree">Appointment Step Three
+        Screen
+    </screenName>
+    <screenName name="com.schoolteacher.serviceRequest.SlotsScreen">Available Slots Screen</screenName>
+    <screenName name="com.schoolteacher.serviceRequest.SendMessageStepTwo">Send Message Step Two
+        Screen
+    </screenName>
+    <screenName name="com.schoolteacher.medvault.MedVaultActivity">Medvault Screen</screenName>
+    <screenName name="com.schoolteacher.medvault.DocumentUploadActivity">Document Upload Screen
+    </screenName>
+    <screenName name="com.schoolteacher.serviceRequest.SelectDocumentForAttachment">Select Document
+        Screen
+    </screenName>
+    <screenName name="com.schoolteacher.serviceRequest.EmailconsultationStepTwo">Email Consultation Step
+        Two Screen
+    </screenName>
+    <screenName name="com.schoolteacher.appointment.IndivisualAppointmentActivity">Individual Appointment
+        Screen
+    </screenName>
+    <screenName name="com.schoolteacher.video.VideoActivity">Video Screen</screenName>
+    <screenName name="com.schoolteacher.wallet.WalletActivity">Wallet Screen</screenName>
+    <screenName name="com.schoolteacher.wallet.RecentTransactions">Recent Transaction Screen</screenName>
+    <screenName name="com.schoolteacher.library.main.PhoneEmailVerification">Phone &amp; Email Verification
+        Screen
+    </screenName>
+    <screenName name="com.schoolteacher.library.main.PhoneAndEmailVerification">Phone &amp; Email
+        VerificationScreen
+    </screenName>
+    <screenName name="com.schoolteacher.library.main.AddressBasedMap">Address Map Screen</screenName>
+    <screenName name="com.schoolteacher.library.main.TermsAndConditions">Terms &amp; Conditions Screen
+    </screenName>
+    <screenName name="com.schoolteacher.appointment.ServiceRequestDetail">Service Reuqest Detail Screen
+    </screenName>
+    <screenName name="com.schoolteacher.appointment.MessagesListClass">Message List Screen</screenName>
+    <screenName name="com.schoolteacher.search.MapsSearchViewActivity">Map Search List Screen</screenName>
+    <screenName name="com.schoolteacher.healthvitals.HealthVitals">Health Analyzer Screen</screenName>
+    <screenName name="com.schoolteacher.healthvitals.AddHealthVital">Add Health Track Parameter Screen
+    </screenName>
+    <screenName name="com.schoolteacher.healthvitals.HealthIndicators">Health Indicators Screen
+    </screenName>
+    <screenName name="com.schoolteacher.healthvitals.ViewHealthVitalInformation">Health Analyzer Details
+        Screen
+    </screenName>
+    <screenName name="com.schoolteacher.healthvitals.AddVitalReading">Add Reading Value Screen</screenName>
+    <screenName name="com.schoolteacher.main.CareAtHome">Care At Home Screen</screenName>
+    <screenName name="com.schoolteacher.healthvitals.AddHeightIndicatorValue">Add Height Indicator Value
+        Screen
+    </screenName>
+
+</resources>

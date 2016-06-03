@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/heading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp" >
+
+        <TextView
+            android:id="@+id/heading_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/message_size_medium" />
+
+        <ImageView
+            android:id="@+id/show_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="4dp"
+            android:src="@drawable/show" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:paddingBottom="8dp"
+        android:visibility="gone" >
+
+        <View
+            android:id="@+id/seprator"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/Gray" />
+
+        <LinearLayout
+            android:id="@+id/website_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seprator"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:id="@+id/website_tag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:gravity="center_vertical|left"
+                android:text="Website"
+                android:textColor="@color/Blue"
+                android:textSize="@dimen/message_size_medium"
+                 />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/Gray" />
+
+            <TextView
+                android:id="@+id/website_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight=".7"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/message_size_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/valid_from_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/website_layout"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:id="@+id/valid_from_tag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:gravity="center_vertical|left"
+                android:text="Valid From"
+                android:textColor="@color/Blue"
+                android:textSize="@dimen/message_size_medium"
+                 />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/Gray" />
+
+            <TextView
+                android:id="@+id/valid_from_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight=".7"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/message_size_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/valid_till_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/valid_from_layout"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:id="@+id/valid_till_tag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:gravity="center_vertical|left"
+                android:text="Valid Till"
+                android:textColor="@color/Blue"
+                android:textSize="@dimen/message_size_medium"
+                 />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/Gray" />
+
+            <TextView
+                android:id="@+id/valid_till_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight=".7"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/message_size_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/coverage_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/valid_till_layout"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:id="@+id/coverage_tag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:gravity="center_vertical|left"
+                android:text="Coverage Amount"
+                android:textColor="@color/Blue"
+                android:textSize="@dimen/message_size_medium"
+                 />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/Gray" />
+
+            <TextView
+                android:id="@+id/coverage_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight=".7"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/message_size_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/claim_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coverage_layout"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:id="@+id/claim_tag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:gravity="center_vertical|left"
+                android:text="Claimed Amount"
+                android:textColor="@color/Blue"
+                android:textSize="@dimen/message_size_medium"
+                 />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/Gray" />
+
+            <TextView
+                android:id="@+id/claim_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight=".7"
+                android:gravity="center_vertical|clip_vertical"
+                android:textSize="@dimen/message_size_medium" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

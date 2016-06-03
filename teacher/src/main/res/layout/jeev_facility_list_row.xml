@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/jeev_row_drop_shadow">
+
+    <!-- Thumbnail Image -->
+
+    <LinearLayout
+        android:id="@+id/first_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:id="@+id/image_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight=".2">
+
+            <com.schoolteacher.main.CircleImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/main_logo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/content_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight=".7">
+
+            <TextView
+                android:id="@+id/facility_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/green"
+                android:textSize="@dimen/first_line" />
+
+            <TextView
+                android:id="@+id/facility_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/facility_name"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/genre"
+                android:textSize="@dimen/second_line" />
+
+            <TextView
+                android:id="@+id/facility_services"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/facility_address"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/genre"
+                android:textSize="@dimen/second_line" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/actions_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight=".1">
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="8dp"
+                android:src="@drawable/menu_item"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menu"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_jeev_profile_view" />
+
+            <TextView
+                android:id="@+id/likes_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/likes"
+                android:layout_centerHorizontal="true"
+                android:text="-"
+                android:textSize="@dimen/message_size_small" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/seprator"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/first_container"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/Gray"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_container"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/experience"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_jeev_experience" />
+
+            <TextView
+                android:id="@+id/recommended_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="-"
+                android:textSize="@dimen/message_size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fee"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_jeev_fee" />
+
+            <TextView
+                android:id="@+id/fee_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="-"
+                android:textSize="@dimen/message_size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profile_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_jeev_reviews"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/review_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="-"
+                android:textSize="@dimen/message_size_small" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/recommended"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:src="@drawable/recommended" />
+
+        <ImageView
+            android:id="@+id/certified"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:src="@drawable/discount" />
+
+        <ImageView
+            android:id="@+id/imagevw_instant_appointment"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/instant_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/clinics_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bottom_layout"
+        android:background="@color/grey_light"
+        android:orientation="vertical"
+        android:visibility="gone"></LinearLayout>
+
+</RelativeLayout>

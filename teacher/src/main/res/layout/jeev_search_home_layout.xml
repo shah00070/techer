@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/upper_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <EditText
+            android:id="@+id/search_field"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jeev_row_drop_shadow"
+            android:drawableLeft="@drawable/ic_search_what"
+            android:drawableRight="@drawable/ic_mic"
+            android:focusable="false"
+            android:hint="Search Doctors and Clinics.."
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textColor="@color/black_first"
+            android:textSize="@dimen/message_size_normal"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upper_container"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="16dp" >
+
+        <LinearLayout
+            android:id="@+id/options_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/first_row"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/option_one"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3" >
+
+                    <ImageView
+                        android:id="@+id/option_one_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/jeev_search_doctor_selector" />
+
+                    <TextView
+                        android:id="@+id/option_one_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/option_one_image"
+                        android:layout_centerHorizontal="true"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="@string/search_doctor_clinic"
+                        android:textColor="@color/black_first"
+                        android:textSize="@dimen/message_size_medium" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/option_two"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3" >
+
+                    <ImageView
+                        android:id="@+id/option_two_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/jeev_search_pharmacy_selector" />
+
+                    <TextView
+                        android:id="@+id/option_two_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/option_two_image"
+                        android:layout_centerHorizontal="true"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="@string/search_pharmacies"
+                        android:textColor="@color/black_first"
+                        android:textSize="@dimen/message_size_medium" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/second_row"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/option_three"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3" >
+
+                    <ImageView
+                        android:id="@+id/option_three_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/jeev_search_lab_selector" />
+
+                    <TextView
+                        android:id="@+id/option_three_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/option_three_image"
+                        android:layout_centerHorizontal="true"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="@string/search_labs_diagnostics"
+                        android:textColor="@color/black_first"
+                        android:textSize="@dimen/message_size_medium" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/option_four"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3" >
+
+                    <ImageView
+                        android:id="@+id/option_four_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/jeev_search_fitness_selector" />
+
+                    <TextView
+                        android:id="@+id/option_four_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/option_four_image"
+                        android:layout_centerHorizontal="true"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="@string/search_fitness_wellness"
+                        android:textColor="@color/black_first"
+                        android:textSize="@dimen/message_size_medium" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/third_row"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/option_five"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3" >
+
+                    <ImageView
+                        android:id="@+id/option_five_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/jeev_search_audio_selector" />
+
+                    <TextView
+                        android:id="@+id/option_five_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/option_five_image"
+                        android:layout_centerHorizontal="true"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="@string/search_audio_video"
+                        android:textColor="@color/black_first"
+                        android:textSize="@dimen/message_size_medium" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/option_six"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3" >
+
+                    <ImageView
+                        android:id="@+id/option_six_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/jeev_search_email_selector" />
+
+                    <TextView
+                        android:id="@+id/option_six_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/option_six_image"
+                        android:layout_centerHorizontal="true"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="@string/search_email_chat"
+                        android:textColor="@color/black_first"
+                        android:textSize="@dimen/message_size_medium" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fourth_row"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/option_seven"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3" >
+
+                    <ImageView
+                        android:id="@+id/option_seven_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/jeev_search_home_selector" />
+
+                    <TextView
+                        android:id="@+id/option_seven_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/option_seven_image"
+                        android:layout_centerHorizontal="true"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="@string/search_care_home"
+                        android:textColor="@color/black_first"
+                        android:textSize="@dimen/message_size_medium" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/option_eight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3" >
+
+                    <ImageView
+                        android:id="@+id/option_eight_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/jeev_search_order_selector" />
+
+                    <TextView
+                        android:id="@+id/option_eight_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/option_eight_image"
+                        android:layout_centerHorizontal="true"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="@string/search_order_online"
+                        android:textColor="@color/black_first"
+                        android:textSize="@dimen/message_size_medium" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

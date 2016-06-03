@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <group
+        android:id="@+id/nav_group"
+        android:checkableBehavior="single">
+
+
+
+
+
+
+<!--
+    int HEALTH_BUDDY = 1; int MY_DAIRY =1;
+    int HEALTH_CLOUD = 2;int MY_LOCKER =2;
+    int HEALTH_MART = 3;int MY_TIMETABLE= 3;
+    int HEALTH_SOCIAL = 4;int MY_SYLLABUS =4;
+    int DEAL_AND_OFFERS = 5;int MY_ATTENDANCE =5;
+    int HEALTH_LIBRARY = 6;int MY_REPORTCARD =6;
+    int HEALTH_PROFILE = 7;int TEACHER_AND_CLASSMATE =7;
+    int WHY_JEEVOM = 8;int MEMORYLANE =8;
+    int ABOUT_US = 9;int NOTICE_BOARD =9;
+    int HOME_SCREEN = 10;
+    int MY_SERVICE_REQUEST = 11;int SOCIAL_MEDIA =11;
+    int POPULAR_SEARCH = 12;int SHOWCASE =12;-->
+
+        <item
+            android:id="@+id/navigation_subheader"
+            app:itemBackground="@color/white"
+            android:title="My EduCloud">
+            <menu>
+
+                <item
+                    app:itemIconTint="#2196f3"
+                    android:id="@+id/home_btn"
+                    android:icon="@drawable/home_icon"
+                    android:title="My Dashboard"/>
+                <item
+                    app:itemIconTint="#2196f3"
+                    android:id="@+id/MY_DAIRY"
+                    android:icon="@drawable/my_diary"
+                    android:title="My Diary"/>
+                <item
+                    android:id="@+id/MY_LOCKER"
+                    android:icon="@drawable/my_locker"
+                    android:title="My Locker"/>
+                <item
+                    android:id="@+id/MY_TIMETABLE"
+                    android:icon="@drawable/my_timetable"
+                    android:title="My Timetable"/>
+               <!-- <item
+                    android:id="@+id/MY_SYLLABUS"
+                    android:icon="@drawable/my_sylabus"
+                    android:title="My Syllabus"/>
+                <item
+                    android:id="@+id/MY_ATTENDANCE"
+                    android:icon="@drawable/my_attendance"
+                    android:title="My Attendance"/>
+                <item
+                    android:id="@+id/MY_REPORTCARD"
+                    android:icon="@drawable/my_reportcard"
+                    android:title="My ReportCard"/>-->
+
+
+</menu>
+        </item>
+<!--s
+My Teachers ( view / chat / send message)  - list view as in FB app friend request list view
+My Classmates ( view / chat / send message) - list view as in FB app friend request list view (Hidden for Parents)
+Class Discussion board  - can be similar to FB wall (Hidden for Parents)
+My MemoryLane
+My School-->
+        <item
+            android:id="@+id/navigation_subheader1"
+            android:title="My Class">
+            <menu>
+
+                <item
+                    android:id="@+id/MY_ATTENDANCE"
+                    android:icon="@drawable/my_attendance"
+                    android:title="Class Attendance"/>
+
+
+                <item
+                    android:id="@+id/CLASS_HOMEWORK"
+                    android:icon="@drawable/assign_homeword"
+                    android:title="Class Homework"/>
+
+                <item
+                    android:id="@+id/CLASS_D_BOARD"
+                    android:icon="@drawable/discussionboard"
+                    android:title="Class Discussion Board"/>
+                <item
+                    android:id="@+id/CLASS_LIST"
+                    android:icon="@drawable/my_attendance"
+                    android:title="Class List"/>
+
+                <item
+                    android:id="@+id/SCH_PTM"
+                    android:icon="@drawable/my_memorylane"
+                    android:title="Schedule PTM"/>
+
+
+                </menu>
+                </item>
+
+
+
+
+
+
+
+    <item
+        android:id="@+id/navigatiosan_subheader1"
+        android:title="My School">
+        <menu>
+            <item
+                android:id="@+id/NOTICE_BOARD"
+                android:icon="@drawable/noticeboard"
+                android:title="Notice Board"/>
+
+            <item
+                android:id="@+id/SOCIAL_MEDIA"
+                android:icon="@drawable/social"
+                android:title="Social Media"/>
+
+            <item
+                android:id="@+id/SHOWCASE"
+                android:icon="@drawable/showcase"
+                android:title="Showcase"/>
+
+            <item
+                android:id="@+id/My_Colleagues"
+                android:icon="@drawable/my_colleagues"
+                android:title="My Colleagues"/>
+
+
+
+        </menu>
+    </item>
+
+
+
+
+
+        <item
+            android:id="@+id/School_Admin"
+            android:title="School Management and Admin">
+            <menu>
+                <item
+                    android:id="@+id/School_Holidays"
+                    android:icon="@drawable/school_holiday"
+                    android:title="School Holidays"/>
+
+                <item
+                    android:id="@+id/Circulars"
+                    android:icon="@drawable/circular"
+                    android:title="Circulars"/>
+
+                <item
+                    android:id="@+id/Head_Count"
+                    android:icon="@drawable/head_count"
+                    android:title="Head Count"/>
+
+                <item
+                    android:id="@+id/School_Analytics"
+                    android:icon="@drawable/head_count"
+                    android:title="School Analytics"/>
+
+            </menu>
+        </item>
+
+
+
+
+       <!-- <item
+            android:id="@+id/home_btn"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/popular_search"
+            android:icon="@drawable/popular_search_icon"
+            android:title="Popular Searches" />
+
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/profile"
+            android:title="My Profile" />
+
+        <item
+            android:id="@+id/my_request_btn"
+            android:icon="@drawable/my_sr_icon"
+            android:title="My Service Requests" />
+
+        <item
+            android:id="@+id/health_mart"
+            android:icon="@drawable/health_mart"
+            android:title="Health Mart" />
+
+        <item
+            android:id="@+id/health_cloud"
+            android:icon="@drawable/health_cloud"
+            android:title="Health Cloud" />
+
+        <item
+            android:id="@+id/deals_offer"
+            android:icon="@drawable/deals_icon"
+            android:title="Deals and Offer" />
+
+        <item
+            android:id="@+id/health_buddy"
+            android:icon="@drawable/health_buddy"
+            android:title="Health Buddy" />
+
+
+        <item
+            android:id="@+id/health_social"
+            android:icon="@drawable/community"
+            android:title="Health Social" />
+
+        <item
+            android:id="@+id/health_library"
+            android:icon="@drawable/health_tips"
+            android:title="Health Library" />
+
+        <item
+            android:id="@+id/why_jeevom"
+            android:icon="@drawable/why_jeev"
+            android:title="Product Overview" />
+
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/about_icon"
+            android:title="About Us" />-->
+    </group>
+
+</menu>

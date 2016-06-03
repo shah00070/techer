@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White" >
+
+    <HorizontalScrollView
+        android:id="@+id/top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:scrollbars="none"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/counts_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="4dp" >
+
+            <TextView
+                android:id="@+id/total_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Total(0)"
+                android:textColor="@color/White"
+                android:textSize="@dimen/message_size_small"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/Gray"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/recommend_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Recommended(0)"
+                android:textColor="@color/White"
+                android:textSize="@dimen/message_size_small" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/Gray" />
+
+            <TextView
+                android:id="@+id/certified_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Certified(0)"
+                android:textColor="@color/White"
+                android:textSize="@dimen/message_size_small" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/Gray" />
+
+            <TextView
+                android:id="@+id/shortlist_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Shortlist(0)"
+                android:textColor="@color/White"
+                android:textSize="@dimen/message_size_small" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/Gray"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/hidden_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Hidden(0)"
+                android:textColor="@color/White"
+                android:textSize="@dimen/message_size_small"
+                android:visibility="gone" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:id="@+id/list_map_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@+id/top_bar" >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:src="@drawable/ic_filter" />
+    </RelativeLayout>
+
+</RelativeLayout>

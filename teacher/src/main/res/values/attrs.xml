@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FloatLabelLayout">
+        <attr name="floatLabelTextAppearance" format="reference" />
+        <attr name="floatLabelTrigger" format="enum">
+            <enum name="text" value="0" />
+            <enum name="focus" value="1" />
+        </attr>
+        <attr name="floatLabelSidePadding" format="reference|dimension" />
+    </declare-styleable>
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer" />
+        <attr name="animDuration" format="integer" />
+        <attr name="animAlphaStart" format="float" />
+        <attr name="expandDrawable" format="reference" />
+        <attr name="collapseDrawable" format="reference" />
+    </declare-styleable>
+
+</resources>

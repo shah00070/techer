@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/home/chandan/Teacher/openTok/src/main/jniLibs"><file name="x86/libopentok.so" path="/home/chandan/Teacher/openTok/src/main/jniLibs/x86/libopentok.so"/><file name="armeabi/libopentok.so" path="/home/chandan/Teacher/openTok/src/main/jniLibs/armeabi/libopentok.so"/></source></dataSet><dataSet config="release"><source path="/home/chandan/Teacher/openTok/src/release/jniLibs"/></dataSet></merger>

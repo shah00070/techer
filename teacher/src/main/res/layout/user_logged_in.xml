@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/consult_for_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="4dp"
+            android:text="For Whom You want to book for"
+            android:textColor="@color/blue_button"
+            android:textSize="@dimen/message_size_medium"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/consult_for_value_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_dropdown"
+            android:padding="4dp"
+            android:textColor="@color/text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/consult_for_layout"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="4dp"
+            android:text="Name"
+            android:textColor="@color/blue_button"
+            android:textSize="@dimen/message_size_medium"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/name_value"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message_text"
+            android:background="@drawable/edit_text_line_green"
+            android:gravity="start"
+            android:textSize="@dimen/message_size_medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/age_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_layout"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="4dp"
+            android:text="Age"
+            android:textColor="@color/blue_button"
+            android:textSize="@dimen/message_size_medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/dob_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new_user_gender_spinner"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/age_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_line_green"
+                android:gravity="start"
+                android:hint="Date of Birth"
+                android:inputType="number"
+                android:textColorHint="@color/black_first"
+                android:textSize="@dimen/message_size_medium" />
+
+            <ImageView
+                android:id="@+id/age_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:src="@drawable/ic_calender" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gender_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/age_layout"
+        android:layout_margin="8dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/gender_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="4dp"
+            android:text="Gender"
+            android:textColor="@color/blue_button"
+            android:textSize="@dimen/message_size_medium"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/gender_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/ic_dropdown"
+            android:padding="4dp"
+            android:textColor="@color/text_color" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/shared_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender_layout" >
+
+        <TextView
+            android:id="@+id/shared_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="Following Details will be Shared"
+            android:textColor="@color/White"
+            android:textSize="@dimen/message_size_medium"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/basic_info_checkbox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shared_text"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp"
+            android:checked="true"
+            android:enabled="false"
+            android:focusable="false"
+            android:text="Basic Information"
+            android:textSize="@dimen/message_size_medium" />
+
+        <CheckBox
+            android:id="@+id/medical_info_checkbox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/basic_info_checkbox"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp"
+            android:text="Medical Information"
+            android:textSize="@dimen/message_size_medium" />
+
+        <CheckBox
+            android:id="@+id/health_info_checkbox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/medical_info_checkbox"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp"
+            android:text="Health Track Information"
+            android:textSize="@dimen/message_size_medium" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/address_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shared_info"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="Address"
+            android:textColor="@color/blue_button"
+            android:textSize="@dimen/message_size_medium" />
+
+        <View
+            android:id="@+id/action_seprator"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/Gray" />
+
+        <EditText
+            android:id="@+id/address_value"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subject_value"
+            android:layout_marginTop="4dp"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="Enter your address here.."
+            android:maxLength="500"
+            android:minHeight="100dp"
+            android:padding="4dp"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/message_size_medium" />
+    </LinearLayout>
+
+</RelativeLayout>

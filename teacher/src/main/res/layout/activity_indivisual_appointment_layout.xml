@@ -1,0 +1,376 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White" >
+
+        <include
+            android:id="@+id/toolbar_appointment"
+            layout="@layout/toobar" />
+
+        <RelativeLayout
+            android:id="@+id/rl_dr_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/toolbar_appointment"
+            android:paddingTop="8dp" >
+
+            <LinearLayout
+                android:id="@+id/ll_dr_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <ImageView
+                    android:id="@+id/profile_img"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@string/weight_left"
+                    android:src="@drawable/profile_man" />
+
+                <TextView
+                    android:id="@+id/dr_name"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="@string/weight_right"
+                    android:gravity="center_vertical"
+                    android:text="Dr. Kuldep Singh"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/message_size_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_dr_name_void_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_dr_name"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="@string/weight_left" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="@string/weight_right"
+                    android:background="@color/void_view" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_app_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rl_dr_name" >
+
+            <LinearLayout
+                android:id="@+id/ll_app_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <ImageView
+                    android:id="@+id/app_img"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@string/weight_left"
+                    android:src="@drawable/app_id" />
+
+                <RelativeLayout
+                    android:id="@+id/app_id_container"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@string/weight_right"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/app_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@string/weight_right"
+                        android:text="524178"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/message_size_medium" />
+
+                    <TextView
+                        android:id="@+id/app_type_n_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/app_id"
+                        android:text="Video, Confirmed" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_app_id"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="@string/weight_left" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="@string/weight_right"
+                    android:background="@color/void_view" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rl_app_id" >
+
+            <LinearLayout
+                android:id="@+id/ll_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <ImageView
+                    android:id="@+id/time_img"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@string/weight_left"
+                    android:src="@drawable/clock" />
+
+                <RelativeLayout
+                    android:id="@+id/timing_container"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@string/weight_right"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/timing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Today, 7: pm"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/message_size_medium" />
+
+                    <TextView
+                        android:id="@+id/remaining_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/timing"
+                        android:text="in 1 hour"
+                        android:textColor="@color/warning" />
+
+                    <ImageButton
+                        android:id="@+id/video_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="24dp"
+                        android:background="@drawable/video_call_selector"
+                        android:src="@drawable/video_chat"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_time"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="@string/weight_left" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="@string/weight_right"
+                    android:background="@color/void_view" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_app_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rl_time"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/ll_app_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <ImageView
+                    android:id="@+id/address_img"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@string/weight_left"
+                    android:src="@drawable/clinic" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="@string/weight_right"
+                    android:gravity="center_vertical"
+                    android:text="Singhs Dental Clinic\n PF-27,C Block 57, Sector 62 Noida\n landmark: Near TOT Mall Market"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/message_size_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_app_type"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="@string/weight_left" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="@string/weight_right"
+                    android:background="@color/void_view" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_user_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rl_app_type" >
+
+            <LinearLayout
+                android:id="@+id/ll_user_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <ImageView
+                    android:id="@+id/user_img"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@string/weight_left"
+                    android:src="@drawable/profile_man" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="@string/weight_right"
+                    android:gravity="center_vertical"
+                    android:text="Dinesh\n 9456804609\n ad@gmail.com"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/message_size_medium" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_user_messege"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ll_user_detail"
+                android:paddingTop="8dp"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/ll_user_messege"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp" >
+
+                    <ImageView
+                        android:id="@+id/user_messege_img"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@string/weight_left"
+                        android:src="@drawable/message" />
+
+                    <TextView
+                        android:id="@+id/user_messege"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="@string/weight_right"
+                        android:gravity="center_vertical"
+                        android:text="user  msg"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/message_size_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_user_messege_void_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_dr_name"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_weight="@string/weight_left" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_weight="@string/weight_right"
+                        android:background="@color/void_view" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_user_messege"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="@string/weight_left"
+                    android:background="@color/void_view" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="@string/weight_right"
+                    android:background="@color/void_view" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

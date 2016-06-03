@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
+        android:background="#E0E3F9" >
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_button"
+            android:gravity="center_horizontal"
+            android:padding="4dp"
+            android:text="Email Consultation"
+            android:textColor="@color/White"
+            android:textSize="@dimen/message_size_medium"
+            android:textStyle="bold" />
+
+        <info.jeevom.appointment.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_header"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/main_logo" />
+
+        <TextView
+            android:id="@+id/tv_doctor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_header"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/tv_date"
+            android:layout_toRightOf="@+id/circleImageView"
+            android:text="Doctor Name"
+            android:textSize="@dimen/message_size_small" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_doctor_name"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/circleImageView"
+            android:text="Jeevom Test"
+            android:textSize="@dimen/message_size_small" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_header"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="08-12-2014"
+            android:textSize="@dimen/message_size_small" />
+
+        <TextView
+            android:id="@+id/tv_for_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@+id/tv_status"
+            android:layout_toRightOf="@+id/circleImageView"
+            android:text="For_Member"
+            android:textSize="@dimen/message_size_small"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_for_member"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@+id/tv_status"
+            android:layout_toRightOf="@+id/circleImageView"
+            android:text="Anonymous/Non"
+            android:textSize="@dimen/message_size_small" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tv_doctor_name"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:text=""
+            android:textSize="@dimen/message_size_small" />
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_mode"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/circleImageView"
+            android:text="gender"
+            android:textSize="@dimen/message_size_small"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_gender"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/circleImageView"
+            android:text="Age"
+            android:textSize="@dimen/message_size_small"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_age"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@+id/tv_status"
+            android:layout_toRightOf="@+id/circleImageView"
+            android:text="Sub"
+            android:textSize="@dimen/message_size_small" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_time"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/blue_button"
+            android:padding="4dp"
+            android:text="Status"
+            android:textColor="@color/White"
+            android:textSize="@dimen/message_size_small" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/void_view"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/rl_top_container"
+        android:background="#3A4C5C" />
+
+    <ScrollView
+        android:id="@+id/msg_container"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/void_view"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_ip_border" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/autofitTextView_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/message_hint"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/autofitTextView_reply_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/message_hint"
+                android:padding="8dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

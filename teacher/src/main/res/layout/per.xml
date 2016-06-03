@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="7dp"
+    tools:context="com.example.perveenakhter.firstp.MainActivity"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+    android:background="@drawable/bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+    <!--
+
+            <ImageView
+                android:id="@+id/im1"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_column="0"
+                android:layout_columnSpan="13"
+                android:layout_marginTop="15dp"
+                android:layout_row="1"
+                android:src="@drawable/sin" />
+    -->
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="5dp"
+        android:gravity="right"
+        android:textSize="21sp"
+        android:textStyle="normal"
+        android:textColor="#000000"
+        android:text="SKIP"
+        />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/skip"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1200"
+        >
+
+
+        <TextView
+            android:id="@+id/imageView1"
+            android:layout_below="@+id/imagebut"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textSize="29sp"
+            android:textStyle="bold"
+            android:textColor="#218CB8"
+            android:layout_weight="120"
+            android:text="Almost There..."
+            />
+        <TextView
+            android:id="@+id/imageView33"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:maxLines="2"
+            android:textStyle="italic"
+            android:layout_weight="110"
+            android:textColor="#000000"
+            android:text="Jeevom is personalizing the app for you,it will only a take care few second !"
+            />
+
+        <EditText
+            android:id="@+id/namee"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="Name"
+            android:layout_weight="122"
+            android:drawablePadding="10dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/round"
+            android:drawableLeft="@drawable/n"
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/addpicc"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingLeft="20dp"
+            android:drawablePadding="10dp"
+            android:layout_weight="122"
+            android:layout_below="@+id/editText4"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/round"
+            android:drawableLeft="@drawable/cam"
+
+            android:inputType="textPhonetic|number"
+            android:hint="Add your Picture"
+            ></EditText>
+        <EditText
+            android:id="@+id/Emailaddress"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingLeft="20dp"
+            android:drawablePadding="10dp"
+            android:layout_weight="122"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/round"
+            android:drawableLeft="@drawable/emaill"
+            android:hint="Email Address"
+            ></EditText>
+        <EditText
+            android:id="@+id/mobilee"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingLeft="20dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/phone"
+            android:background="@drawable/round"
+
+            android:layout_marginTop="7dp"
+            android:hint="Mobile"
+            android:inputType="phone"
+            android:layout_weight="122"
+            ></EditText>
+        <EditText
+            android:id="@+id/addresss"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingLeft="20dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/addresss"
+            android:layout_marginTop="7dp"
+            android:hint="Address"
+
+            android:layout_weight="122"
+            android:inputType="text"
+            android:background="@drawable/round"
+
+            ></EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="720"
+            android:layout_weight="110"
+            >
+
+            <TextView
+                android:id="@+id/switchtext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:maxLines="1"
+                android:textSize="16sp"
+                android:layout_weight="350"
+                android:text="What is your Gender ?"/>
+
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textOff=""
+                android:textOn=""
+                android:id="@+id/toggleButton"
+                android:layout_weight="370"
+                android:layout_gravity="right"
+                android:background="@drawable/togglemf"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="720"
+            android:layout_weight="120"
+            >
+
+            <TextView
+                android:id="@+id/switchtexte"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:maxLines="1"
+                android:textSize="16sp"
+                android:layout_weight="350"
+                android:text="Date Of Birth "/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:id="@+id/dob"
+                android:layout_weight="370"
+                android:padding="10sp"
+                android:background="@drawable/round"
+                android:drawableLeft="@drawable/cal"
+                android:layout_gravity="right"
+                />
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Done"
+            android:textStyle="bold"
+            android:id="@+id/submitt"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/bttn"
+            android:layout_weight="150"
+            android:gravity="center"
+            android:paddingBottom="6sp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
+

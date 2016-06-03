@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp" >
+
+    <ImageView
+        android:id="@+id/clinic_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_jeev_clinic" />
+
+    <TextView
+        android:id="@+id/clinic_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seprator"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_toLeftOf="@+id/left_container"
+        android:layout_toRightOf="@+id/clinic_image"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textSize="@dimen/message_size_normal" />
+
+    <TextView
+        android:id="@+id/address_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clinic_name"
+        android:layout_marginLeft="8dp"
+        android:layout_toLeftOf="@+id/left_container"
+        android:layout_toRightOf="@+id/clinic_image"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textSize="@dimen/message_size_small" />
+
+    <TextView
+        android:id="@+id/address_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address_one"
+        android:layout_marginLeft="8dp"
+        android:layout_toLeftOf="@+id/left_container"
+        android:layout_toRightOf="@+id/clinic_image"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textSize="@dimen/message_size_small" />
+
+    <TextView
+        android:id="@+id/address_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address_two"
+        android:layout_marginLeft="8dp"
+        android:layout_toLeftOf="@+id/left_container"
+        android:layout_toRightOf="@+id/clinic_image"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textSize="@dimen/message_size_small" />
+
+    <RelativeLayout
+        android:id="@+id/left_container"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/seprator"
+        android:layout_marginTop="4dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/directin_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_jeev_direction" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/directin_image"
+            android:text="Direction"
+            android:textSize="@dimen/message_size_small" />
+    </RelativeLayout>
+
+</RelativeLayout>

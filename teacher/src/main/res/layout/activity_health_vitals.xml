@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.schoolteacher.healthvitals.HealthVitals">
+
+    <include
+        android:id="@+id/toolbar_healthvitals"
+        layout="@layout/toobar_map" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_healthvitals">
+
+        <LinearLayout
+            android:id="@+id/graph_container"
+            android:layout_below="@+id/toolbar_healthvitals"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6d8176" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp" >
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toobar" />
+
+        <!-- Email Code Layout -->
+
+        <RelativeLayout
+            android:id="@+id/ep_email_code_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:background="@drawable/actionbar_gradient"
+            android:padding="8dp" >
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/ep_thanks"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="8dp"
+                android:text="@string/verify_thanks"
+                android:textColor="@color/black_first"
+                android:textSize="@dimen/message_size_medium" />
+
+            <Button
+                android:id="@+id/btn_register"
+                style="@style/buttonFillParent"
+                android:layout_below="@+id/ep_thanks"
+                android:layout_centerHorizontal="true"
+                android:background="@color/green"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:text="Register"
+                android:textColor="@color/White"
+                android:visibility="gone" >
+            </Button>
+
+            <TextView
+                android:id="@+id/ep_email_verify_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_register"
+                android:layout_marginTop="8dp"
+                android:background="#393d60"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="@string/email_verification"
+                android:textColor="@color/White"
+                android:textSize="@dimen/message_size_normal" />
+
+            <TextView
+                android:id="@+id/ep_email_successful_verify_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ep_email_verify_text"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/message_size_medium"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/email_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ep_email_successful_verify_text" >
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/ep_email_toll_free_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:text="@string/emailVerificationMessage"
+                    android:textColor="@color/black_first"
+                    android:textSize="@dimen/message_size_medium" />
+
+                <TextView
+                    android:id="@+id/ep_email_or_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ep_email_toll_free_text"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/textview_rounded"
+                    android:padding="8dp"
+                    android:text="OR"
+                    android:textSize="@dimen/message_size_medium" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/ep_email_sms_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ep_email_or_text"
+                    android:layout_centerHorizontal="true"
+                    android:padding="8dp"
+                    android:text="@string/emailText"
+                    android:textColor="@color/black_first"
+                    android:textSize="@dimen/message_size_medium" />
+
+                <RelativeLayout
+                    android:id="@+id/ep_email_code_field_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ep_email_sms_text"
+                    android:layout_centerHorizontal="true" >
+
+                    <EditText
+                        android:id="@+id/ep_email_code_field"
+                        style="@style/EditTextFillParent"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@color/White"
+                        android:hint="Code"
+                        android:inputType="numberPassword"
+                        android:maxLength="4"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="8dp" />
+
+                    <Button
+                        android:id="@+id/ep_email_verify_btn"
+                        style="@style/buttonFillParent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/ep_email_code_field"
+                        android:background="@color/green"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="Verify"
+                        android:textColor="@color/White" >
+                    </Button>
+
+                    <ProgressBar
+                        android:id="@+id/ep_email_verify_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/ep_email_verify_btn"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- Phone Code Layout -->
+
+        <RelativeLayout
+            android:id="@+id/ep_phone_code_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ep_email_code_layout"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/actionbar_gradient"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/ep_phone_verify_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#393d60"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="@string/phone_verification"
+                android:textColor="@color/White"
+                android:textSize="@dimen/message_size_normal" />
+
+            <RelativeLayout
+                android:id="@+id/phoneContainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ep_phone_verify_text" >
+
+                <TextView
+                    android:id="@+id/ep_phone_successful_verify_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:textColor="@color/Black"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/text_call"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ep_phone_successful_verify_text"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/ep_phone_toll_free_text_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:text="@string/missedCallText"
+                        android:textColor="@color/black_first"
+                        android:textSize="@dimen/message_size_medium" />
+
+                    <TextView
+                        android:id="@+id/ep_phone_toll_free_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="8dp"
+                        android:text="@string/tollFreeNo"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/message_size_medium"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/text_call_remaining"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_call"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/ep_seconds_remaining"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:text="Seconds Remaining : "
+                        android:textColor="@color/black_first" />
+
+                    <TextView
+                        android:id="@+id/ep_seconds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:clickable="true"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/black_first"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ep_phone_or_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_call_remaining"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/textview_rounded"
+                    android:padding="8dp"
+                    android:text="OR"
+                    android:textSize="@dimen/message_size_medium" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/ep_phone_sms_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ep_phone_or_text"
+                    android:layout_centerHorizontal="true"
+                    android:padding="8dp"
+                    android:text="@string/phoneText"
+                    android:textColor="@color/black_first"
+                    android:textSize="@dimen/message_size_medium" />
+
+                <RelativeLayout
+                    android:id="@+id/ep_phone_code_field_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ep_phone_sms_text"
+                    android:layout_centerHorizontal="true" >
+
+                    <EditText
+                        android:id="@+id/ep_phone_code_field"
+                        style="@style/EditTextFillParent"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@color/White"
+                        android:hint="Code"
+                        android:inputType="numberPassword"
+                        android:maxLength="4"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="8dp"
+                        android:textColorHint="@color/black_first" />
+
+                    <Button
+                        android:id="@+id/ep_phone_verify_btn"
+                        style="@style/buttonFillParent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/ep_phone_code_field"
+                        android:background="@color/green"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="Verify"
+                        android:textColor="@color/White" >
+                    </Button>
+
+                    <ProgressBar
+                        android:id="@+id/ep_phone_verify_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/ep_phone_verify_btn"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/ep_regenerate_code_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ep_phone_code_layout"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="@string/regenerate_code_text"
+            android:textColor="@color/verification_blue"
+            android:textSize="@dimen/message_size_small" />
+
+        <LinearLayout
+            android:id="@+id/email_phone_regenerate_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ep_regenerate_code_text"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/checkbox_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Email"
+                android:textSize="@dimen/message_size_small" />
+
+            <CheckBox
+                android:id="@+id/checkbox_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="phone"
+                android:textSize="@dimen/message_size_small" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ep_phone_email_regenerate_btn"
+            style="@style/buttonFillParent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_phone_regenerate_layout"
+            android:layout_centerHorizontal="true"
+            android:background="@color/green"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="Regenerate"
+            android:textColor="@color/White" >
+        </Button>
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/ep_regenerate_code_successful"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ep_phone_email_regenerate_btn"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:textColor="@color/verification_blue"
+            android:textSize="@dimen/message_size_small"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</ScrollView>

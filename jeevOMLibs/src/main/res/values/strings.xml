@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="rs">\u20A8</string>
+    <string name="image_description">image_description</string>
+    <string name="action_settings">Settings</string>
+    <string name="work_email">Work E-mail ID</string>
+    <string name="please_updtae">Please update</string>
+    <string name="phone">Phone</string>
+    <string name="provide_phone">Please provide your Phone Number to proceed with the request</string>
+    <string name="submit">SUBMIT</string>
+    <string name="verify_top">Verify your account</string>
+    <string name="verification_thanks">Congratulations on taking a vital initiative towards your own and your family’s health!</string>
+    <string name="verify_email_msg">Would you like to verify your email id now?
+We sent you an email on your registered email id with the code to verify your email id. Please enter the code provided in the mail to verify.</string>
+    <string name="PASSWORD_VALID_MSG">Password must be between 5 to 20 characters and must have at least 1 special character or a number or a capital letter.</string>
+    <string name="verify_thanks">Thanks for showing your interest in Jeevom.Kindly verify your email/phone number.</string>
+    <string name="verify_thanks_user_cell_exist">"Please verify your Phone number to continue.</string>
+    <string name="verify_thanks_user_email_exist">"Please verify your Email to continue.</string>
+    <string name="regenerate_code_text">* If you have not received the code yet, regenerate your code.</string>
+    <string name="email_verification">E-mail Verification</string>
+    <string name="phone_verification">Phone Verification</string>
+    <string name="emailVerificationMessage">We sent you a verification message to your e-mail. Please click the link that you have received in your e-mail.</string>
+    <string name="emailText">Enter below the code that is mentioned in your E-mail</string>
+    <string name="missedCallText">Give us a missed call on </string>
+    <string name="tollFreeNo">1800 700 600</string>
+    <string name="tollFreeText"> (tollfree)</string>
+    <string name="phoneText">Enter below the code that is received by SMS</string>
+    <string name="male">Male</string>
+    <string name="femail">Female</string>
+    <string name="other">Other</string>
+    <string name="email">Email</string>
+    <!-- Sign Up Forms -->
+    <string name="selectArea">Select Area</string>
+    <string name="searchWhat">Search What</string>
+    <string name="name">Name</string>
+    <string name="emailPhone">Email/Phone</string>
+    <string name="contact">Contact Number</string>
+    <string name="dob">Date of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="type_healthcare_professional">Type of Healthcare Professional</string>
+    <string name="degree">Degree</string>
+    <string name="career">Started Career in</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Second/Last Name</string>
+    <string name="speciality">Speciality</string>
+    <string name="reg_number">Registration Number</string>
+    <string name="reg_authority">Registration Authority</string>
+    <string name="pwd">Password</string>
+    <string name="confirm_pwd">Confirm Password</string>
+    <string name="type_healthcare_facility">Type of Healthcare Facility</string>
+    <string name="timings">Timings</string>
+    <string name="facility_name">Facility Name</string>
+    <string name="address_1">Address Line 1</string>
+    <string name="address_2">Address Line 2</string>
+    <string name="location">Location</string>
+    <string name="city">City</string>
+    <string name="owner_details">Owner Details</string>
+    <string name="log_in">Log In</string>
+    <string name="forget_ur_pwd"><u>Forgot your password ?</u></string>
+    <string name="sign_up"><u>New to Jeevom? Signup</u></string>
+    <string name="thanks_login">Dear User, Thanks for Login</string>
+    <string name="thanks_signup">Welcome to Jeevom</string>
+    <string name="stay_tuned">The fun is about to begin....... stay tuned!!! </string>
+    <string name="curtain_message_first">We are taking Baby Steps to achieve the Giant Leap. While We are busy fixing
+the nuts &amp; bolts of this comprehensive healthcare platform, you are welcome to
+Jeevom and become our flagship early adopter.</string>
+    <string name="curtain_promise">We promise to enthrall you by the ease, elegance and assortment of
+functionalities to take care of your Health, Wellness and Medical needs.</string>
+    <!-- Sign Up Options & title -->
+    <string name="signup_dialog_title">Sign Up As </string>
+    <string name="signup_free">Signup for free</string>
+    <string name="member">Member </string>
+    <string name="message">Message </string>
+    <string name="subject">Subject</string>
+    <string name="message_hint">Enter your message here...</string>
+    <string name="subject_hint">Enter your subject here...</string>
+    <string name="info_share">Your following information is being shared</string>
+    <string name="healthcare_professional">Healthcare Professional</string>
+    <string name="facility_provider">Healthcare facility Provider</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="send_message">Email Consultation</string>
+    <string name="call_back_request">Call Back request</string>
+    <string name="req_book_appoint">Request for book Appointment</string>
+    <string name="to">To</string>
+    <string name="from">From</string>
+    <string name="reason">Reason</string>
+    <string name="area">Area</string>
+    <string name="age">Age</string>
+    <string name="callback_subject">[Jeevom] Request for Call Back</string>
+    <string name="req_appoint_subject">Request for Appointment</string>
+    <string name="message_subject">[Jeevom] Email Enquiry</string>
+    <string name="phone_email_exists">The email id or phone number you entered already exists. Do you want to set your Password?</string>
+    <string name="phone_email_exists_note">Note: We use this number only to send you the required details.</string>
+    <!-- String resources for terms and conditions -->
+    <string name="attention">ATTENTION</string>
+    <string name="attention_text">This legal notice applies to the entire contents of the Websites under the domain names Jeevom.com, (the ‘Website’) and to any correspondence by e-mail between us and you. Please read these terms carefully before using the Website. Using the Website indicates that you accept these terms regardless of whether or not you choose to register with us. If you do not accept these terms, do not use the Website. This notice is issued by Jeevom Healthcare Pvt. Ltd.</string>
+    <string name="introduction_heading">1. Introduction</string>
+    <string name="introduction_first">1.1 By accessing any part of this Website, you shall be deemed to have accepted these terms in full. If you do not accept these terms in full you must leave this Application.</string>
+    <string name="introduction_second">1.2 We reserve the right to change these terms at any time without prior notice. You should check this Website regularly to review the terms because they are binding on you. Certain provisions of these terms may be superseded by expressly designated legal notices or terms located on particular pages at this Website.</string>
+    <string name="introduction_third">This Website is Copyright © Jeevom Healthcare Pvt. Ltd.</string>
+    <string name="website_access">2. Application Access</string>
+    <string name="website_access_first">2.1 We do not guarantee that access to this Application will be continuously available and will not be liable if for any reason (including but not limited to) the Application being suspended temporarily and without notice in the case of system failure, maintenance or repair or for reasons beyond the Company\'s control.</string>
+    <string name="website_access_second">2.2 We reserve the right to withdraw or restrict access to the Application without notice for any user who is registered with us and/or is deemed to be in breach of these terms.</string>
+    <string name="misuse">3. Misuse</string>
+    <string name="misuse_first">3.1 You will not use the Application for any purpose that is unlawful or prohibited by these terms.</string>
+    <string name="misuse_second">3.2 You must not misuse the Website site by knowingly introducing viruses, trojans or any other material which is malicious or technologically harmful in breach of the Computer Misuse Act 1990.</string>
+    <string name="misuse_third">3.3 You must not attempt to gain unauthorised access to the Website, the server on which the Website is stored or any server, computer or database connected to the Website.</string>
+    <string name="links">4. Links to Third Party Websites</string>
+    <string name="links_first">4.1 The Application  may include links to third party websites that are controlled and maintained by others. Any link to any other website is not an endorsement of such website and the Company accepts no responsibility or liability for any material supplied by or contained on any third party websites linked from or to this website.</string>
+    <string name="linking">5. Linking to our Website</string>
+    <string name="linking_first">5.1 You may link to our home page, provided you do so in a way that is fair and legal and does not seek to damage our reputation or take undue advantage of it or suggest that any form of association or endorsement exists on our part when this is not the case. We reserve the right to withdraw linking permission without notice.</string>
+    <string name="linking_second">This right is subject to the following conditions:</string>
+    <string name="linking_a">(a) you must not establish a link from any website that is not operated by you;</string>
+    <string name="linking_b">(b) you must not replicate the home page of our Website;</string>
+    <string name="linking_c">(c) you do not remove, distort or otherwise alter the size or appearance of the Jeevom logo;</string>
+    <string name="linking_d">(d) you do not create a frame or any other browser or border environment around this Website;	</string>
+    <string name="linking_e">(e) you do not in any way imply that the Company endorses any products or services other than our own;</string>
+    <string name="linking_f">(f) you do not otherwise use any trademarks or material subject to copyright displayed on this Website without our express written permission;</string>
+    <string name="linking_g">(g) your website does not contain content that is distasteful, offensive or controversial, infringes any intellectual property rights or other rights of any other person or otherwise does not comply with all applicable laws and regulations.</string>
+    <string name="property">6. Intellectual Property Rights</string>
+    <string name="property_first">6.1 The Intellectual Property Rights in this Website and the materials on or accessible via it belong to the Company and/or our licensors. The Website and the materials on or accessible via it and the Intellectual Property Rights therein may not be copied, distributed, published, licensed, used or reproduced in any way save to the exception that you are permitted to print and download extracts from the Website for your own use subject to the following conditions:</string>
+    <string name="property_first_a">(a) no documents or related graphics on this Website are modified in any way;</string>
+    <string name="property_first_b">(b) no graphics on this Website are used out of context or separate from any relevant accompanying text; and</string>
+    <string name="property_first_c">(c) any of our copyright and trade mark notices and this permission notice appear in all copies.</string>
+    <string name="property_second">6.2 Subject to clause 6.1, no part of this Website may be reproduced then stored in any website or included in any public or private electronic retrieval system or service without our prior written permission.</string>
+    <string name="property_third">6.3 If your permission to use this Website is terminated in accordance with clause 2.2 you must immediately destroy any downloaded or printed extracts from this Website.
+For these purposes "Intellectual Property Rights" includes the following: any patent, trade mark, trade name, service mark, service name, design, design right, copyright, database right, moral rights, know how, trade secret and other confidential information, rights in the nature of any of these items in any country, rights in the nature of unfair competition rights and rights to sue for passing off or other similar intellectual or commercial right (in each case whether or not registered or register able) and registrations of and applications to register any of them.</string>
+    <string name="privacy">7. Privacy Policy</string>
+    <string name="privacy_first">7.1 We process information about you in accordance with our Privacy Policy. By using our Website you consent to such processing and you warrant that all data provided by you is accurate.</string>
+    <string name="reliance">8. Reliance on Website Material</string>
+    <string name="reliance_first">8.1 Although we have taken due care in compiling this Website, the materials on or accessible via our website are provided without any guarantees, conditions or warranties as to its accuracy. The Company accepts no liability whatsoever for any errors, inaccuracies or omissions.</string>
+    <string name="reliance_second">8.2 The materials on or accessible via our website are not intended to amount to advice on which any reliance should be placed. We therefore disclaim all liability and responsibility arising from any reliance placed on such materials by any user of our site, or by anyone who may be informed of its contents.</string>
+    <string name="alteration">9. Alteration to Website</string>
+    <string name="alteration_first">9.1 We may make changes to our Website or the services advertised at any time and reserve the right to suspend access to this site in such a case.</string>
+    <string name="alteration_second">9.2 Any of the material on our Website may be out of date at any given time and we make no warranty that the defects will be corrected.</string>
+    <string name="liability">10. Liability</string>
+    <string name="liability_first">10.1 To the extent permitted by law, the Company, other members of our group of companies and third parties connected to us will not be liable for any indirect or consequential loss or damage (including without limitation loss of business, opportunity, data, profits, goodwill, anticipated savings) or any other loss or damage of any kind whether caused by tort, breach of contract or otherwise, even if foreseeable, arising out of or in connection with the use of the Website.</string>
+    <string name="liability_second">10.2 The Company makes no warranty that that the Website or the server that makes it available are free of viruses or anything else which may be harmful or destructive.</string>
+    <string name="liability_third">10.3 If your use of material on this Website results in the need for servicing, repair or correction of equipment, software or data, you assume all costs thereof.</string>
+    <string name="liability_fourth">10.4 Nothing in these terms and conditions shall be construed so as to exclude or limit the liability of the Company or members of our group of companies for death or personal injury as a result of the negligence of the Company or members of our group of companies or that of its employees or agents.</string>
+    <string name="indemnity">Indemnity</string>
+    <string name="indemnity_first">11.1 You agree to indemnify and hold the Company and members of our group of companies and its employees and agents harmless from and against all liabilities, legal fees, damages, losses, costs and other expenses in associationName to any claims or actions brought against the Company arising out of any breach by you of these terms and conditions or other liabilities arising out of your use of this Website.</string>
+    <string name="law">12. Applicable Law and Dispute</string>
+    <string name="law_first">This Agreement and all matters arising from it are governed by and construed in accordance with the laws of India. Disputes arising in connection with this Agreement shall be subject to the exclusive jurisdiction of the India courts</string>
+    <string name="claim_profile_message">We sent found profiles similar to that of yours.Do you want to claim these profile ?</string>
+
+    <string name="lookup_msg"><i>Not ready to signup?</i><b> Look Around</b></string>
+    <string name="see_you_msg"><i>It\'s good to see you again</i></string>
+    <string name="forgot_text"><u><i>Forgot Password?</i></u></string>
+    <string name="new_user_text"><i>New user?</i><b> Signup</b></string>
+    <string name="with_fb">Facebook Login</string>
+    <string name="with_google">Google+ Login</string>
+    <string name="create_account_msg">Create your Account!</string>
+    <string name="signup_msg"><i>Securely host your medical records on cloud for free.</i></string>
+    <string name="terms_agree">By tapping Signup, you are agreeing to Terms of Use</string>
+    <string name="user_already"><i>Already a user? </i><b>Login</b></string>
+
+    <string name="forgot_pass_title">Access your account!</string>
+
+    <string name="health_cloud_text">Never miss any new notice and circular. Get notified every time a notice comes.</string>
+    <string name="health_social_text">No need to check every students diary. Assign homework from your app and its done.</string>
+    <string name="health_mart_text">Carry your attendance register in your smartphone. Its that easy.</string>
+
+
+</resources>

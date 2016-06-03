@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="4dp"
+        android:src="@drawable/jeevom_logo" />
+
+    <View
+        android:id="@+id/seprator"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/logo"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/grey_light" />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seprator"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/message_size_medium" />
+
+    <View
+        android:id="@+id/seprator_first"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/message"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/grey_light" />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seprator_first"
+        android:layout_margin="8dp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="Ok"
+        android:textColor="@drawable/alert_ok_click"
+        android:textSize="@dimen/message_size_medium" />
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:paddingBottom="16dp" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:textSize="@dimen/message_size_small"
+            android:text="TO CONTINUE EXPLORING FURTHER"
+            android:textColor="@color/Black"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_existing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:text="if you are an existing member"
+        android:textColor="@color/grey_dark"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/login"
+        style="@style/buttonFillParent"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/text_existing"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_button"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="LOGIN" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/login"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/Gray" />
+
+    <TextView
+        android:id="@+id/new_jeevom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:text="New to Jeevom?"
+        android:textColor="@color/grey_dark"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/signup"
+        style="@style/buttonFillParent"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/new_jeevom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_blue_button"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="SIGNUP FOR FREE"
+        android:textStyle="bold" />
+
+</RelativeLayout>

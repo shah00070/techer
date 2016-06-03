@@ -1,0 +1,126 @@
+[
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/abc_action_bar_up_container.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/abc_action_bar_title_item.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/abc_activity_chooser_view.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/date_picker_dialog.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/layout/date_picker_dialog.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/abc_list_menu_item_layout.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/date_picker_done_button.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/layout/date_picker_done_button.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/abc_list_menu_item_radio.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/abc_popup_menu_item_layout.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/abc_action_mode_bar.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/abc_action_mode_close_item_material.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/date_picker_view_animator.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/layout/date_picker_view_animator.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/abc_screen_simple.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/abc_search_view.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/abc_simple_dropdown_hint.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_simple_dropdown_hint.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/date_picker_header_view.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/layout/date_picker_header_view.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/time_picker_dialog.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/layout/time_picker_dialog.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/date_picker_selected_date.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/layout/date_picker_selected_date.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/abc_expanded_menu_layout.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/abc_action_menu_layout.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/time_header_label.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/layout/time_header_label.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/year_label_text_view.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/src/main/res/layout/year_label_text_view.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/abc_list_menu_item_icon.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/abc_screen_content_include.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/abc_action_menu_item_layout.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/res/merged/release/layout/abc_screen_toolbar.xml",
+        "source": "/home/chandan/Teacher/datetimepickerlibrary/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_screen_toolbar.xml"
+    }
+]

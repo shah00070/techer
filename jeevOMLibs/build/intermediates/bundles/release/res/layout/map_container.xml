@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/ep_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/verification_top" >
+
+        <TextView
+            android:id="@+id/ep_top_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Location"
+            android:textColor="@color/verification_text"
+            android:textSize="@dimen/message_size_normal"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:src="@drawable/map_image_click" />
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/map_fragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/button_save"
+        android:layout_below="@+id/ep_top" />
+
+    <Button
+        android:id="@+id/button_save"
+        style="@style/buttonFillParent"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/round_button"
+        android:text="Save"
+        android:textSize="@dimen/message_size_small" />
+
+    <RelativeLayout
+        android:id="@+id/address_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ep_top"
+        android:background="#99FFFFFF"
+        android:padding="8dp" >
+
+        <LinearLayout
+            android:id="@+id/country_zipcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true" >
+
+            <AutoCompleteTextView
+                android:id="@+id/country_lookup"
+                style="@style/EditTextFillParent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_line_green"
+                android:completionThreshold="1"
+                android:hint="Country"
+                android:inputType="textCapWords"
+                android:padding="8dp"
+                android:text="India"
+                android:textSize="@dimen/message_size_small" />
+
+            <EditText
+                android:id="@+id/zipcode"
+                style="@style/EditTextFillParent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_line_green"
+                android:hint="zipcode"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textSize="@dimen/message_size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/state_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/country_zipcode"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true" >
+
+            <AutoCompleteTextView
+                android:id="@+id/state_lookup"
+                style="@style/EditTextFillParent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_line_green"
+                android:completionThreshold="1"
+                android:hint="State"
+                android:inputType="textCapWords"
+                android:padding="8dp"
+                android:textSize="@dimen/message_size_small" />
+
+            <AutoCompleteTextView
+                android:id="@+id/city_lookup"
+                style="@style/EditTextFillParent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_line_green"
+                android:completionThreshold="1"
+                android:hint="City"
+                android:inputType="textCapWords"
+                android:padding="8dp"
+                android:textSize="@dimen/message_size_small" />
+        </LinearLayout>
+
+        <AutoCompleteTextView
+            android:id="@+id/area_lookup"
+            style="@style/EditTextFillParent"
+            android:layout_below="@+id/state_city"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_line_green"
+            android:completionThreshold="1"
+            android:hint="Area"
+            android:inputType="textCapWords"
+            android:padding="8dp"
+            android:textSize="@dimen/message_size_small" />
+
+        <LinearLayout
+            android:id="@+id/address_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/area_lookup"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edit_text_address"
+                style="@style/EditTextFillParent"
+                android:layout_width="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="4dp"
+                android:layout_weight=".75"
+                android:background="@drawable/edit_text_line_green"
+                android:ems="10"
+                android:hint="address"
+                android:padding="8dp"
+                android:textSize="@dimen/message_size_small" />
+
+            <Button
+                android:id="@+id/button_ok"
+                style="@style/buttonFillParent"
+                android:layout_width="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".25"
+                android:background="@drawable/round_button"
+                android:text="Ok"
+                android:textSize="@dimen/message_size_small" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

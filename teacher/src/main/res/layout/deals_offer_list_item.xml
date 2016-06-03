@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingRight="5dp">
+
+    <LinearLayout
+        android:id="@+id/coupon_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/coupon_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coupon code: "
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/coupon_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WC0003"
+            android:textColor="#6db02f"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/offer_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/coupon_layout"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/special_offer" />
+
+    <TextView
+        android:id="@+id/offer_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/coupon_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/offer_image"
+        android:text="Recharge wallet with Rs. 1999/- and get Rs. 400/- extra"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/details_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/offer_title"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/details_btn"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Details"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/grab_offer_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/offer_title"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/details_btn"
+        android:background="@drawable/details_btn"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Grab Offer"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+</RelativeLayout>

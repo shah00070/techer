@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_layout"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/members"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/btn_user_save_skip"
+            style="@style/buttonFillParent"
+            android:layout_width="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="SAVE &amp; SKIP"
+            android:textColor="@color/White"
+            android:textSize="@dimen/message_size_small" />
+
+        <Button
+            android:id="@+id/btn_user_save"
+            style="@style/buttonFillParent"
+            android:layout_width="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="SAVE &amp; CONTINUE"
+            android:textColor="@color/White"
+            android:textSize="@dimen/message_size_small" />
+    </LinearLayout>
+
+</RelativeLayout>

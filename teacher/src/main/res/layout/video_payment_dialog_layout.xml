@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Header" />
+
+    <View
+        android:id="@+id/void_view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tv_header"
+        android:background="#E6E6E6" />
+
+    <TextView
+        android:id="@+id/tv_header2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/void_view"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"
+        android:text="Header" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_header2"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"
+        android:text="Type" />
+
+    <TextView
+        android:id="@+id/tv_INR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_type"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"
+        android:text="INR" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_INR"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"
+        android:text="Email" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_email"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"
+        android:text="Phone" />
+
+</RelativeLayout>

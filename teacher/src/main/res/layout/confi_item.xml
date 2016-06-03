@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="@drawable/bk"
+    tools:context="com.example.perveenakhter.sub.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1000"
+        android:orientation="vertical"
+        >
+
+        <include
+            android:id="@+id/tool"
+            layout="@layout/toobar_map"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30" />
+        <EditText
+            android:id="@+id/Titlee"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/custom_edit"
+            android:hint="Title"
+            android:paddingLeft="10dp"
+            android:textColor="#585858"
+            android:textSize="20sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25" />
+        <EditText
+            android:id="@+id/cuntommmsg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:background="@drawable/round"
+            android:gravity="top"
+            android:layout_weight="400"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:paddingTop="10sp"
+
+            android:hint="Enter your Notes here...."
+            android:inputType="text|textMultiLine|textCapSentences"
+            android:maxLength="221"
+            ></EditText>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="300" />
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/upload_notes"
+        style="@style/buttonFillParent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/round_button"
+        android:text="Upload" />
+</RelativeLayout>

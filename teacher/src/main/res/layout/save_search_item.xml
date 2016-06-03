@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jeev_row_drop_shadow"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/name_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="8dp"
+        android:layout_toLeftOf="@+id/date_search"
+        android:ellipsize="end"
+        android:lines="1"
+        android:padding="4dp"
+        android:textSize="@dimen/message_size_medium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/date_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:padding="4dp"
+        android:textSize="@dimen/message_size_medium"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_search"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/modify"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
+            android:text="modify"
+            android:textColor="@color/White" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
+            android:text="search"
+            android:textColor="@color/White" />
+    </LinearLayout>
+
+</RelativeLayout>

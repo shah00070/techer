@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/graph_contain"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="300dp"-->
+    <!--android:layout_below="@+id/toolbar_healthvitals_individual"-->
+    <!--android:orientation="vertical">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+            <include
+                android:id="@+id/toolbar_healthvitals_individual"
+                layout="@layout/toobar_map" />
+   </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        <HorizontalScrollView
+            android:id="@+id/graph"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/toolbar_healthvitals_individual"
+            android:layout_height="300dp">
+
+            <com.db.chart.view.LineChartView xmlns:chart="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/linechart"
+                android:paddingTop="10dp"
+                android:layout_width="500dp"
+                android:layout_height="300dp"
+                android:layout_below="@+id/toolbar_healthvitals_individual"
+                android:scrollbars="horizontal"
+                android:scrollbarStyle="insideInset"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+android:paddingLeft="20dp"
+                android:paddingRight="15dp"
+                />
+
+        </HorizontalScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/graph"
+            android:layout_weight="100">
+
+            <LinearLayout
+                android:id="@+id/details_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

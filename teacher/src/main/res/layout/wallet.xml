@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White" >
+
+    <include
+        android:id="@+id/wallet_toolbar"
+        layout="@layout/toobar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/wallet_toolbar" >
+
+        <RelativeLayout
+            android:id="@+id/main_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/wallet_amount_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:id="@+id/wallet_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/walleticon" />
+
+                <TextView
+                    android:id="@+id/amount_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/wallet_icon"
+                    android:text="Your Wallet Balance"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/message_size_normal" />
+
+                <TextView
+                    android:id="@+id/amount_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/amount_text"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/message_size_normal" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/packages"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wallet_amount_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:background="@drawable/jeev_row_drop_shadow"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="LATEST TOP-UP PLANS"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/message_size_normal" />
+
+            <HorizontalScrollView
+                android:id="@+id/packages_scroll_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/packages"
+                android:layout_marginTop="8dp"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/package_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/recent_transactions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/packages_scroll_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text="View Recent Transaction"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/message_size_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/terms_and_condition_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recent_transactions"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:text="TERMS &amp; CONDITIONS"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/message_size_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/terms_and_condition_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/terms_and_condition_text"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:text="At Jeevom, we provide 100% assurance. Your wallet is safe and secure. It is valid for lifetime. You can use it only for various services on Jeevom."
+                android:textColor="@color/Black"
+                android:textSize="@dimen/message_size_small" />
+
+            <TextView
+                android:id="@+id/terms_and_condition_text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/terms_and_condition_text_1"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:text="Note: Jeevom wallet is a part of marketing offers &amp; the money in your Jeevom wallet cannot be transferred back to your bank."
+                android:textColor="@color/Black"
+                android:textSize="@dimen/message_size_small" />
+
+            <TextView
+                android:id="@+id/terms_and_condition_text_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/terms_and_condition_text_2"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:text="Happiness is guaranteed at Jeevom. If we fall short of your expectations, please give us a feedback @ Toll Free 1800 3000 5032."
+                android:textColor="@color/Black"
+                android:textSize="@dimen/message_size_small"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

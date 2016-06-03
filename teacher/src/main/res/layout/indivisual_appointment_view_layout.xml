@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#E0E3F9"
+        android:paddingBottom="8dp" >
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_button"
+            android:gravity="center_horizontal"
+            android:padding="4dp"
+            android:text="Appointment"
+            android:textColor="@color/White"
+            android:textSize="@dimen/message_size_medium"
+            android:textStyle="bold" />
+
+        <info.jeevom.appointment.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_header"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/main_logo" />
+
+        <TextView
+            android:id="@+id/tv_doctor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_header"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/tv_date"
+            android:layout_toRightOf="@+id/circleImageView"
+            android:text="Doctor Name"
+            android:textSize="@dimen/message_size_small" />
+
+        <TextView
+            android:id="@+id/tv_app_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_doctor_name"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@+id/tv_time"
+            android:layout_toRightOf="@+id/circleImageView"
+            android:text="Video"
+            android:textSize="@dimen/message_size_small" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_header"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="08-12-2014"
+            android:textSize="@dimen/message_size_small" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_date"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:text="11.50AM"
+            android:textSize="@dimen/message_size_small" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_app_type"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/circleImageView"
+            android:text="Name"
+            android:textSize="@dimen/message_size_small" />
+
+        <TextView
+            android:id="@+id/tv_for_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/circleImageView"
+            android:text="Name"
+            android:textSize="@dimen/message_size_small"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_clinic_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_for_name"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/circleImageView"
+            android:text="Clinic Name"
+            android:textSize="@dimen/message_size_small"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_clinic_name"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/circleImageView"
+            android:text="Status"
+            android:textSize="@dimen/message_size_small" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/void_view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/rl_top_container"
+        android:background="#3A4C5C" />
+
+    <ScrollView
+        android:id="@+id/msg_container"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_below="@+id/void_view"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_background" >
+
+        <TextView
+            android:id="@+id/autofitTextView_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/message_hint" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_pay_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/msg_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_button"
+        android:minLines="2"
+        android:padding="4dp"
+        android:text="Pay Now"
+        android:textColor="@color/White"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_pay_now"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_button"
+        android:gravity="center"
+        android:padding="4dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/round_button"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Timer"
+        android:visibility="gone" />
+
+</RelativeLayout>

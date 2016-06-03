@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White" >
+
+    <TextView
+        android:id="@+id/signup_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="64dp"
+        android:text="Signup"
+        android:textColor="@color/button_text_color_green"
+        android:textSize="@dimen/message_size_medium" />
+
+    <TextView
+        android:id="@+id/warning_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_text"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/email_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/warning_email"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp" >
+
+        <EditText
+            android:id="@+id/work_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_line"
+            android:drawableLeft="@drawable/ic_email_icon"
+            android:drawablePadding="8dp"
+            android:hint="@string/work_email"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"
+            android:textColor="@color/black_first"
+            android:textSize="@dimen/message_size_medium" >
+        </EditText>
+
+        <ProgressBar
+            android:id="@+id/email_progress"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="8dp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/first_or"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_layout"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/or" />
+
+    <TextView
+        android:id="@+id/warning_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_or"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/phone_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/warning_phone"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp" >
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_line"
+            android:drawableLeft="@drawable/ic_cell"
+            android:drawablePadding="8dp"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:padding="8dp"
+            android:textColor="@color/black_first"
+            android:textSize="@dimen/message_size_medium" />
+
+        <ProgressBar
+            android:id="@+id/phone_progress"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="8dp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/buttonFillParent"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/phone_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/round_button"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:text="@string/submit"
+        android:textColor="@color/White"
+        android:textSize="@dimen/message_size_medium" />
+
+    <ProgressBar
+        android:id="@+id/wait"
+        style="@android:style/Widget.ProgressBar.Small.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone_layout"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/btn_submit"
+        android:padding="8dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/second_or"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_submit"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/or" />
+
+    <LinearLayout
+        android:id="@+id/social_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/second_or"
+        android:layout_margin="8dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/facebook_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="16dp"
+            android:background="#3B5998"
+            android:drawableLeft="@drawable/fbk"
+            android:drawablePadding="8dp"
+            android:text="Signup through Facebook"
+            android:textColor="@color/White"
+            android:textSize="@dimen/message_size_medium" />
+
+        <Button
+            android:id="@+id/google_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="8dp"
+            android:background="#DD4B39"
+            android:drawableLeft="@drawable/g"
+            android:drawablePadding="8dp"
+            android:text="Signup through Google+"
+            android:textColor="@color/White"
+            android:textSize="@dimen/message_size_medium" />
+
+        <Button
+            android:id="@+id/linkedin_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Signup through LinkedIn"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

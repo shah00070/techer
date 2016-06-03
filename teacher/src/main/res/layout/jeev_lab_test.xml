@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/toolbar_lab"
+        layout="@layout/toobar_map" />
+
+    <RelativeLayout
+        android:id="@+id/image_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_lab"
+        android:layout_marginBottom="8dp"
+        android:paddingBottom="4dp" >
+
+        <com.schoolteacher.main.CircleImageView
+            android:id="@+id/prof_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/jeevom_back" />
+
+        <TextView
+            android:id="@+id/prof_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/prof_image"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/message_size_normal"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_submit"
+        android:layout_below="@+id/image_name"
+        android:background="@color/white"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lab_test_form_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="4dp"
+                android:text="Lab Test Form"
+                android:textSize="@dimen/message_size_medium" />
+
+            <LinearLayout
+                android:id="@+id/medicine_order_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lab_test_form_text"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/jeev_row_drop_shadow"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:id="@+id/titles_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="4dp" >
+
+                    <TextView
+                        android:id="@+id/sno"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:text="S.No."
+                        android:textSize="@dimen/message_size_medium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/itemname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:text="Test Name"
+                        android:textSize="@dimen/message_size_medium"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/container_order"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/add_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@drawable/round_button"
+                    android:text="+ Add More"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/message_size_small" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/order_time_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/medicine_order_layout"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="4dp"
+                android:text="Delivery Time Preference"
+                android:textSize="@dimen/message_size_medium" />
+
+            <LinearLayout
+                android:id="@+id/order_time_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/order_time_text"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/jeev_row_drop_shadow"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@+id/time_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/radio_button_immediate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Immediate (Within next 3 hours)"
+                        android:textColor="@color/black_first"
+                        android:textSize="@dimen/message_size_small" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button_morning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Morning (9 AM - 12 PM)"
+                        android:textColor="@color/black_first"
+                        android:textSize="@dimen/message_size_small" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button_afternoon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Afternoon (12 PM - 4 PM)"
+                        android:textColor="@color/black_first"
+                        android:textSize="@dimen/message_size_small" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button_evening"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Evening (4 PM - 9 PM)"
+                        android:textColor="@color/black_first"
+                        android:textSize="@dimen/message_size_small" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/home_address_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/order_time_layout"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Would you like to take the Lab Test at Home?"
+                android:textSize="@dimen/message_size_medium" />
+
+            <LinearLayout
+                android:id="@+id/home_address_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_address_text"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/jeev_row_drop_shadow"
+                android:visibility="gone" >
+
+                <EditText
+                    android:id="@+id/home_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="address..."
+                    android:maxLength="500"
+                    android:minHeight="100dp"
+                    android:padding="8dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/message_size_medium"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_attachment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_address_container"
+                android:layout_margin="4dp"
+                android:background="@drawable/jeev_row_drop_shadow"
+                android:paddingBottom="8dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/attach_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="8dp"
+                    android:src="@drawable/attach_document_icon" />
+
+                <TextView
+                    android:id="@+id/time_slot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/attach_icon"
+                    android:padding="8dp"
+                    android:text="Attach Document"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="@dimen/message_size_normal" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/documents_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_attachment"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/buttonFillParent"
+        android:background="@drawable/round_button"
+        android:text="Proceed"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jeev_row_drop_shadow"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingTop="4dp" >
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="8dp"
+        android:src="@drawable/file_icon" />
+
+    <TextView
+        android:id="@+id/file_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/file_date"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/green"
+        android:textSize="@dimen/first_line" />
+
+    <TextView
+        android:id="@+id/file_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/header_color_blue"
+        android:textSize="@dimen/second_line" />
+
+    <TextView
+        android:id="@+id/file_tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/file_name"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/download"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/genre"
+        android:textSize="@dimen/second_line" />
+
+    <TextView
+        android:id="@+id/file_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/file_tags"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/download"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/genre"
+        android:textSize="@dimen/third_line" />
+
+    <TextView
+        android:id="@+id/file_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/file_description"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/download"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/genre"
+        android:textSize="@dimen/fourth_line" />
+
+    <ImageView
+        android:id="@+id/download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/ic_action_download" />
+
+</RelativeLayout>

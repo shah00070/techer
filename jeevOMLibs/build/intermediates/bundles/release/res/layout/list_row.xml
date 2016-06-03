@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:focusableInTouchMode="false" >
+
+    <!-- Thumbnail Image -->
+
+    <RelativeLayout
+        android:id="@+id/image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp" >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/image_bg"
+            android:scaleType="fitCenter"
+            android:src="@drawable/jeevom_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/image_layout" >
+
+        <TextView
+            android:id="@+id/doctor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/menu"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/green"
+            android:textSize="@dimen/first_line"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/doctor_degrees"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/doctor_name"
+            android:layout_toLeftOf="@+id/menu"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/genre"
+            android:textSize="@dimen/second_line" />
+
+        <TextView
+            android:id="@+id/doctor_specialization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/doctor_degrees"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@+id/certified"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="Not Available"
+            android:textColor="@color/genre"
+            android:textSize="@dimen/third_line" />
+
+        <TextView
+            android:id="@+id/doctor_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/doctor_specialization"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@+id/certified"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingBottom="8dp"
+            android:text="Not Available"
+            android:textColor="@color/genre"
+            android:textSize="@dimen/third_line" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_layout"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/view_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="View Full Profile"
+            android:textColor="@color/green_dark"
+            android:textSize="@dimen/message_size_medium"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/claim_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:text="Claim Profile"
+            android:textColor="@color/green"
+            android:textSize="@dimen/message_size_medium" />
+    </LinearLayout>
+
+</RelativeLayout>

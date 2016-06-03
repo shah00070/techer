@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/health_mart_bg"
+    android:paddingBottom="10dp"
+    android:paddingTop="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1080">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="170"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/health_mart_logo" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60"
+            android:gravity="center"
+            android:text="Health Mart"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="140"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="3"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:text="@string/health_mart_msg"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="690"
+            android:fadeScrollbars="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="720">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30" />
+
+                    <LinearLayout
+                        android:id="@+id/book_appoint_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="315"
+                        android:background="#99000000"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/book_appoint_selector" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal|bottom"
+                            android:paddingTop="5dp"
+                            android:text="Book Appointment"
+                            android:textColor="#fff"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30" />
+
+                    <LinearLayout
+                        android:id="@+id/online_consult_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="315"
+                        android:background="#99000000"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/online_consultant_selector" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal|bottom"
+                            android:paddingTop="5dp"
+                            android:text="Online Consultation"
+                            android:textColor="#fff"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="720">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30" />
+
+                    <LinearLayout
+                        android:id="@+id/lab_test_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="315"
+                        android:background="#99000000"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/book_lab_test_selector" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal|bottom"
+                            android:paddingTop="5dp"
+                            android:text="Book Lab Test"
+                            android:textColor="#fff"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30" />
+
+                    <LinearLayout
+                        android:id="@+id/order_medicine_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="315"
+                        android:background="#99000000"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/order_medicine_selector" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal|bottom"
+                            android:paddingTop="5dp"
+                            android:text="Order Medicine"
+                            android:textColor="#fff"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="720">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30" />
+
+                    <LinearLayout
+                        android:id="@+id/yoga_fitness_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="315"
+                        android:background="#99000000"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/yoga_fitness_selector" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal|bottom"
+                            android:paddingTop="5dp"
+                            android:text="Yoga &amp; Fitness"
+                            android:textColor="#fff"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30" />
+
+                    <LinearLayout
+                        android:id="@+id/beauty_wellness_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="315"
+                        android:background="#99000000"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/beauty_wellness_selector" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal|bottom"
+                            android:paddingTop="5dp"
+                            android:text="Beauty &amp; Wellness"
+                            android:textColor="#fff"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="720">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30" />
+
+                    <LinearLayout
+                        android:id="@+id/care_home_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="315"
+                        android:background="#99000000"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/care_at_home_selector" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal|bottom"
+                            android:paddingTop="5dp"
+                            android:text="Care at Home"
+                            android:textColor="#fff"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30" />
+
+                    <LinearLayout
+                        android:id="@+id/health_insurance_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="315"
+                        android:background="#99000000"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/health_insurance_selector" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal|bottom"
+                            android:paddingTop="5dp"
+                            android:text="Health Insurance"
+                            android:textColor="#fff"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

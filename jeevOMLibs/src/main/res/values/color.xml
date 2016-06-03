@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <drawable name="red">#C11B17</drawable>
+ <drawable name="darkgrey">#606060</drawable>
+ <color name="tarns">#00FFFFFF</color>
+ <!--   <color name="colorPrimary">#125688</color>
+    <color name="colorPrimaryDark">#125688</color>-->
+ <color name="transs">#FF000000</color>.
+   <color name="title">#000000</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="bblackk">#000000</color>
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="view_divider_color">#BABABA</color>
+    <color name="view_divider_color_2">#DADADA</color>
+    <color name="grey_light">#bcbcba</color>
+    <color name="sub_heading">#8a9daa</color>
+    <color name="profile_color">#5e7483</color>
+    <color name="warning">#fb3d3f</color>
+    <color name="doctor_list_item_press_background">#cfcfcf</color>
+    <color name="list_background_pressed">#6dae30</color>
+    <color name="list_background">#303030</color>
+    <color name="list_divider">#272727</color>
+    <color name="White">#FFFFFF</color>
+    <color name="blue_edit">#393d60</color>
+    <color name="curtain_page_color">#3a4c5c</color>
+    <color name="Black">#000000</color>
+    <color name="verification_top">#d0d0ce</color>
+    <color name="verification_text">#989491</color>
+    <color name="Gray">#c9c9c9</color>
+    <color name="text_color">#495861</color>
+    <color name="Blue">#2980b9</color>
+    <color name="genre">#666666</color>
+    <color name="verification_green">#9AB49B</color>
+    <color name="verification_dark_green">#48b110</color>
+    <color name="verification_blue">#65aacb</color>
+    <color name="verification_red">#ff3939</color>
+    <color name="doctor_list_item_background">#e2e2e2</color>
+    <color name="green">#6db02f</color>
+    <color name="green_dark">#578d25</color>
+    <color name="grey_dark">#4a4a4a</color>
+    <color name="sky_blue">#0091ea</color>
+    <color name="black_first">#514f50</color>
+    <color name="blue_button">#3c4160</color>
+    <color name="edit_text_background">#FFFFF5</color>
+    <color name="button_text_color_green">#5a7c63</color>
+
+    <!-- Material Color -->
+    <color name="header_color_blue">#4281A5</color>
+    <color name="colorOrange">#e89f0c</color>
+    <color name="colorOrangeDark">#D6940C</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#6db02f</color>
+
+    <color name="colorPrimary">#555b73</color>
+    <color name="colorPrimaryDark">#687bc8</color>
+
+
+    <!-- Slots Colors -->
+    <color name="selected_slot">#F3B700</color>
+    <color name="available_slot">#6DAE32</color>
+    <color name="not_available_slot">#999999</color>
+
+    <!-- color code for myAppointment -->
+    <color name="void_view">#DEDEDE</color>
+
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#FFAAAAAA</color>
+
+    <color name="popup_bg">#D9000000</color>
+
+</resources>

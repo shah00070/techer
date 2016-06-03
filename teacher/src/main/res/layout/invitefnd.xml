@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="@drawable/bk"
+    tools:context="com.example.perveenakhter.sub.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1000"
+        android:orientation="vertical"
+        >
+        <include
+            android:id="@+id/toolbar_view_profile"
+            layout="@layout/toobar_map"
+            />
+        <!--
+            <EditText
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="164"
+                android:background="@drawable/titlebg"
+                android:drawablePadding="1dp"
+                android:paddingLeft="12dp"
+                android:gravity="left|center"
+                android:textSize="20dp"
+                android:clickable="false"
+                android:editable="false"
+                android:text="Invite Friends"
+                android:textColor="@android:color/white"
+                android:drawableLeft="@drawable/newimg"
+                />-->
+        <EditText
+            android:id="@+id/logo"
+            android:layout_marginTop="25dp"
+            android:layout_width="210dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:editable="false"
+            android:background="@drawable/logo"
+
+            />
+
+
+
+
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:text="Invite your friend by:"
+            android:layout_weight="240"
+            />
+
+
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:drawableLeft="@drawable/finalmail"
+            android:paddingLeft="15dp"
+            android:drawablePadding="12dp"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:hint="Enter Email id for invite...."
+            android:background="@drawable/roundd"
+            />
+
+
+
+
+
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:text="OR"
+            android:textColor="@android:color/black"
+            android:layout_weight="210"
+            />
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:maxLines="1"
+            android:drawableLeft="@drawable/finalphone"
+            android:paddingLeft="15dp"
+            android:drawablePadding="12dp"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:maxLength="10"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:hint="Enter Mobile no. for invite...."
+            android:background="@drawable/roundd"
+            />
+
+        <Button
+            android:id="@+id/invite"
+            android:layout_marginTop="32dp"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Invite"
+
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/invitebttn"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="0dp"
+            android:layout_weight="570"
+            />
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

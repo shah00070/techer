@@ -1,0 +1,48 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools">
+    <FrameLayout
+        android:id="@+id/fabb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/menu_labels_rightt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            fab:menu_labels_ellipsize="end"
+            fab:menu_colorPressed="#687bc8"
+            fab:menu_colorNormal="#687bc8"
+            fab:menu_labels_singleLine="true"
+            fab:menu_backgroundColor="#cc000000"
+            fab:menu_labels_position="left">
+            <!--  <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/attach_docc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/sechdule_ptm"
+                        fab:fab_colorNormal="#6dae30"
+                        fab:fab_colorPressed="#6dae30"
+                        fab:fab_size="normal"
+                        fab:fab_label="Confidential note" />-->
+
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/inv_frnn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorPressed="#687bc8"
+                android:src="@drawable/apply_leave"
+                fab:fab_colorNormal="#687bc8"
+                fab:fab_size="normal"
+                fab:fab_label="Add Note" />
+
+
+        </com.github.clans.fab.FloatingActionMenu>
+    </FrameLayout>
+</merge>

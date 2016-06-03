@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/introduction_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/verification_thanks"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/message_size_normal" />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/provide_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/introduction_first"
+        android:layout_margin="8dp"
+        android:gravity="left"
+        android:text="Would you like to verify your phone now?"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/message_size_medium" />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/provide_phone"
+        android:layout_margin="8dp"
+        android:gravity="left"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/message_size_medium" />
+
+    <TextView
+        android:id="@+id/warning_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/note"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="kfjdslkfjsdf"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/phone_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/warning_phone"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" >
+
+        <EditText
+            android:id="@+id/code_field"
+            style="@style/EditTextFillParent"
+            android:layout_width="fill_parent"
+            android:layout_centerVertical="true"
+            android:background="@color/White"
+            android:hint="Code"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp" />
+
+        <ProgressBar
+            android:id="@+id/phone_progress"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="8dp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone_layout"
+        android:layout_margin="8dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_verify_proceed"
+            style="@style/buttonFillParent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
+            android:lines="2"
+            android:text="Verify"
+            android:textColor="@color/White" />
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_skip_proceed"
+            style="@style/buttonFillParent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
+            android:lines="2"
+            android:text="Skip"
+            android:textColor="@color/White" />
+    </LinearLayout>
+
+</RelativeLayout>

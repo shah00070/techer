@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/gender_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:id="@+id/gender_tag"
+               
+                android:drawableLeft="@drawable/gender"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="Gender"
+               
+                android:textSize="@dimen/message_size_normal"
+                 android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                 android:textColor="@color/Blue"
+                 />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/Gray" />
+
+            <TextView
+                android:id="@+id/gender_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/message_size_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/blood_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gender_layout"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:id="@+id/blood_tag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/bloodgroup"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="Blood Group:"
+                android:textColor="@color/Blue"
+                android:textSize="@dimen/message_size_normal"
+                 />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/Gray" />
+
+            <TextView
+                android:id="@+id/blood_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/message_size_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dob_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/blood_layout"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:id="@+id/dob_tag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/dob"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="Date of Birth:"
+                android:textColor="@color/Blue"
+                android:textSize="@dimen/message_size_normal"
+                 />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/Gray" />
+
+            <TextView
+                android:id="@+id/dob_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/message_size_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/address_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dob_layout"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/address_tag"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:drawableLeft="@drawable/address"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="Address"
+                android:textColor="@color/Blue"
+                android:textSize="@dimen/message_size_normal"
+                 />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/Gray" />
+
+            <TextView
+                android:id="@+id/address_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/message_size_medium" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" >
+
+        <LinearLayout
+            android:id="@+id/to_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".30"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="@string/to"
+                android:textColor="@color/blue_button"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/message_to_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".70"
+                android:ellipsize="end"
+                android:ems="10"
+                android:gravity="left"
+                android:lines="1"
+                android:padding="4dp"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/message_size_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/consult_for_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/to_layout"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".30"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="Consult For"
+                android:textColor="@color/blue_button"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/consult_for_value_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight=".70"
+                android:padding="4dp"
+                android:textColor="@color/text_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/consult_for_layout"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".30"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="Name"
+                android:textColor="@color/blue_button"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/name_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".70"
+                android:ellipsize="end"
+                android:ems="10"
+                android:gravity="left"
+                android:lines="1"
+                android:padding="4dp"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/message_size_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gender_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_layout"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".30"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="Gender"
+                android:textColor="@color/blue_button"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/gender_value_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight=".70"
+                android:padding="4dp"
+                android:textColor="@color/text_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/age_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gender_layout"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".30"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="Age"
+                android:textColor="@color/blue_button"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/age_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".70"
+                android:ellipsize="end"
+                android:ems="10"
+                android:gravity="left"
+                android:lines="1"
+                android:padding="4dp"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/message_size_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/age_layout"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".30"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="Area"
+                android:textColor="@color/blue_button"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/area_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".70"
+                android:ellipsize="end"
+                android:ems="10"
+                android:gravity="left"
+                android:lines="1"
+                android:padding="4dp"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/message_size_medium" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/anonymous_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/area_layout"
+            android:background="@color/blue_button"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="Consult as Anonymous"
+            android:textColor="@color/White"
+            android:textSize="@dimen/message_size_medium"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/name_hide_checkbox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/anonymous_text"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="Hide My Name"
+            android:textSize="@dimen/message_size_medium" />
+
+        <CheckBox
+            android:id="@+id/address_hide_checkbox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_hide_checkbox"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center_horizontal"
+            android:text=" Hide My Address"
+            android:textSize="@dimen/message_size_medium" />
+
+        <TextView
+            android:id="@+id/subject_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address_hide_checkbox"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="left"
+            android:text="@string/subject"
+            android:textColor="@color/blue_button"
+            android:textSize="@dimen/message_size_medium" />
+
+        <EditText
+            android:id="@+id/subject_value"
+            style="@style/EditTextFillParent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subject_text"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/edit_text_background"
+            android:gravity="start"
+            android:hint="@string/subject_hint"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/message_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subject_value"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="left"
+            android:text="@string/message"
+            android:textColor="@color/blue_button"
+            android:textSize="@dimen/message_size_medium" />
+
+        <EditText
+            android:id="@+id/message_message_value"
+            style="@style/EditTextFillParent"
+            android:layout_below="@+id/message_text"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/edit_text_background"
+            android:gravity="start"
+            android:hint="@string/message_hint"
+            android:maxLength="1000"
+            android:minHeight="100dp" />
+
+        <Button
+            android:id="@+id/btn_message_send_message"
+            style="@style/buttonFillParent"
+            android:layout_below="@+id/message_message_value"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/round_button"
+            android:text="PAY &amp; SUBMIT" />
+    </RelativeLayout>
+
+</ScrollView>

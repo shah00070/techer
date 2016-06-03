@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DotIndicator">
+        <attr name="DotStyle" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="DotPageIndicator">
+        <attr name="dot_centered" format="boolean" />
+        <attr name="dot_fillColor" format="color" />
+        <attr name="dot_pageColor" format="color" />
+        <attr name="android:orientation" />
+        <attr name="dot_radius" format="dimension" />
+        <attr name="dot_snap" format="boolean" />
+        <attr name="dot_strokeColor" format="color" />
+        <attr name="dot_strokeWidth" format="dimension" />
+        <attr name="android:background" />
+    </declare-styleable>
+
+
+</resources>

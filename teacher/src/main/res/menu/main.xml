@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/noti"
+        android:icon="@drawable/notify_icon"
+        android:title="Notification"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/inbox"
+        android:icon="@drawable/msg"
+        android:title="Inbox"
+        app:showAsAction="always" />
+
+  <item
+         android:id="@+id/login"
+         android:icon="@drawable/profile_pic"
+         android:showAsAction="collapseActionView"
+         android:title="Update Profile" />
+     <item
+         android:id="@+id/change_password"
+         android:icon="@drawable/change_password"
+         android:showAsAction="collapseActionView"
+         android:title="Change Password" />
+    <!--<item
+        android:id="@+id/my_profile"
+        android:icon="@drawable/profile_pic"
+        android:showAsAction="collapseActionView"
+        android:title="refresh" />
+    <item
+        android:id="@+id/wallet"
+        android:icon="@drawable/profile_pic"
+        android:showAsAction="collapseActionView"
+        android:title="Wallet" />-->
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:showAsAction="collapseActionView"
+        android:title="Logout" />
+
+</menu>

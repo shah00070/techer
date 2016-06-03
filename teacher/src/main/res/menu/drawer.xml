@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Health Assistant">
+        <menu>
+            <item
+                android:id="@+id/jeevom_home"
+                android:icon="@drawable/home_icon"
+                android:title="Home" />
+
+            <item
+                android:id="@+id/deals_offers"
+                android:icon="@drawable/deals_icon"
+                android:title="Deals &amp; Offer" />
+
+            <item
+                android:id="@+id/my_requests"
+                android:icon="@drawable/my_requests"
+                android:title="My Requests" />
+            <item
+                android:id="@+id/saved_search"
+                android:icon="@drawable/save_searches"
+                android:title="My Searches" />
+
+            <item
+                android:id="@+id/user_profile"
+                android:icon="@drawable/user_profile"
+                android:title="My Profile" />
+        </menu>
+    </item>
+
+    <item android:title="Health Cloud">
+        <menu>
+
+            <item
+                android:id="@+id/health_track"
+                android:icon="@drawable/health_track_icon"
+                android:title="Health Analyzer" />
+            <item
+                android:id="@+id/health_record"
+                android:icon="@drawable/health_records"
+                android:title="Health Locker" />
+        </menu>
+    </item>
+    <item android:title="Health Mart">
+        <menu>
+            <item
+                android:id="@+id/book_appointment"
+                android:icon="@drawable/book_appointment"
+                android:title="Book Appointments" />
+            <item
+                android:id="@+id/consult_online"
+                android:icon="@drawable/online_consultant"
+                android:title="Consult Online" />
+            <item
+                android:id="@+id/order_medicine"
+                android:icon="@drawable/order_medicine"
+                android:title="Order Medicine" />
+            <item
+                android:id="@+id/lab_test"
+                android:icon="@drawable/lab_test_icon"
+                android:title="Book Lab Test" />
+            <item
+                android:id="@+id/beauty_wellness"
+                android:icon="@drawable/beauty_wellness"
+                android:title="Beauty &amp; Wellness" />
+            <item
+                android:id="@+id/yoga_fitness"
+                android:icon="@drawable/yoga"
+                android:title="Yoga &amp; Fitness" />
+            <item
+                android:id="@+id/care_home"
+                android:icon="@drawable/care_home"
+                android:title="Care @ Home" />
+        </menu>
+    </item>
+</menu>

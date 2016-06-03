@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Teacher.iml" filepath="$PROJECT_DIR$/Teacher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datetimepickerlibrary/datetimepickerlibrary.iml" filepath="$PROJECT_DIR$/datetimepickerlibrary/datetimepickerlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebookSDK/facebookSDK.iml" filepath="$PROJECT_DIR$/facebookSDK/facebookSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jeevOMLibs/jeevOMLibs.iml" filepath="$PROJECT_DIR$/jeevOMLibs/jeevOMLibs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/justifiedTextLibrary/justifiedTextLibrary.iml" filepath="$PROJECT_DIR$/justifiedTextLibrary/justifiedTextLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/openTok/openTok.iml" filepath="$PROJECT_DIR$/openTok/openTok.iml" />
+      <module fileurl="file://$PROJECT_DIR$/teacher/teacher.iml" filepath="$PROJECT_DIR$/teacher/teacher.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+
+    <RelativeLayout
+        android:id="@+id/subscriberview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/call_mute"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal" >
+
+        <ProgressBar
+            android:id="@+id/loadingSpinner"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="false"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/publisherview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_prescription"
+        android:layout_below="@+id/subscriberview"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/tv_timer" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_prescription"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/round_button"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:id="@+id/call_mute"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_timer"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/publisherview"
+        android:gravity="center"
+        android:padding="4dp" >
+
+        <ImageView
+            android:id="@+id/end_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:src="@drawable/ic_end_call" />
+
+        <ImageView
+            android:id="@+id/mute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:src="@drawable/unmute_pub" />
+
+        <ImageView
+            android:id="@+id/speaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:src="@drawable/unmute_sub" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/tv_prescription"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/round_button"
+        android:minHeight="64dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/prescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="Prescription"
+                android:textColor="@color/Black" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

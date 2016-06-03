@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="first_line">24dp</dimen>
+    <dimen name="fix_message_size_medium">12dp</dimen>
+    <dimen name="fix_message_size_normal">14dp</dimen>
+    <dimen name="fix_message_size_small">10dp</dimen>
+    <dimen name="fourth_line">18dip</dimen>
+    <dimen name="message_size_big">40dp</dimen>
+    <dimen name="message_size_medium">24dp</dimen>
+    <dimen name="message_size_normal">30dp</dimen>
+    <dimen name="message_size_small">21dp</dimen>
+    <dimen name="second_line">21dip</dimen>
+    <dimen name="third_line">19dip</dimen>
+    <style name="EditTextFillParent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/edit_text_border</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+    <style name="buttonFillParent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textSize">@dimen/message_size_medium</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+</resources>

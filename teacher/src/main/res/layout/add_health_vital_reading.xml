@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolbar_reading_activity"
+        layout="@layout/toobar_map" />
+
+
+    <LinearLayout
+        android:id="@+id/date_time_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_reading_activity"
+        android:layout_margin="8dp">
+
+        <Button
+            android:id="@+id/date_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/blue_button"
+            android:text="date"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/time_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/blue_button"
+            android:text="Time"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_time_layout"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/reading_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="4dp"
+            android:text="Name"
+            android:textColor="@color/blue_button"
+            android:textSize="@dimen/message_size_medium"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/reading_value_cms"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message_text"
+            android:background="@drawable/edit_text_line_green"
+            android:gravity="start"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/message_size_medium" />
+
+        <TextView
+            android:id="@+id/reading_text_second"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="4dp"
+            android:text="Name"
+            android:textColor="@color/blue_button"
+            android:textSize="@dimen/message_size_medium"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/reading_value_second"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_line_green"
+            android:gravity="start"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/message_size_medium"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/reading_value_ft"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message_text"
+            android:background="@drawable/edit_text_line_green"
+            android:gravity="start"
+            android:hint="Enter height in ft."
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/message_size_medium"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/reading_value_inch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reading_value_ft"
+            android:background="@drawable/edit_text_line_green"
+            android:gravity="start"
+            android:hint="Enter height in inch."
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/message_size_medium"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/reading_unit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reading_layout"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/ic_dropdown"
+        android:padding="4dp"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:id="@+id/reading_comment_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reading_unit"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/jeev_row_drop_shadow">
+
+        <TextView
+            android:id="@+id/reading_comment_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="Add Notes (Optional)"
+            android:textSize="@dimen/message_size_medium" />
+
+        <View
+            android:id="@+id/top_seprator"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/reading_comment_text"
+            android:background="@color/Gray" />
+
+        <EditText
+            android:id="@+id/reading_comment_value"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_seprator"
+            android:background="@null"
+            android:gravity="start"
+            android:maxLength="1000"
+            android:maxLines="5"
+            android:minHeight="100dp"
+            android:padding="8dp"
+            android:textSize="@dimen/message_size_medium" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/add_button"
+        style="@style/buttonFillParent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/round_button"
+        android:text="Add" />
+</RelativeLayout>

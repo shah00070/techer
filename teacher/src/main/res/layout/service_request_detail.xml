@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar_service_request"
+        layout="@layout/toobar_map" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/start_video_button"
+        android:layout_below="@+id/toolbar_service_request">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/status_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="8dp"
+                android:text="Status : "
+                android:textSize="@dimen/message_size_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/date_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="8dp"
+                android:textSize="@dimen/message_size_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/status_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/status_title"
+                android:textColor="@color/colorOrangeDark"
+                android:textSize="@dimen/message_size_normal"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/provider_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/status_value"
+                android:layout_margin="8dp"
+                android:background="@drawable/jeev_row_drop_shadow">
+
+                <TextView
+                    android:id="@+id/provider_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/grey_light"
+                    android:padding="8dp"
+                    android:text="Provider Basic Information"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/message_size_normal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/provider_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/provider_title"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="@dimen/message_size_normal" />
+
+                <TextView
+                    android:id="@+id/provider_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/provider_name"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="@dimen/message_size_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/member_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/provider_details"
+                android:layout_margin="8dp"
+                android:background="@drawable/jeev_row_drop_shadow">
+
+                <TextView
+                    android:id="@+id/member_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/grey_light"
+                    android:padding="8dp"
+                    android:text="Consumer Basic Information"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/message_size_normal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/member_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/member_title"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="@dimen/message_size_normal" />
+
+                <TextView
+                    android:id="@+id/member_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/member_name"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="@dimen/message_size_normal" />
+
+                <TextView
+                    android:id="@+id/member_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/member_gender"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="@dimen/message_size_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/additional_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/member_details"
+                android:layout_margin="8dp"
+                android:background="@drawable/jeev_row_drop_shadow">
+
+                <TextView
+                    android:id="@+id/additional_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/grey_light"
+                    android:padding="8dp"
+                    android:text="Additional Details"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/message_size_normal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/additional_title"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="@dimen/message_size_normal" />
+
+                <TextView
+                    android:id="@+id/height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/weight"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="@dimen/message_size_normal" />
+
+                <TextView
+                    android:id="@+id/bmi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/height"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="@dimen/message_size_normal" />
+
+                <TextView
+                    android:id="@+id/bmr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/bmi"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="@dimen/message_size_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/medical_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/additional_details"
+                android:layout_margin="8dp"
+                android:background="@drawable/jeev_row_drop_shadow">
+
+                <TextView
+                    android:id="@+id/medical_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/grey_light"
+                    android:padding="8dp"
+                    android:text="Additional Details"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/message_size_normal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/blood_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/medical_title"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="@dimen/message_size_normal" />
+
+                <TextView
+                    android:id="@+id/specific_medical_condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/blood_group"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="@dimen/message_size_normal" />
+
+                <TextView
+                    android:id="@+id/allergies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/specific_medical_condition"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="@dimen/message_size_normal" />
+
+                <TextView
+                    android:id="@+id/heriditary_condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/allergies"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="@dimen/message_size_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sr_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/medical_details"
+                android:layout_margin="8dp"
+                android:background="@drawable/jeev_row_drop_shadow">
+
+                <TextView
+                    android:id="@+id/sr_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/grey_light"
+                    android:padding="8dp"
+                    android:text="Service Request Details"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/message_size_normal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/subject_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/sr_title"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="@dimen/message_size_normal" />
+
+                <TextView
+                    android:id="@+id/message_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/subject_name"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="@dimen/message_size_normal" />
+
+                <TextView
+                    android:id="@+id/documents_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/message_list"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="@dimen/message_size_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lab_test_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sr_details"
+                android:layout_margin="8dp"
+                android:background="@drawable/jeev_row_drop_shadow">
+
+                <TextView
+                    android:id="@+id/lab_test_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/grey_light"
+                    android:padding="8dp"
+                    android:text="Lab Test Details"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/message_size_normal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/delivery_address_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/lab_test_title"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Delivery Address:"
+                    android:textSize="@dimen/message_size_normal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/delivery_address_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/delivery_address_text"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="@dimen/message_size_normal" />
+
+                <TextView
+                    android:id="@+id/home_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/delivery_address_value"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Lab test at home:"
+                    android:textSize="@dimen/message_size_normal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/home_text_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/home_text"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="@dimen/message_size_normal" />
+
+                <TextView
+                    android:id="@+id/lab_test_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/home_text_value"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Lab Test:"
+                    android:textSize="@dimen/message_size_normal"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/lab_tests_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lab_test_text"
+                    android:orientation="vertical"></LinearLayout>
+
+                <TextView
+                    android:id="@+id/delivery_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/lab_tests_container"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Delivery Time Preference:"
+                    android:textSize="@dimen/message_size_normal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/delivery_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/delivery_text"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="@dimen/message_size_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/purchase_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lab_test_details"
+                android:layout_margin="8dp"
+                android:background="@drawable/jeev_row_drop_shadow">
+
+                <TextView
+                    android:id="@+id/purchase_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/grey_light"
+                    android:padding="8dp"
+                    android:text="Order Medicine Details"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/message_size_normal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/order_category_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/purchase_title"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Order Category:"
+                    android:textSize="@dimen/message_size_normal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/order_category_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/order_category_text"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="@dimen/message_size_normal" />
+
+                <TextView
+                    android:id="@+id/medicine_list_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/order_category_value"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Medicine List:"
+                    android:textSize="@dimen/message_size_normal"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/medicine_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/medicine_list_text"
+                    android:orientation="vertical"></LinearLayout>
+
+                <TextView
+                    android:id="@+id/general_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/medicine_container"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="General Requirements:"
+                    android:textSize="@dimen/message_size_normal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/general_items_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/general_text"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="@dimen/message_size_normal" />
+
+                <TextView
+                    android:id="@+id/medicine_delivery_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/general_items_value"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Delivery Time Preference:"
+                    android:textSize="@dimen/message_size_normal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/medicine_delivery_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/medicine_delivery_text"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="@dimen/message_size_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/messages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/purchase_details"
+                android:layout_margin="8dp"
+                android:background="@drawable/jeev_row_drop_shadow">
+
+                <TextView
+                    android:id="@+id/messages_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/grey_light"
+                    android:padding="8dp"
+                    android:text="Message Queue"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/message_size_normal"
+                    android:textStyle="bold" />
+
+                <com.schoolteacher.main.CircleImageView
+                    android:id="@+id/image_view"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/messages_title"
+                    android:layout_margin="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/jeevom_back" />
+
+                <TextView
+                    android:id="@+id/msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/messages_title"
+                    android:layout_margin="8dp"
+                    android:layout_toRightOf="@+id/image_view"
+                    android:textSize="@dimen/message_size_normal" />
+
+                <TextView
+                    android:id="@+id/more_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/msg"
+                    android:padding="8dp"
+                    android:textColor="@color/Blue"
+                    android:textSize="@dimen/message_size_normal" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/documents_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/messages"
+                android:layout_margin="8dp"
+                android:background="@drawable/jeev_row_drop_shadow"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey_light"
+                    android:padding="8dp"
+                    android:text="Documents Attached"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/message_size_normal"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/start_video_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/horizontalScroll"
+        android:text="Start Video Chat"
+        android:visibility="gone" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/service_requests_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+</RelativeLayout>

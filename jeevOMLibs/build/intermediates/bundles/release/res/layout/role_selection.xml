@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/hi_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="4dp"
+        android:text="Hi"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/message_size_normal"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/jeev_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hi_text"
+        android:gravity="center_horizontal"
+        android:padding="4dp"
+        android:text="How would you like to explore Jeevom?"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/message_size_normal"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/main_seprator"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/jeev_message"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/Gray" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_seprator">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/consumer_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:button="@drawable/checkbox_selector"
+                android:checked="true"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/consumer_text_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/consumer_checkbox"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/consumer_checkbox"
+                android:text="Consumer"
+                android:textSize="@dimen/message_size_normal" />
+
+
+            <TextView
+                android:id="@+id/consumer_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/consumer_checkbox"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:text="As a consumer you can search for the best of professionals and connect them through Video, Audio, Email or In-Clinic consultations. As a consumer you can also upload your medical documents securely in Medvault or track your vital health parameters through HealthTrack. Explore more to unlock multitude of features that we have for you for FREE." />
+
+            <CheckBox
+                android:id="@+id/professional_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/consumer_text"
+                android:layout_margin="8dp"
+                android:button="@drawable/checkbox_selector"
+                android:checked="false" />
+
+            <TextView
+                android:id="@+id/professional_text_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/professional_checkbox"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/professional_checkbox"
+                android:text="Professional"
+                android:textSize="@dimen/message_size_normal" />
+
+
+            <TextView
+                android:id="@+id/professional_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/professional_checkbox"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:text="If you are a working professional like – Doctor, Radiologist, Yoga Instructor, Gym Instructor, Chemist or  any other individual working in the healthcare space, click here to unlock the potential of running your setup online." />
+
+            <CheckBox
+                android:id="@+id/business_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/professional_text"
+                android:layout_margin="8dp"
+                android:button="@drawable/checkbox_selector"
+                android:checked="false" />
+
+            <TextView
+                android:id="@+id/business_text_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/business_checkbox"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/business_checkbox"
+                android:text="Business"
+                android:textSize="@dimen/message_size_normal" />
+
+
+            <TextView
+                android:id="@+id/business_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/business_checkbox"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:text="Do you have one of these- Clinic, Hospital, Radiology Center, Spa, Gym, Pharmacy? Click here to unlock the potential of running your setup online." />
+
+            <Button
+                android:id="@+id/explore_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/business_text"
+
+                android:text="Explore" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

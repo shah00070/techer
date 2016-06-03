@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary" >
+
+        <ImageView
+            android:id="@+id/finish_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="4dp"
+            android:src="@drawable/ic_jeev_cancel" />
+
+        <TextView
+            android:id="@+id/top_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/search_view"
+            android:layout_toRightOf="@+id/finish_view"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/advance_search"
+            android:textColor="@color/White"
+            android:textSize="@dimen/message_size_normal" />
+
+        <TextView
+            android:id="@+id/search_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="false"
+            android:padding="4dp"
+            android:src="@drawable/ic_jeev_done"
+            android:text="Search"
+            android:textColor="@color/White"
+            android:textSize="@dimen/message_size_normal" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

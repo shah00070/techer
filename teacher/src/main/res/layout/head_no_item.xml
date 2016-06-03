@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/round_layout"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></View>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            >
+            <com.schoolteacher.main.CircleImageView
+                android:id="@+id/head_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/huppy" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="55"
+            android:weightSum="100">
+            />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40">
+
+                <TextView
+                    android:id="@+id/head_class_detail_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Ajay Singh"
+                    android:paddingLeft="17dp"
+                    android:textColor="@color/Black"
+                    android:textSize="16dp"
+                    android:gravity="center|left"
+                  />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Absent"
+                    android:paddingLeft="17dp"
+                    android:textColor="@color/Black"
+                    android:textSize="14dp"
+                    android:gravity="center|left"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:orientation="vertical"
+            android:background="@drawable/round_layout_last"
+            android:weightSum="100"
+            >
+           <!-- <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="25"
+                ></View>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                android:text="Reassign"
+                android:layout_weight="35"
+                android:textStyle="bold"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:textColor="@color/white"
+                android:drawableRight="@drawable/arrow_image"
+                android:textSize="15dp"
+                android:layout_centerHorizontal="true"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="35"
+                android:weightSum="100">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"></View>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Duty"
+                    android:layout_weight="56"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+               />
+
+
+            </LinearLayout>-->
+          <!--  -->
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="0dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:text="Reassign"
+android:paddingLeft="10dp"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:text="Duty"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/arrow_image" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"></View>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/main_layout" />
+</RelativeLayout>

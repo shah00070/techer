@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg2"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/circular_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="Presidium School, 2016-17"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:background="#99000000"
+        android:textStyle="bold" />
+    <ListView
+        android:id="@+id/circular_listview"
+        android:layout_below="@+id/circular_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+    <include layout="@layout/circulars_fab" />
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Already a Jeevom Member?"
+        android:textSize="@dimen/message_size_normal" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_text"
+        android:text="Log In" />
+
+    <TextView
+        android:id="@+id/become_member_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_button"
+        android:layout_centerHorizontal="true"
+        android:text="New User?"
+        android:textSize="@dimen/message_size_normal" />
+
+    <Button
+        android:id="@+id/member_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/become_member_text"
+        android:text="Join the Family" />
+
+    <TextView
+        android:id="@+id/or_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/member_button"
+        android:layout_centerHorizontal="true"
+        android:text="Or"
+        android:textSize="@dimen/message_size_normal" />
+
+    <Button
+        android:id="@+id/anonymous_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/or_text"
+        android:text="Consult as Anonymous" />
+
+</RelativeLayout>

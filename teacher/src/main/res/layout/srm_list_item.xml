@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#d1d1d1" />
+
+    <LinearLayout
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <info.jeevom.appointment.RectangleView
+            android:id="@+id/rv_profile_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="0.18"
+            android:background="@drawable/circle_view_background"
+            android:padding="8dp" >
+
+            <info.jeevom.appointment.CircleImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/main_logo" />
+        </info.jeevom.appointment.RectangleView>
+
+        <RelativeLayout
+            android:id="@+id/rl_user_detail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.80" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toLeftOf="@+id/tv_date"
+                android:text="Name"
+                android:textSize="@dimen/second_line" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="2dp"
+                android:text="08-12-2014"
+                android:textSize="@dimen/fourth_line" />
+
+            <TextView
+                android:id="@+id/tv_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_name"
+                android:layout_marginLeft="8dp"
+                android:layout_toLeftOf="@+id/tv_time"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Sub :"
+                android:textSize="@dimen/third_line" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_name"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:padding="2dp"
+                android:text="11:50 AM"
+                android:textSize="@dimen/fourth_line" />
+
+            <TextView
+                android:id="@+id/tv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_sub"
+                android:layout_marginLeft="8dp"
+                android:layout_toLeftOf="@+id/tv_time"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="One Line msg..."
+                android:textSize="@dimen/fourth_line" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_msg"
+                android:layout_marginLeft="8dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Completed"
+                android:textSize="@dimen/fourth_line" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_date"
+        android:layout_marginTop="4dp"
+        android:background="#DEDEDE" />
+
+</LinearLayout>

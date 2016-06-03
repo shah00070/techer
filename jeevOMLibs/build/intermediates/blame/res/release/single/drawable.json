@@ -1,0 +1,534 @@
+[
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/star_rating_bar_full.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/star_rating_bar_full.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/abc_list_selector_holo_light.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/drawable/abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/hide.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/hide.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_picker_list_focused.9.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_picker_list_focused.9.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_loginbutton_silver.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_loginbutton_silver.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_button_like.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_button_like.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/round_blue_button.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/round_blue_button.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/list_row_selector.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/list_row_selector.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/progress_bar.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/progress_bar.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_button_blue_normal.9.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_button_blue_normal.9.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_picker_list_longpressed.9.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_picker_list_longpressed.9.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/abc_item_background_holo_light.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/textview_rounded.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/textview_rounded.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_top_background.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_top_background.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_button_like_selected.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_button_like_selected.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/abc_cab_background_top_material.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/drawable/abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/abc_dialog_material_background_dark.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/drawable/abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/abc_ratingbar_full_material.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/drawable/abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/common_signin_btn_text_light.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.8.0/res/drawable/common_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/list_selector.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/list_selector.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_usersettingsfragment_background_gradient.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_usersettingsfragment_background_gradient.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_button_grey_focused.9.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_button_grey_focused.9.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_button_blue_focused.9.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_button_blue_focused.9.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/mr_ic_pause_dark.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/drawable/mr_ic_pause_dark.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/map_image_click.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/map_image_click.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_button_like_pressed.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_button_like_pressed.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_profile_picture_blank_square.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_profile_picture_blank_square.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/jeevom_back.jpg",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/jeevom_back.jpg"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/list_item_bg_normal.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/list_item_bg_normal.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/abc_textfield_search_material.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/drawable/abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/back.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/back.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_button_grey_normal.9.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_button_grey_normal.9.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/btn_shape_white_stroke.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/btn_shape_white_stroke.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/round_button_pressed.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/round_button_pressed.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/mr_ic_play_dark.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/drawable/mr_ic_play_dark.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/actionbar_gradient.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/actionbar_gradient.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_button_blue_pressed.9.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_button_blue_pressed.9.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/round_button_dark.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/round_button_dark.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_button_blue.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_button_blue.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/mygradient.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/mygradient.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/common_signin_btn_text_dark.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.8.0/res/drawable/common_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_top_button.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_top_button.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/mr_ic_media_route_connecting_mono_dark.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/drawable/mr_ic_media_route_connecting_mono_dark.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/list_item_bg_pressed.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/list_item_bg_pressed.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/abc_tab_indicator_material.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/drawable/abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/list_row_bg_hover.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/list_row_bg_hover.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/str2.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/str2.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_picker_item_background.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_picker_item_background.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/round_button.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/round_button.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/mr_ic_play_light.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/drawable/mr_ic_play_light.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/image_bg.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/image_bg.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/rounded_edit_black.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/rounded_edit_black.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/rounded_edit_padding.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/rounded_edit_padding.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_profile_default_icon.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_profile_default_icon.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/abc_edit_text_material.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/drawable/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_picker_list_selector.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_picker_list_selector.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/checkbox_selector.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/checkbox_selector.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_place_default_icon.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_place_default_icon.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_list_section_header_background.9.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_list_section_header_background.9.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/common_signin_btn_icon_dark.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.8.0/res/drawable/common_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/forgot_password_color.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/forgot_password_color.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_button_like_icon.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_button_like_icon.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/star_ratingbar_full_empty.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/star_ratingbar_full_empty.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_button_check.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_button_check.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_logo.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_logo.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/cal_img.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/cal_img.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/custom_radio_button.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/custom_radio_button.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/round_button_blue_normal.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/round_button_blue_normal.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/custom_edit.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/custom_edit.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/abc_btn_borderless_material.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/list_row_bg.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/list_row_bg.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/star.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/star.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/mr_ic_media_route_connecting_mono_light.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/drawable/mr_ic_media_route_connecting_mono_light.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/textc.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/textc.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_picker_top_button.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_picker_top_button.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_button_grey_pressed.9.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_button_grey_pressed.9.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/actionbar.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/actionbar.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/tab_selector.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/tab_selector.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/round_button_normal.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/round_button_normal.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/alert_ok_click.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/alert_ok_click.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/tab_indicator_ab_example.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/tab_indicator_ab_example.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/star1.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/star1.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_button_like_background.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_button_like_background.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_inverse_icon.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_inverse_icon.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/abc_btn_radio_material.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/abc_switch_thumb_material.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/round_button_white.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/round_button_white.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_profile_picture_blank_portrait.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_profile_picture_blank_portrait.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/round_button_white_pressed.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/round_button_white_pressed.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/hidepsd.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/hidepsd.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/mr_ic_settings_light.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/drawable/mr_ic_settings_light.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/round_button_white_normal.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/round_button_white_normal.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/show.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/show.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_picker_list_pressed.9.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_picker_list_pressed.9.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/cast_ic_notification_connecting.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.8.0/res/drawable/cast_ic_notification_connecting.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/edit_text_background.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/edit_text_background.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/mr_ic_pause_light.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/drawable/mr_ic_pause_light.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/rounded_edit_white.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/rounded_edit_white.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/apptheme_ratingbar_small_holo_light.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/apptheme_ratingbar_small_holo_light.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/time_img.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/time_img.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_list_divider.9.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_list_divider.9.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/round_button_dark_normal.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/round_button_dark_normal.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_picker_list_selector_disabled.9.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_picker_list_selector_disabled.9.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/mr_ic_media_route_mono_dark.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/drawable/mr_ic_media_route_mono_dark.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_button_like_icon_selected.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_button_like_icon_selected.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/custom_checkbox.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/custom_checkbox.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/star_ratingbar_full_filled.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/star_ratingbar_full_filled.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/showpass.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/showpass.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_close.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_close.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/showpsd.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/showpsd.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/mr_ic_media_route_mono_light.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/drawable/mr_ic_media_route_mono_light.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/mr_ic_settings_dark.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/drawable/mr_ic_settings_dark.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/abc_item_background_holo_dark.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_picker_list_selector_background_transition.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_picker_list_selector_background_transition.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_button_check_on.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_button_check_on.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/common_signin_btn_icon_light.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.8.0/res/drawable/common_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/abc_btn_check_material.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/btn_shape_rad.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/btn_shape_rad.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/hidepass.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/hidepass.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/btn_shape_white.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/btn_shape_white.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/str1.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/str1.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_button_like_background_selected.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_button_like_background_selected.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/internet_connection.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/internet_connection.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/abc_dialog_material_background_light.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/drawable/abc_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/round_button__blue_pressed.xml",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/round_button__blue_pressed.xml"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/com_facebook_button_check_off.png",
+        "source": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/exploded-aar/Teacher/facebookSDK/unspecified/res/drawable/com_facebook_button_check_off.png"
+    },
+    {
+        "merged": "/home/chandan/Teacher/jeevOMLibs/build/intermediates/res/merged/release/drawable/jeevom_back_facility.jpg",
+        "source": "/home/chandan/Teacher/jeevOMLibs/src/main/res/drawable/jeevom_back_facility.jpg"
+    }
+]

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="A confirmation message after the transaction would be sent to –"
+        android:textSize="@dimen/message_size_medium" />
+
+    <EditText
+        android:id="@+id/user_email_value"
+        style="@style/EditTextFillParentSmall"
+        android:layout_below="@+id/message"
+        android:layout_margin="8dp"
+        android:background="@drawable/edit_text_line_green"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="8dp"
+        android:textColorHint="@color/black_first" />
+
+    <EditText
+        android:id="@+id/user_phone_value"
+        style="@style/EditTextFillParentSmall"
+        android:layout_below="@+id/user_email_value"
+        android:layout_margin="8dp"
+        android:background="@drawable/edit_text_line_green"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:paddingLeft="8dp"
+        android:textColorHint="@color/black_first" />
+
+    <View
+        android:id="@+id/seprator_below"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/user_phone_value"
+        android:layout_marginTop="16dp"
+        android:background="@color/Gray" />
+
+    <TextView
+        android:id="@+id/pkg_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seprator_below"
+        android:layout_margin="8dp"
+        android:text="You have selected Basic."
+        android:textSize="@dimen/message_size_normal" />
+
+    <TextView
+        android:id="@+id/transaction_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pkg_detail"
+        android:layout_margin="8dp"
+        android:text="Your total transaction amount is INR 499"
+        android:textSize="@dimen/message_size_normal" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/buttonFillParent"
+            android:layout_width="0dp"
+            android:layout_below="@+id/phone_layout"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
+            android:text="Cancel"
+            android:textColor="@color/White" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="fill_parent" />
+
+        <Button
+            android:id="@+id/btn_proceed"
+            style="@style/buttonFillParent"
+            android:layout_width="0dp"
+            android:layout_below="@+id/phone_layout"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
+            android:text="Proceed"
+            android:textColor="@color/White" />
+    </LinearLayout>
+
+</RelativeLayout>

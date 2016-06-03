@@ -1,0 +1,15 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <rotate
+            android:drawable="@drawable/progress_bar_logo_scroll"
+            android:fromDegrees="720"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:toDegrees="0" />
+    </item>
+    <item>
+        <bitmap android:src="@drawable/progress_bar_logo" />
+    </item>
+
+</layer-list>

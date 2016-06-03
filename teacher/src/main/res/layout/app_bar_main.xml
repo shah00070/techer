@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:elevation="0dp"
+            app:popupTheme="@style/AppTheme.AppBarOverlay"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+
+      >
+            <LinearLayout
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|right"
+                android:orientation="horizontal"
+                android:weightSum="100">
+                <TextView
+                    android:id="@+id/t"
+                    android:layout_weight="95"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@android:color/white"
+                    android:gravity="left|center"
+                    android:layout_gravity="center|left"/>
+
+
+
+               <!-- <ImageView
+                    android:id="@+id/btSpeak"
+                    android:layout_weight="5"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/profile"
+                    android:layout_gravity="right|center"
+                    tools:context=".VoiceRecognitionActivity"
+                    />-->
+
+               <!-- <ImageView
+                    android:id="@+id/btSpeakk"
+                    android:layout_weight="5"
+                    android:layout_width="10dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right|center"
+                    tools:context=".VoiceRecognitionActivity"
+                    />-->
+              <!--  <ImageView
+                    android:id="@+id/a"
+                    android:layout_weight="5"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/bbell"
+                    android:layout_gravity="right|center"
+                    />-->
+
+                <!--<Button
+                    android:id="@+id/btSpeak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:text="@string/btSpeak"
+                    tools:context=".VoiceRecognitionActivity" />-->
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <FrameLayout
+        android:id="@+id/container_body"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_dialog_email"
+        android:visibility="gone" />
+
+</android.support.design.widget.CoordinatorLayout>

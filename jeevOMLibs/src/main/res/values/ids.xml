@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="contact_icon" type="id"/>
+    <item name="add_clinic" type="id"/>
+    <item name="pencil_image" type="id"/>
+    <item name="pencil_contact" type="id"/>
+    <item name="pencil_ser_and_exp" type="id"/>
+    <item name="pencil_education" type="id"/>
+    <item name="pencil_experience" type="id"/>
+    <item name="pencil_awards_and_mention" type="id"/>
+    <item name="pencil_other_info" type="id"/>
+    <item name="pencil_pannel_and_details" type="id"/>
+    <item name="pencil_service" type="id"/>
+
+</resources>

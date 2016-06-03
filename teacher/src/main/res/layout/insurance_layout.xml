@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/toolbar_insu"
+        layout="@layout/toobar_map" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/save"
+        android:layout_below="@+id/toolbar_insu" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/provider_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="4dp"
+                android:text="Insc. Provider&apos;s Name"
+                android:textColor="@color/button_text_color_green"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/provider_name"
+                style="@style/EditTextFillParentSmall"
+                android:layout_below="@+id/provider_label"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/edit_text_line_green"
+                android:inputType="textCapWords"
+                android:paddingLeft="8dp" />
+
+            <TextView
+                android:id="@+id/provider_url_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/provider_name"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="8dp"
+                android:text="Provider&apos;s URL"
+                android:textColor="@color/button_text_color_green"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/provider_url_name"
+                style="@style/EditTextFillParentSmall"
+                android:layout_below="@+id/provider_url_label"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/edit_text_line_green"
+                android:inputType="textCapWords"
+                android:paddingLeft="8dp" />
+
+            <TextView
+                android:id="@+id/policy_name_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/provider_url_name"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="8dp"
+                android:text="Policy Name"
+                android:textColor="@color/button_text_color_green"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/policy_name"
+                style="@style/EditTextFillParentSmall"
+                android:layout_below="@+id/policy_name_label"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/edit_text_line_green"
+                android:inputType="textCapWords"
+                android:paddingLeft="8dp" />
+
+            <TextView
+                android:id="@+id/policy_no_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/policy_name"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="8dp"
+                android:text="Policy Number"
+                android:textColor="@color/button_text_color_green"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/policy_no"
+                style="@style/EditTextFillParentSmall"
+                android:layout_below="@+id/policy_no_label"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/edit_text_line_green"
+                android:inputType="textCapWords"
+                android:paddingLeft="8dp" />
+
+            <TextView
+                android:id="@+id/valid_from_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/policy_no"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="8dp"
+                android:text="Valid From"
+                android:textColor="@color/button_text_color_green"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/valid_from_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/valid_from_label"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/valid_from_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_line_green"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/valid_from_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:src="@drawable/ic_calender" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/valid_thru_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/valid_from_layout"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="8dp"
+                android:text="Valid Thru"
+                android:textColor="@color/button_text_color_green"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/valid_thru_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/valid_thru_label"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/valid_thru_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_line_green"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/valid_thru_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:src="@drawable/ic_calender" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/coverage_amount_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/valid_thru_layout"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="8dp"
+                android:text="Coverage Amount"
+                android:textColor="@color/button_text_color_green"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/coverage_amount_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coverage_amount_label"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/coverage_amount_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".3"
+                    android:background="@drawable/ic_dropdown"
+                    android:padding="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:textColor="@color/black_first" />
+
+                <EditText
+                    android:id="@+id/coverage_amount_value"
+                    style="@style/EditTextFillParentSmall"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight=".7"
+                    android:background="@drawable/edit_text_line_green"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:paddingLeft="8dp" >
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/claimed_amount_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coverage_amount_layout"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="8dp"
+                android:text="Claimed Amount"
+                android:textColor="@color/button_text_color_green"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/claimed_amount_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/claimed_amount_label"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/claimed_amount_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".3"
+                    android:background="@drawable/ic_dropdown"
+                    android:padding="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:textColor="@color/black_first" />
+
+                <EditText
+                    android:id="@+id/claimed_amount_value"
+                    style="@style/EditTextFillParentSmall"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight=".7"
+                    android:background="@drawable/edit_text_line_green"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:paddingLeft="8dp" >
+                </EditText>
+            </LinearLayout>
+
+            <!-- Second Segment Starts -->
+
+            <TextView
+                android:id="@+id/second_segment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/claimed_amount_layout"
+                android:layout_marginTop="8dp"
+                android:background="@color/blue_edit"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="Primary Insurance Contact Point"
+                android:textColor="@color/White"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pri_ins_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/second_segment"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="8dp"
+                android:text="Name"
+                android:textColor="@color/button_text_color_green"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/Pri_ins_first_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pri_ins_label"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/name_title_Spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".3"
+                    android:background="@drawable/ic_dropdown"
+                    android:padding="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:textColor="@color/black_first" />
+
+                <EditText
+                    android:id="@+id/pi_first_name_value"
+                    style="@style/EditTextFillParentSmall"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight=".7"
+                    android:background="@drawable/edit_text_line_green"
+                    android:hint="First Name"
+                    android:inputType="textCapWords"
+                    android:maxLength="50"
+                    android:paddingLeft="8dp"
+                    android:textColorHint="@color/black_first" >
+                </EditText>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/pi_last_name_value"
+                style="@style/EditTextFillParentSmall"
+                android:layout_below="@+id/Pri_ins_first_layout"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/edit_text_line_green"
+                android:hint="Last Name"
+                android:inputType="textCapWords"
+                android:maxLength="50"
+                android:paddingLeft="8dp"
+                android:textColorHint="@color/black_first" />
+
+            <TextView
+                android:id="@+id/pri_ins_phone_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pi_last_name_value"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="8dp"
+                android:text="Phone Number"
+                android:textColor="@color/button_text_color_green"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/pri_ins_phone_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pri_ins_phone_label"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/pri_ins_phone_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".3"
+                    android:background="@drawable/ic_dropdown"
+                    android:padding="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:textColor="@color/black_first" />
+
+                <EditText
+                    android:id="@+id/pri_ins_phone_value"
+                    style="@style/EditTextFillParentSmall"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight=".7"
+                    android:background="@drawable/edit_text_line_green"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:paddingLeft="8dp" >
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pri_ins_email_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pri_ins_phone_layout"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="8dp"
+                android:text="Email"
+                android:textColor="@color/button_text_color_green"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/pri_ins_email"
+                style="@style/EditTextFillParentSmall"
+                android:layout_below="@+id/pri_ins_email_label"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/edit_text_line_green"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="8dp" />
+            <!-- Third Segment Starts -->
+
+            <TextView
+                android:id="@+id/third_segment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pri_ins_email"
+                android:layout_marginTop="8dp"
+                android:background="@color/blue_edit"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="Third-Party Administrator (TPA)"
+                android:textColor="@color/White"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/org_name_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/third_segment"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="8dp"
+                android:text="Organisation Name"
+                android:textColor="@color/button_text_color_green"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/org_name_value"
+                style="@style/EditTextFillParentSmall"
+                android:layout_below="@+id/org_name_label"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/edit_text_line_green"
+                android:inputType="textCapWords"
+                android:paddingLeft="8dp" />
+
+            <TextView
+                android:id="@+id/tpa_phone_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/org_name_value"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="8dp"
+                android:text="Phone Number"
+                android:textColor="@color/button_text_color_green"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/tpa_phone_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tpa_phone_label"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/tpa_phone_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".3"
+                    android:background="@drawable/ic_dropdown"
+                    android:padding="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:textColor="@color/black_first" />
+
+                <EditText
+                    android:id="@+id/tpa_phone_value"
+                    style="@style/EditTextFillParentSmall"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight=".7"
+                    android:background="@drawable/edit_text_line_green"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:paddingLeft="8dp" >
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tpa_email_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tpa_phone_layout"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="8dp"
+                android:text="Email"
+                android:textColor="@color/button_text_color_green"
+                android:textSize="@dimen/message_size_medium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/tpa_email"
+                style="@style/EditTextFillParentSmall"
+                android:layout_below="@+id/tpa_email_label"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/edit_text_line_green"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="8dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/save"
+        style="@style/buttonFillParent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/round_button"
+        android:text="Save"
+        android:textColor="@color/White"
+        android:textSize="@dimen/message_size_medium" />
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.schoolteacher.healthvitals.AddHealthVital">
+
+    <include
+        android:id="@+id/toolbar_add_healthvitals"
+        layout="@layout/toobar_map" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/update_dashboard"
+        android:layout_below="@+id/toolbar_add_healthvitals">
+
+        <LinearLayout
+            android:id="@+id/health_vital_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/update_dashboard"
+        style="@style/buttonFillParent"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/round_button"
+        android:ellipsize="end"
+        android:lines="1"
+        android:enabled="false"
+        android:text="Update Dashboard"
+        android:textColor="@color/White"
+        android:textSize="@dimen/message_size_small" />
+</RelativeLayout>

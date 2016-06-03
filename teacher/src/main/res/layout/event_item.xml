@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:weightSum="100"
+                android:visibility="gone"
+
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    />
+                <TextView
+                    android:id="@+id/timmmsdee"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_date"
+                    android:gravity="left|center"
+                    android:textSize="17dip"
+                    android:paddingLeft="15dp"
+                    android:editable="false"
+                    android:visibility="invisible"
+                    android:text="Date/Time" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    />
+
+            </LinearLayout>
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvv"
+
+                style="@style/Widget.CardContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPadding= "5dp"
+                card_view:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:id="@+id/pkk"
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#33CCCC"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:weightSum="100"
+
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                      <LinearLayout
+                          android:layout_width="0dp"
+                          android:layout_weight="10"
+                          android:orientation="horizontal"
+                        android:gravity="right|center"
+                          android:layout_height="match_parent">
+                          <TextView
+                              android:id="@+id/starr"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                              android:gravity="bottom|right"
+
+                              android:background="@drawable/unstar"
+                              android:editable="false"
+                              />
+                      </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/person_namee"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Best Out of Waste week"
+                            android:layout_weight="80"
+                            android:maxLines="1"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/white"
+                            android:gravity="center|left"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:editable="false"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="10"
+                            android:orientation="horizontal"
+                            android:gravity="right|left"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:id="@+id/bookmarr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|left"
+                                android:gravity="bottom|left"
+
+                                android:background="@drawable/bbookmark"
+                                android:editable="false"
+                                />
+                        </LinearLayout>
+                        ///
+
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/Black"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/transparentt"
+                        android:weightSum="100">
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/Black"
+                            android:gravity="center|left"
+
+                            android:layout_weight="50"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:textSize="14dip"
+                            android:background="@null"
+                            android:editable="false"
+                            android:text="Created By: " />
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:gravity="center|right"
+                            android:layout_weight="50"
+
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:textSize="14dip"
+                            android:background="@null"
+                            android:paddingLeft="5dp"
+                            android:editable="false"
+                            android:text="Self" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/person_photoo"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/transparentt"
+                        android:scrollbars="vertical"
+android:layout_marginRight="15dp"
+                        android:paddingTop="15dp"
+                        android:text="Create a masterpiece art collection out of waste material for the class competition. Entries to be submitted by the end of Thursday"
+                        android:layout_marginLeft="15dp"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/white"
+                        android:textSize="17dip"
+                        ></TextView>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@null"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="5dp"
+                        />
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                       android:background="@color/transparentt"
+                       android:weightSum="100">
+                       <TextView
+                           android:id="@+id/type"
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:textColor="@color/Black"
+                           android:gravity="center|left"
+
+                           android:layout_weight="50"
+                           android:layout_marginLeft="15dp"
+                           android:layout_marginRight="15dp"
+                           android:textSize="14dip"
+                           android:background="@null"
+                           android:editable="false"
+                           android:text="Type: " />
+                       <TextView
+                           android:id="@+id/nametype"
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:textColor="@color/white"
+                           android:gravity="center|right"
+                           android:layout_weight="50"
+
+                           android:layout_marginLeft="15dp"
+                           android:layout_marginRight="15dp"
+                           android:textSize="14dip"
+                           android:background="@null"
+                           android:paddingLeft="5dp"
+                           android:editable="false"
+                           android:text="Mandatory" />
+
+                   </LinearLayout>
+
+
+                    <View
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/Black"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:weightSum="100"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="70"
+                            android:orientation="horizontal">
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="18"
+                                android:weightSum="100"
+                                android:orientation="vertical">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="50">
+                                    <TextView
+                                        android:id="@+id/personds_agee"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="25"
+                                        android:textColor="@color/white"
+                                        android:gravity="left|top"
+                                        android:paddingTop="5dp"
+                                        android:textSize="14dip"
+                                        android:paddingLeft="5dp"
+                                        android:editable="false"
+                                        android:text="Time " />
+                                </LinearLayout>
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="50">
+                                    <TextView
+                                        android:id="@+id/person_agee"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="25"
+                                        android:textColor="@color/white"
+                                        android:gravity="left|top"
+                                        android:paddingTop="5dp"
+                                        android:textSize="14dip"
+                                        android:paddingLeft="5dp"
+                                        android:editable="false"
+                                        android:layout_marginBottom="2dp"
+                                        android:text="Time " />
+                                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </LinearLayout>
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="25"
+                                android:weightSum="100"
+                                android:orientation="vertical">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="50">
+                                    <TextView
+                                        android:id="@+id/persondssd_agee"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="25"
+                                        android:textColor="@color/white"
+                                        android:gravity="left|top"
+                                        android:paddingTop="5dp"
+                                        android:textSize="14dip"
+
+                                        android:editable="false"
+                                        android:text="From" />
+                                </LinearLayout>
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="50">
+                                    <TextView
+                                        android:id="@+id/timeee"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="25"
+                                        android:textColor="@color/white"
+                                        android:background="@null"
+                                        android:gravity="left|top"
+                                        android:paddingTop="5dp"
+                                        android:textSize="14dip"
+                                        android:layout_marginBottom="2dp"
+                                        android:editable="false"
+                                        android:text="13/6/2016" />
+                                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="25"
+                                android:weightSum="100"
+                                android:orientation="vertical">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="50">
+                                    <TextView
+                                        android:id="@+id/too"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="25"
+                                        android:textColor="@color/white"
+                                        android:gravity="left|top"
+                                        android:paddingTop="5dp"
+                                        android:textSize="14dip"
+
+                                        android:editable="false"
+                                        android:text="To" />
+                                </LinearLayout>
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="50">
+                                    <TextView
+                                        android:id="@+id/to_datee"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="25"
+                                        android:textColor="@color/white"
+                                        android:background="@null"
+                                        android:gravity="left|top"
+                                        android:paddingTop="5dp"
+                                        android:textSize="14dip"
+                                        android:layout_marginBottom="2dp"
+                                        android:editable="false"
+                                        android:text="17/6/2016" />
+                                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                        ///
+                        <!-- <TextView
+                             android:id="@+id/person_ageq"
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="50"
+                             android:paddingRight="15dp"
+                             android:drawableRight="@drawable/notify_icon"
+                             android:textColor="@color/white"
+                             android:gravity="center|top"
+                             android:editable="false"
+                             android:textSize="14dip"
+                             android:paddingTop="5dp"
+                             android:text="Delivered" />-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="30"
+                            android:weightSum="100"
+                            android:orientation="vertical">
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="50">
+                                <TextView
+                                    android:id="@+id/delevv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="25"
+                                    android:textColor="@color/white"
+                                    android:gravity="left|top"
+                                    android:paddingTop="5dp"
+                                    android:textSize="14dip"
+                                    android:paddingRight="15dp"
+                                    android:drawableRight="@drawable/tick"
+                                    android:paddingLeft="5dp"
+                                    android:editable="false"
+                                    android:text="Sent to " />
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="50">
+                                <TextView
+                                    android:id="@+id/recnamee"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="25"
+                                    android:textColor="@color/white"
+                                    android:gravity="left|top"
+                                    android:paddingTop="5dp"
+                                    android:textSize="14dip"
+                                    android:paddingRight="15dp"
+                                    android:drawableRight="@drawable/tick"
+                                    android:paddingLeft="5dp"
+                                    android:editable="false"
+
+                                    android:layout_marginBottom="2dp"
+                                    android:text="All" />
+                            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                 <!--   <LinearLayout
+                        android:id="@+id/linearrr"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:weightSum="100"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@color/transparentt"
+                        android:layout_marginTop="10dp"                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="50"
+                            android:textSize="15dp"
+                            android:gravity="center"
+                            android:textColor="@color/Black"
+                            android:background="@null"
+                            android:text="Attending Status: "/>
+
+                        <RadioGroup
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="50"
+                            android:orientation="horizontal">
+
+                        <RadioButton android:id="@+id/noo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="yes"
+                         />
+                            <View
+                                android:layout_width="25dp"
+                                android:layout_height="match_parent"
+
+                                />
+                        <RadioButton android:id="@+id/yess"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="No"
+                           /></RadioGroup>
+
+
+                    </LinearLayout>-->
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:weightSum="100"
+
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    />
+                <TextView
+                    android:id="@+id/timmmeee"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_date"
+                    android:gravity="left|center"
+                    android:textSize="17dip"
+                    android:paddingLeft="15dp"
+                    android:editable="false"
+                    android:visibility="invisible"
+                    android:text="Date/Time" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

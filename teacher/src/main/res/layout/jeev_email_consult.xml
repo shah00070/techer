@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White" >
+
+    <include
+        android:id="@+id/toolbar_email"
+        layout="@layout/toobar_map" />
+
+    <RelativeLayout
+        android:id="@+id/image_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_email"
+        android:padding="4dp" >
+
+        <com.schoolteacher.main.CircleImageView
+            android:id="@+id/prof_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/jeevom_back" />
+
+        <TextView
+            android:id="@+id/prof_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/prof_image"
+            android:ellipsize="end"
+            android:textColor="@color/blue_button"
+            android:textSize="@dimen/message_size_normal" />
+
+        <TextView
+            android:id="@+id/prof_fee"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prof_name"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/prof_image"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/message_size_normal"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_message_send_message"
+        android:layout_below="@+id/image_name" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/subject_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/jeev_row_drop_shadow" >
+
+                <EditText
+                    android:id="@+id/subject_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="@string/subject_hint"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/message_size_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/message_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subject_container"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/jeev_row_drop_shadow" >
+
+                <EditText
+                    android:id="@+id/message_message_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="@string/message_hint"
+                    android:maxLength="1000"
+                    android:minHeight="100dp"
+                    android:padding="8dp"
+                    android:textSize="@dimen/message_size_medium" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_attachment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message_container"
+                android:layout_margin="4dp"
+                android:background="@drawable/jeev_row_drop_shadow"
+                android:paddingBottom="8dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/attach_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="8dp"
+                    android:src="@drawable/attach_document_icon" />
+
+                <TextView
+                    android:id="@+id/time_slot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/attach_icon"
+                    android:padding="8dp"
+                    android:text="Attach Document"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="@dimen/message_size_normal" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/documents_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_attachment"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_message_send_message"
+        style="@style/buttonFillParent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/round_button"
+        android:text="Proceed" />
+
+</RelativeLayout>

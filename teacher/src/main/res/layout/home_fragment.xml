@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="875">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="245">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <com.schoolteacher.main.CircleImageView
+                    android:id="@+id/user_imageview"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/threet" />
+
+                <TextView
+                    android:id="@+id/header_title_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/user_imageview"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/header_hello_text"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/welcome_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/header_title_text"
+                    android:layout_toRightOf="@id/user_imageview"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/welcome_message"
+                    android:textColor="#fff"
+                    android:textSize="17sp"
+                    android:textStyle="italic" />
+
+
+                <LinearLayout
+                    android:id="@+id/today_alerts_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/welcome_text"
+                    android:layout_toRightOf="@id/user_imageview"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp" />
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="150" />
+
+        <TextView
+            android:id="@+id/today_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:text="Thursday, December 24, 2015"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="480" />
+    </LinearLayout>
+    <include layout="@layout/fab" />
+</RelativeLayout>

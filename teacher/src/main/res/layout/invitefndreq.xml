@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="@drawable/bk"
+    tools:context="com.example.perveenakhter.sub.MainActivity">
+    <include
+        android:id="@+id/toolbar_view_profile"
+        layout="@layout/toobar_map"
+        />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="60dp">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        <EditText
+            android:id="@+id/logo"
+            android:layout_marginTop="25dp"
+            android:layout_width="220dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:editable="false"
+            android:background="@drawable/logo"
+
+            />
+
+    <EditText
+        android:id="@+id/fnamee"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="First Name"
+android:layout_gravity="center"
+        android:maxLines="1"
+        android:drawablePadding="10dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round"
+        android:drawableLeft="@drawable/finalmale"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/lnamee"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Last Name   "
+        android:layout_gravity="center"
+        android:drawablePadding="10dp"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/round"
+        android:drawableLeft="@drawable/finalmale"
+        >
+    </EditText>
+    <EditText
+        android:id="@+id/Emailaddresss"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:layout_gravity="center"
+        android:drawablePadding="10dp"
+        android:editable="false"
+        android:clickable="false"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/round"
+        android:drawableLeft="@drawable/finalmail"
+        android:hint="Email   "
+        ></EditText>
+    <EditText
+        android:id="@+id/mobilee"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:drawablePadding="10dp"
+        android:editable="false"
+        android:clickable="false"
+        android:drawableLeft="@drawable/finalphone"
+        android:background="@drawable/round"
+        android:layout_gravity="center"
+        android:layout_marginTop="7dp"
+        android:hint="Mobile   "
+   ></EditText>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:weightSum="720"
+        >
+
+        <TextView
+            android:id="@+id/switchtext1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:layout_weight="350"
+            android:text="  Gender ?"/>
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            android:id="@+id/toggleButt1"
+            android:layout_weight="370"
+            android:layout_gravity="right"
+            android:background="@drawable/togglemf"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:drawablePadding="10dp"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="10dp"
+        android:gravity="center|left"
+android:text="Following Message Will Be Send(in case of Email):"
+android:textStyle="normal"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:textColor="@android:color/background_dark"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/decrip"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:drawablePadding="10dp"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center"
+        android:gravity="center|left"
+        android:text="You have been invited to jeevom which is a Microsoft powered cloud based HealthCare plateform for the masses."
+        android:textStyle="normal"
+        android:textSize="14sp"
+        ></TextView>
+          <TextView
+               android:id="@+id/messg"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+
+               android:drawablePadding="10dp"
+               android:background="@android:color/transparent"
+               android:layout_gravity="center"
+               android:gravity="center|left"
+               android:text="Here's the message -"
+               android:textStyle="normal"
+               android:textSize="14sp"
+               ></TextView>
+
+
+         <EditText
+               android:id="@+id/custommsg"
+               android:layout_width="match_parent"
+               android:layout_height="90dp"
+               android:paddingLeft="20dp"
+               android:drawablePadding="10dp"
+               android:background="@drawable/round"
+               android:gravity="top"
+             android:layout_gravity="center"
+               android:paddingTop="10sp"
+               android:layout_marginTop="7dp"
+               android:hint="Enter your custom message here...."
+             android:inputType="text|textMultiLine|textCapSentences"
+             android:maxLength="221"
+               ></EditText>
+
+        <Button
+            android:id="@+id/butto1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/invitebttn"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="23sp"
+            android:textAllCaps="false"
+            android:text="Send"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="10dp"
+            android:layout_weight="350"
+            />
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

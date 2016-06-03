@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="message_size_normal">20dp</dimen>
+    <dimen name="message_size_medium">16dp</dimen>
+    <dimen name="message_size_small">14dp</dimen>
+    <dimen name="fix_message_size_normal">14dp</dimen>
+    <dimen name="fix_message_size_medium">12dp</dimen>
+    <dimen name="fix_message_size_small">10dp</dimen>
+    <dimen name="first_line">17dp</dimen>
+    <dimen name="second_line">15dip</dimen>
+    <dimen name="third_line">13dip</dimen>
+    <dimen name="fourth_line">12dip</dimen>
+
+
+    <dimen name="default_circle_indicator_stroke_width">2dp</dimen>
+    <dimen name="default_circle_indicator_radius">5dp</dimen>
+
+    <integer name="default_circle_indicator_orientation">0</integer>
+
+    <bool name="default_circle_indicator_snap">false</bool>
+    <bool name="default_circle_indicator_centered">true</bool>
+
+</resources>
