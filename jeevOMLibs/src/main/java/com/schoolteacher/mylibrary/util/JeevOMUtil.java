@@ -21,7 +21,7 @@ public interface JeevOMUtil {
     String PayNowUrl = "/*https://www.jeevom.com/*/";
 //test-school-triangle
  // String baseurl="https://services-core-test.study-lab.biz:9091/";
-
+//production url school triangle22
   //production url school triangle
   String baseurl="https://services-core.studytriangle.com:9091/";
 
